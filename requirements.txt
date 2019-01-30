@@ -1,2 +1,3 @@
 Click==7.0
+Owlready2==0.13
 python-dateutil==2.7.5

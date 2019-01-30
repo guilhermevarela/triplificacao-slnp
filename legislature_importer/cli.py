@@ -1,6 +1,10 @@
 # -*- coding:utf-8 -*-
 import click
 
+
+from owlready2 import *
+
+
 from .classes import ElectionResults, Identity
 from .helpers import generate_uri
 
@@ -21,8 +25,13 @@ START_DATE = '01/02/2019'
 END_DATE = '31/01/2024'
 
 
-@click.command()
+@click.group()
 def cli():
+    pass
+
+
+@click.command()
+def import_all_elected():
     identity = Identity()
     election_results = ElectionResults()
     elected_2018 = election_results.get_all_elected()
@@ -30,6 +39,23 @@ def cli():
         if not identity.find(elected.name):
             uri = generate_uri()
             identity.update_data(uri, elected)
+
+
+@click.command()
+def populate_senator_posts():
+    onto = get_ontology("http://www.lesfleursdunormal.fr/static/_downloads/pizza_onto.owl")
+    onto.load()
+    click.echo('Initialized senator posts')
+
+
+@click.command()
+def populate_deputies_posts():
+    click.echo('Initialized deputies posts')
+
+
+cli.add_command(import_all_elected)
+cli.add_command(populate_senator_posts)
+cli.add_command(populate_deputies_posts)
 
 
 if __name__ == '__main__':
