@@ -43,8 +43,6 @@ def import_all_elected():
 
 @click.command()
 def populate_senator_posts():
-    onto = get_ontology("http://www.lesfleursdunormal.fr/static/_downloads/pizza_onto.owl")
-    onto.load()
     click.echo('Initialized senator posts')
 
 

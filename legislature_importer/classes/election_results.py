@@ -1,7 +1,7 @@
 # -*- coding:utf-8 -*-
 import csv
 
-from elected import Elected
+from .elected import Elected
 
 RESULTS_FILE = './files/candidatos+resultados+2018.csv'
 
@@ -13,7 +13,7 @@ class ElectionResults:
     def __init__(self):
         self.elected = []
 
-        with open(RESULTS_FILE, 'rb') as csvfile:
+        with open(RESULTS_FILE, 'rt') as csvfile:
             spamreader = csv.DictReader(csvfile, delimiter=',')
             for row in spamreader:
                 self.add_elected(Elected(row))

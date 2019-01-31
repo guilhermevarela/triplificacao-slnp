@@ -2,8 +2,8 @@
 import csv
 from dateutil.parser import parse
 
-from deputy import Deputy
-from senator import Senator
+from .deputy import Deputy
+from .senator import Senator
 
 
 IDENTITY_FILE = './files/identity_final.csv'
@@ -14,7 +14,7 @@ class Identity:
         self.deputies = []
         self.senators = []
 
-        with open('./files/identity.csv', 'rb') as csvfile:
+        with open('./files/identity.csv', 'rt') as csvfile:
             spamreader = csv.DictReader(csvfile, delimiter=';')
             for row in spamreader:
                 if row.get('cam:ideCadastro'):
