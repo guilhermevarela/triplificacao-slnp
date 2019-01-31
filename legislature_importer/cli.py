@@ -1,12 +1,9 @@
 # -*- coding:utf-8 -*-
 import click
 
-
-from owlready2 import *
-
-
 from .classes import ElectionResults, Identity
 from .helpers import generate_uri
+from .ontologies import Post
 
 
 # 2. Criar um POST (na ontologia Agents) para cada vaga de deputado/senador, por estado. \
@@ -16,6 +13,8 @@ from .helpers import generate_uri
 #    usar um diferente para cada eleito).
 # 5. A partir deste JSON, gerar um mapeamento no KARMA (https://usc-isi-i2.github.io/karma/) \
 #    para gerar o RDF conforme a ontologia AGENTS que está no diretório.
+
+# O arquivo .rdf veio do Ysvein, não sei se esse é o correto
 
 # 81 senadores
 # 513 deputados federais
@@ -43,7 +42,8 @@ def import_all_elected():
 
 @click.command()
 def populate_senator_posts():
-    click.echo('Initialized senator posts')
+    new_post = Post()
+    click.echo(new_post.name)
 
 
 @click.command()
