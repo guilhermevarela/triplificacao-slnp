@@ -6,6 +6,9 @@ NAMESPACE = Namespace('http://www.w3.org/ns/org#')
 FEATURE_IRI_PREFIX = 'http://www.geonames.org/ontology#Feature'
 SNLP_IRI_PREFIX = 'http://www.seliganapolitica.org/resource'
 
+JURISDICTION_LIST = ['AC', 'AL', 'AM', 'AP', 'BA', 'CE', 'DF', 'ES', 'GO', 'MA', 'MG', 'MS', 'MT',
+                     'PA', 'PB', 'PE', 'PI', 'PR', 'RJ', 'RN', 'RO', 'RR', 'RS', 'SC', 'SE', 'SP', 'TO']
+
 
 class Agent:
     def __init__(self):
@@ -14,6 +17,10 @@ class Agent:
 
     def save(self):
         self.graph.serialize(ONTOLOGY_PATH, format='n3')
+
+    def add_all_jurisdictions(self):
+        for jurisdiction in JURISDICTION_LIST:
+            self.new_jurisdiction(jurisdiction)
 
     def new_jurisdiction(self, jurisdiction):
         jurisdiction_uri = URIRef('{prefix}/{initials}'.format(prefix=FEATURE_IRI_PREFIX, initials=jurisdiction))

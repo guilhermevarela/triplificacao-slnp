@@ -14,20 +14,6 @@ from .classes import ElectionResults, Identity, Agent, generate_uri
 # 513 deputados federais
 
 
-def get_jurisdiction_list_from_elected(elected_list):
-    return list(set([elected.federal_unity for elected in elected_list]))
-
-
-def add_all_jurisdictions(jurisdiction_list):
-    ontology = Agent()
-    for jurisdiction in jurisdiction_list:
-        ontology.new_jurisdiction(jurisdiction)
-
-def add_post(elected, uri):
-    ontology = Agent()
-    ontology.new_post(elected, uri)
-
-
 @click.group()
 def cli():
     pass
@@ -35,16 +21,16 @@ def cli():
 
 @click.command()
 def import_all_elected():
+    ontology = Agent()
     identity = Identity()
     election_results = ElectionResults()
     elected_2018 = election_results.get_all_elected()
 
-    jurisdiction_list = get_jurisdiction_list_from_elected(elected_2018)
-    add_all_jurisdictions(jurisdiction_list)
+    ontology.add_all_jurisdictions()
 
     for elected in elected_2018:
         uri = generate_uri()
-        add_post(elected, uri)
+        ontology.new_post(elected, uri)
 
         if not identity.find(elected.name):
             identity.update_data(uri, elected)

@@ -23,11 +23,6 @@ class ElectionResults:
     def add_elected(self, elected):
         if elected.post in self.POSTS and elected.shift in self.ELECTED_FLAGS:
             self.elected.append(elected)
-            # self.populate_post(elected)
 
     def get_all_elected(self):
         return self.elected
-
-    def populate_post(self, elected):
-        self.ontology.new_jurisdiction(elected.electoral_unity)
-        self.ontology.new_post(elected)
