@@ -1,27 +1,31 @@
 # -*- coding:utf-8 -*-
 import click
 
-from .classes import ElectionResults, Identity
-from .helpers import generate_uri
-from .ontologies import Post
+from .classes import ElectionResults, Identity, Agent, generate_uri
 
-
-# 2. Criar um POST (na ontologia Agents) para cada vaga de deputado/senador, por estado. \
-#    com start date 01/02/2019 e end date 31/1/2024), e um estado associado.
 # 4. Criar um JSON com uma entrada para politico, incluindo a URL dele, o nome do candidato, \
 #    o nome civil, a data de nascimento, a url do partido (ORG),   e de um  POST que vc criou para o estado dele (\
 #    usar um diferente para cada eleito).
 # 5. A partir deste JSON, gerar um mapeamento no KARMA (https://usc-isi-i2.github.io/karma/) \
 #    para gerar o RDF conforme a ontologia AGENTS que está no diretório.
 
-# O arquivo .rdf veio do Ysvein, não sei se esse é o correto
 
 # 81 senadores
 # 513 deputados federais
 
 
-START_DATE = '01/02/2019'
-END_DATE = '31/01/2024'
+def get_jurisdiction_list_from_elected(elected_list):
+    return list(set([elected.federal_unity for elected in elected_list]))
+
+
+def add_all_jurisdictions(jurisdiction_list):
+    ontology = Agent()
+    for jurisdiction in jurisdiction_list:
+        ontology.new_jurisdiction(jurisdiction)
+
+def add_post(elected, uri):
+    ontology = Agent()
+    ontology.new_post(elected, uri)
 
 
 @click.group()
@@ -34,26 +38,19 @@ def import_all_elected():
     identity = Identity()
     election_results = ElectionResults()
     elected_2018 = election_results.get_all_elected()
+
+    jurisdiction_list = get_jurisdiction_list_from_elected(elected_2018)
+    add_all_jurisdictions(jurisdiction_list)
+
     for elected in elected_2018:
+        uri = generate_uri()
+        add_post(elected, uri)
+
         if not identity.find(elected.name):
-            uri = generate_uri()
             identity.update_data(uri, elected)
 
 
-@click.command()
-def populate_senator_posts():
-    new_post = Post()
-    click.echo(new_post.name)
-
-
-@click.command()
-def populate_deputies_posts():
-    click.echo('Initialized deputies posts')
-
-
 cli.add_command(import_all_elected)
-cli.add_command(populate_senator_posts)
-cli.add_command(populate_deputies_posts)
 
 
 if __name__ == '__main__':
