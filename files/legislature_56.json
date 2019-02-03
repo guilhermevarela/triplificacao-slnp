@@ -1,0 +1,4545 @@
+{
+  "Info": {
+    "hasType": "Identity",
+    "timstampPub": "03-02-2019 13:31",
+    "hasVersion": "0.0.1"
+  },
+  "Resource": [
+    {
+      "url": "http://www.seliganapolitica.org/resource/3f568202-6174-49a7-9a6c-c27a1f532409",
+      "nomeCandidato": "",
+      "nomeCivil": "VANDA DENIR MILANI NOGUEIRA",
+      "dataNascimento": "17/09/1953",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/b4a6aaad-e172-45a5-95fb-ca6afb512adb"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/356b51d0-a24d-404f-8866-e49fc865fa88",
+      "nomeCandidato": "",
+      "nomeCivil": "JESUS SERGIO DE MENEZES",
+      "dataNascimento": "10/06/1973",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/d7114d27-76d6-47ce-90c6-e04d47422c23"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/20887bf7-9c65-4f54-93b7-270a44b26643",
+      "nomeCandidato": "",
+      "nomeCivil": "ALAN RICK MIRANDA",
+      "dataNascimento": "23/10/1976",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/ec93b3e2-2dfb-4c3e-b0c5-9d29f874c185"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/cda24f72-ad52-47ec-b0f9-afd0dddb0a8a",
+      "nomeCandidato": "",
+      "nomeCivil": "JESSICA ROJAS SALES",
+      "dataNascimento": "28/11/1980",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/268a67d2-459f-4855-aadb-9f3082fb26dc"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/b6f25793-64cb-474a-ad32-a464b45354c0",
+      "nomeCandidato": "",
+      "nomeCivil": "MANUEL MARCOS CARVALHO DE MESQUITA",
+      "dataNascimento": "07/05/1972",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/cc70cf43-fb91-4c6c-82e0-5f854e4ed9a4"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/627f9f83-fdaa-4791-87fd-c86d2d1831e7",
+      "nomeCandidato": "",
+      "nomeCivil": "CYLMARA FERNANDES DA ROCHA GRIPP",
+      "dataNascimento": "04/09/1973",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/a647c8f2-5e2b-4e38-bf33-8836ac2a2fdf"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/3f57e324-997d-4aab-9817-de97596147c1",
+      "nomeCandidato": "",
+      "nomeCivil": "FLAVIANO FLAVIO BAPTISTA DE MELO",
+      "dataNascimento": "17/11/1949",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/311e4872-74d8-4b31-bee4-f30c9d51ae31"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/a5144506-935d-41a6-93fb-8c36ce129984",
+      "nomeCandidato": "",
+      "nomeCivil": "SERGIO DE OLIVEIRA CUNHA",
+      "dataNascimento": "20/04/1960",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/03bd2b4c-7a0c-404b-81ca-13bc1107b495"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/91f60633-d7ad-4f7d-8e57-76ec5456aa30",
+      "nomeCandidato": "",
+      "nomeCivil": "MARCIO MIGUEL BITTAR",
+      "dataNascimento": "28/06/1963",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/b20902c3-061d-4106-9c8f-1d22a751f4b2"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/21de18fd-acae-4320-ad10-6de18e357d6f",
+      "nomeCandidato": "",
+      "nomeCivil": "MARIA PERPETUA DE ALMEIDA",
+      "dataNascimento": "28/12/1964",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/35b0c616-990b-46f1-8295-4894e6f3dd04"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/2fcad730-16d5-4690-8a7b-f70c9a49b2b1",
+      "nomeCandidato": "",
+      "nomeCivil": "MARX BELTRAO LIMA SIQUEIRA",
+      "dataNascimento": "28/11/1979",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/66572ec8-aa10-4cda-b7a2-2e73dd4e7fc6"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/beeab850-2836-4e3e-8ec4-f0f975c9dfb9",
+      "nomeCandidato": "",
+      "nomeCivil": "JOSE RENAN VASCONCELOS CALHEIROS",
+      "dataNascimento": "16/09/1955",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/7457e0db-dd6d-41d5-941c-63ea1ac2fe43"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/8cef434e-a4b4-4191-9e1c-ec3805269ceb",
+      "nomeCandidato": "",
+      "nomeCivil": "ARTHUR CESAR PEREIRA DE LIRA",
+      "dataNascimento": "25/06/1969",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/45f94afd-8635-42ae-b445-131ca188edef"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/8da9c643-fca1-4ac8-aff0-8853c1b59be8",
+      "nomeCandidato": "",
+      "nomeCivil": "TEREZA NELMA DA SILVA PORTO VIANA SOARES",
+      "dataNascimento": "07/10/1957",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/0625112e-6130-4d2c-b342-78a51e8d24fb"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/22b3b923-6bd6-4088-ae27-e9a094298eb3",
+      "nomeCandidato": "",
+      "nomeCivil": "JOAO HENRIQUE HOLANDA CALDAS",
+      "dataNascimento": "22/07/1987",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/438f47e8-a660-4739-9302-da13ca2d0ace"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/d43717ba-6bb6-4351-8d84-cfe2348b2b87",
+      "nomeCandidato": "",
+      "nomeCivil": "NIVALDO FERREIRA DE ALBUQUERQUE NETO",
+      "dataNascimento": "07/01/1988",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/16ae53c1-7333-4628-9ebe-de82e5cecd9e"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/fec2c4b9-3746-43eb-a16b-c2aa31a263a6",
+      "nomeCandidato": "",
+      "nomeCivil": "PAULO FERNANDO DOS SANTOS",
+      "dataNascimento": "15/09/1957",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/f0b7dbe0-33c6-4ccc-b1d6-fffef40e8a47"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/bd5ffe70-a9b2-40c8-8ed1-773bef4259e9",
+      "nomeCandidato": "",
+      "nomeCivil": "ISNALDO BULHOES BARROS JUNIOR",
+      "dataNascimento": "30/10/1976",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/c7b6bbd0-c0e2-48e3-9b46-6c9dec0081e6"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/0116d0a0-e67c-4f83-a5ce-cd1a3589c1be",
+      "nomeCandidato": "",
+      "nomeCivil": "SEVERINO DE LIRA PESSOA",
+      "dataNascimento": "06/02/1970",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/95088e80-3526-4a7c-a46c-f8117fe4a9bb"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/1b02b181-5807-4ee6-ae87-8c29ad86828e",
+      "nomeCandidato": "",
+      "nomeCivil": "RODRIGO SANTOS CUNHA",
+      "dataNascimento": "11/05/1981",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/db1c8d35-84bd-4827-8f22-54345a7e2f93"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/9e17d127-1a04-4da3-8712-4d79601b7bf6",
+      "nomeCandidato": "",
+      "nomeCivil": "SERGIO TOLEDO DE ALBUQUERQUE",
+      "dataNascimento": "29/01/1962",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/22bd7928-70bd-48b4-a0bd-6197057065dd"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/8a3afa14-8b9f-415e-9b3c-47f129bade25",
+      "nomeCandidato": "",
+      "nomeCivil": "ALBERTO BARROS CAVALCANTE NETO",
+      "dataNascimento": "05/05/1982",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/c0c02518-1d3a-4c3e-ab04-842fa2f1d5d9"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/3f61cccf-5650-4aed-9312-8d8930e49405",
+      "nomeCandidato": "",
+      "nomeCivil": "MARCELO RAMOS RODRIGUES",
+      "dataNascimento": "29/08/1973",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/24623cf5-a274-4cfc-a10f-6fdb89d98e62"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/81eb7bac-27c9-47f8-924a-20ab10c4f14e",
+      "nomeCandidato": "",
+      "nomeCivil": "SIDNEY RICARDO DE OLIVEIRA LEITE",
+      "dataNascimento": "08/04/1967",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/7749d183-f3b0-4c22-8b72-004ef36d10aa"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/fc2227ea-caa1-4466-9df1-6ffbb3f796a4",
+      "nomeCandidato": "",
+      "nomeCivil": "JOAO BOSCO GOMES SARAIVA",
+      "dataNascimento": "10/10/1959",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/2a1ef7db-0ef1-4bca-a993-6102014716e0"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/ed6e5e56-5cd8-44bb-95a0-cb99a029af67",
+      "nomeCandidato": "",
+      "nomeCivil": "ATILA SIDNEY LINS DE ALBUQUERQUE",
+      "dataNascimento": "22/11/1950",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/ef032c03-a3b9-4195-be06-a45d707da439"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/4b3b80ce-f0ed-418f-a0ba-aff70029ce87",
+      "nomeCandidato": "",
+      "nomeCivil": "JOSE RICARDO WENDLING",
+      "dataNascimento": "23/06/1964",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/73aae190-7211-4920-ad41-7e9a7093c16b"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/7670a0ad-3e78-4c52-8abd-ac5dde1c9ade",
+      "nomeCandidato": "",
+      "nomeCivil": "SILAS CAMARA",
+      "dataNascimento": "15/12/1962",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/b8e3cb01-2b4f-4211-a928-fb33974c7447"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/a70f8472-cce4-4849-8bb2-9c9a263fb479",
+      "nomeCandidato": "",
+      "nomeCivil": "FRANCISCO PLINIO VALERIO TOMAZ",
+      "dataNascimento": "31/01/1955",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/89d9bbce-e187-411a-aef8-5ce2cb1c820e"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/83d36f43-3757-4f23-8d56-5b205f9b6312",
+      "nomeCandidato": "",
+      "nomeCivil": "CARLOS EDUARDO DE SOUZA BRAGA",
+      "dataNascimento": "06/12/1960",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/a71cf925-b503-4d13-a1f9-d8c5cd270be8"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/247619ef-1b17-4e97-930b-88076d90ff35",
+      "nomeCandidato": "",
+      "nomeCivil": "PABLO OLIVA SOUZA",
+      "dataNascimento": "26/07/1976",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/a7e13a9b-872d-457e-8549-ebe411d1d24f"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/69cd576a-ff39-4926-8d29-bbf9383d29bc",
+      "nomeCandidato": "",
+      "nomeCivil": "ACACIO DA SILVA FAVACHO NETO",
+      "dataNascimento": "28/09/1983",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/fe828486-9bbe-4501-acdc-caf3e222cca1"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/9aa01707-184a-43b3-b011-4d9abda73d34",
+      "nomeCandidato": "",
+      "nomeCivil": "CARLOS CAMILO GOES CAPIBERIBE",
+      "dataNascimento": "23/05/1972",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/09a6cf88-d2c7-4837-b79d-ecdea41033fd"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/168b5ea2-ed78-4b1f-af20-5534f32c1f9a",
+      "nomeCandidato": "",
+      "nomeCivil": "VINICIUS DE AZEVEDO GURGEL",
+      "dataNascimento": "31/07/1978",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/f9e78699-2750-45ee-b7a8-4540ae3fa5a3"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/31f8c372-acaa-4b99-99b8-af7acdb8b282",
+      "nomeCandidato": "",
+      "nomeCivil": "LUIZ CARLOS GOMES DOS SANTOS JUNIOR",
+      "dataNascimento": "16/08/1979",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/30ef0b6a-b457-4c61-a8bd-3614ade80901"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/a123a74c-a9ad-4f6c-81f3-70d3e8baf56c",
+      "nomeCandidato": "",
+      "nomeCivil": "LEDA MARIA SADALA BRITO",
+      "dataNascimento": "11/06/1966",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/56302965-99ca-4090-96eb-1c36647abac0"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/749c7620-f233-49b1-a573-8461f7522e6c",
+      "nomeCandidato": "",
+      "nomeCivil": "ALINE PARANHOS VARONIL GURGEL",
+      "dataNascimento": "25/11/1980",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/e7cd8dca-391b-4362-8feb-425a4a324198"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/23f31992-2046-4356-82e7-dc6520952a6e",
+      "nomeCandidato": "",
+      "nomeCivil": "RANDOLPH FREDERICH RODRIGUES ALVES",
+      "dataNascimento": "06/11/1972",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/7429d6d2-f96b-437c-bfa6-e45d3d72073d"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/415acf0d-80bc-4f51-8a27-188589df4b85",
+      "nomeCandidato": "",
+      "nomeCivil": "LUIZ CANTUARIA BARRETO",
+      "dataNascimento": "10/11/1964",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/d0a50e6f-47cf-4dbd-b147-3cbb65de81a5"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/81f128a6-2d66-4f10-9e84-e4b1dd4107fe",
+      "nomeCandidato": "",
+      "nomeCivil": "ANDRE DOS SANTOS ABDON",
+      "dataNascimento": "10/11/1970",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/c90da149-dc2e-470e-a25a-88e8249ebb02"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/5a5d12bd-4e7b-49c3-8e09-f5af57f8c884",
+      "nomeCandidato": "",
+      "nomeCivil": "MARCIVANIA DO SOCORRO DA ROCHA FLEXA",
+      "dataNascimento": "21/06/1973",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/2f367cb1-cf68-46dc-8020-0c6bd1c98f3b"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/bbc52756-7d87-4d1f-ae10-f50436478a7e",
+      "nomeCandidato": "",
+      "nomeCivil": "AFONSO BANDEIRA FLORENCE",
+      "dataNascimento": "15/10/1960",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/518e1dbe-34a2-4094-afd2-02d3e0731fe9"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/1732c98b-a170-4356-8916-931c0eaa776d",
+      "nomeCandidato": "",
+      "nomeCivil": "LEUR ANTONIO DE BRITTO LOMANTO JUNIOR",
+      "dataNascimento": "28/10/1976",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/d8bc93ff-a2d1-47f2-8acd-1e220f43867a"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/0f245297-3fca-4003-8c3a-7eef76eba469",
+      "nomeCandidato": "",
+      "nomeCivil": "MANOEL ISIDORIO DE SANTANA JUNIOR",
+      "dataNascimento": "28/07/1962",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/b8d15627-692a-46a2-8ac6-c2bac29f7443"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/a502f912-fad5-453d-830d-34d71efedf6a",
+      "nomeCandidato": "",
+      "nomeCivil": "JOSE CERQUEIRA DE SANTANA NETO",
+      "dataNascimento": "30/03/1964",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/ebcf6eb5-aee5-4402-9271-f052660e2ec3"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/8b839249-9c47-4451-952f-06c1c4c39226",
+      "nomeCandidato": "",
+      "nomeCivil": "JOAO INACIO RIBEIRO ROMA NETO",
+      "dataNascimento": "17/11/1972",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/7f83afa8-079b-406d-a7bd-0c125bb71f8b"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/86c54644-cf35-43ba-b6bc-f0e36d3cb628",
+      "nomeCandidato": "",
+      "nomeCivil": "JOSE MARCELO DO NASCIMENTO NILO",
+      "dataNascimento": "26/04/1955",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/2b892b82-d695-4377-9bb0-9482a24daecf"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/63060433-d8cb-46b7-9a65-ae498990dbd5",
+      "nomeCandidato": "",
+      "nomeCivil": "SERGIO LUIS LACERDA BRITO",
+      "dataNascimento": "08/06/1961",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/627a4b0b-68ba-4d21-b843-27a73bf963da"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/1df9f17a-1953-4a5c-b610-b896e76eef48",
+      "nomeCandidato": "",
+      "nomeCivil": "ADOLFO VIANA DE CASTRO NETO",
+      "dataNascimento": "02/02/1981",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/5935a921-d606-47f9-b81e-8b16090f3f2b"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/1e761294-bd86-4470-8527-eda85e29e036",
+      "nomeCandidato": "",
+      "nomeCivil": "VALMIR CARLOS DA ASSUNCAO",
+      "dataNascimento": "17/12/1964",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/86fc8169-3b7f-4326-92c1-2a4ce6154b5a"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/0663b1bb-2fc4-4503-8cd0-69f2b7f9fc86",
+      "nomeCandidato": "",
+      "nomeCivil": "JOAO CARLOS BACELAR BATISTA",
+      "dataNascimento": "09/07/1957",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/416d5864-1b20-416a-bc29-6b43a93c14a9"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/5bce2d13-be69-4f7e-835c-e1081652cd21",
+      "nomeCandidato": "",
+      "nomeCivil": "MARCIO CARLOS MARINHO",
+      "dataNascimento": "12/12/1970",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/f1415f00-650e-4921-827c-a6a13cd57e58"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/57a93a9a-ccea-41ae-b8c0-6f6fa55ec28e",
+      "nomeCandidato": "",
+      "nomeCivil": "LIDICE DA MATA E SOUZA",
+      "dataNascimento": "12/03/1956",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/bab1b875-18bd-4b5a-b07b-8c179d2e7d7e"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/bac6361a-9e7b-4532-b662-5f9eb108b488",
+      "nomeCandidato": "",
+      "nomeCivil": "ANTONIO LUIZ PARANHOS RIBEIRO LEITE DE BRITO",
+      "dataNascimento": "17/01/1969",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/ff456388-d32f-4611-8cb6-476fd3c5f649"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/243cf869-d37b-4fe4-91b8-0d5325762af2",
+      "nomeCandidato": "",
+      "nomeCivil": "PAULO VELLOSO DANTAS AZI",
+      "dataNascimento": "14/01/1963",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/58b0906b-affb-469d-9b52-119872ab495d"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/dc7cfb9a-67f6-4f71-9e45-596a0334e89e",
+      "nomeCandidato": "",
+      "nomeCivil": "JOSE NUNES SOARES",
+      "dataNascimento": "18/12/1950",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/85c51f5e-fdf3-4eb0-85d1-aa5440a16b5f"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/afc21039-3165-468b-b032-0321fcfa6393",
+      "nomeCandidato": "",
+      "nomeCivil": "RAIMUNDO MAGALHAES COSTA",
+      "dataNascimento": "09/03/1961",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/a1ca11e4-8f0a-4d8a-af6d-fee3e74d8439"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/f49d70cb-ac27-4821-aea5-e67306661833",
+      "nomeCandidato": "",
+      "nomeCivil": "LUIZ CARLOS CAETANO",
+      "dataNascimento": "23/09/1954",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/642ff717-2f55-4503-bad0-dedd4fd0fbad"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/4b6d62f3-d3c7-4af3-809b-06849b9a25af",
+      "nomeCandidato": "",
+      "nomeCivil": "JOAO CARLOS PAOLILO BACELAR FILHO",
+      "dataNascimento": "08/10/1972",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/e66617ca-97d8-4f05-83ae-e058d70708a7"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/e383190a-a9c2-416c-a0e5-77995f0a2dd4",
+      "nomeCandidato": "",
+      "nomeCivil": "ELMAR JOSE VIEIRA NASCIMENTO",
+      "dataNascimento": "06/07/1970",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/0b97f3d9-8f66-4cca-917e-c1e7cee3e3ed"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/2bcc902e-6441-4966-b014-e7e40ed5ec51",
+      "nomeCandidato": "",
+      "nomeCivil": "OTTO ROBERTO MENDONCA DE ALENCAR FILHO",
+      "dataNascimento": "07/07/1977",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/6c6657bb-05bf-4ecc-b91d-903c12368981"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/1dcc8b34-07ff-41a4-b0bf-8a1bfaceb39a",
+      "nomeCandidato": "",
+      "nomeCivil": "WALDENOR ALVES PEREIRA FILHO",
+      "dataNascimento": "08/03/1954",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/9df53afb-c68b-4986-a10a-0cc0682019db"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/14acb72d-a07e-482b-b246-13ec9e098980",
+      "nomeCandidato": "",
+      "nomeCivil": "DANIEL GOMES DE ALMEIDA",
+      "dataNascimento": "21/01/1955",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/7434048d-1bf3-4e01-805a-64b9c9d2f362"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/0a59b56c-368a-4424-883e-1c42659116e0",
+      "nomeCandidato": "",
+      "nomeCivil": "ULDURICO ALENCAR PINTO",
+      "dataNascimento": "30/01/1992",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/de9cd9ea-c707-41af-8c0b-9bf0a58ad7a7"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/e720f529-8adb-4200-b218-14ae9c015fec",
+      "nomeCandidato": "",
+      "nomeCivil": "ALEX MARCO SANTANA SOUSA",
+      "dataNascimento": "22/06/1972",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/5272d7e9-2ff9-48ea-b704-2c841cce951e"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/f55f9945-7d25-4306-a5ec-8db2722f54f8",
+      "nomeCandidato": "",
+      "nomeCivil": "JOSE ALVES ROCHA",
+      "dataNascimento": "18/08/1948",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/1f5385a5-b91e-48be-81ee-2ff87472a5c8"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/615b887e-7380-4fbb-908c-c31e6a35f5e5",
+      "nomeCandidato": "",
+      "nomeCivil": "JOSE ABILIO SILVA DE SANTANA",
+      "dataNascimento": "13/02/1965",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/6f81bd8c-9e04-4b4f-9db0-7f37c1eea96a"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/6352fe51-c310-409c-82f4-088130e6973d",
+      "nomeCandidato": "RONALDO CARLETTO",
+      "nomeCivil": "RONALDO CARLETTO",
+      "dataNascimento": "05/01/1960",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/0fc1be2c-f2cb-4c19-9a05-d3bb92e08c99"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/c59da2d1-4624-4182-a57b-b83797fcdf31",
+      "nomeCandidato": "",
+      "nomeCivil": "CLAUDIO CAJADO SAMPAIO",
+      "dataNascimento": "01/12/1963",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/346f5947-a66b-4d64-94b4-e58d69e81809"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/f6e6192e-b53e-42d6-ad0e-1032f07dad89",
+      "nomeCandidato": "",
+      "nomeCivil": "ANDERSON MACHADO DE JESUS",
+      "dataNascimento": "29/11/1984",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/494d91f4-3066-4bf9-848d-8c4d537a9e4b"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/e4515467-d31a-4eed-861d-e15b3d9d4bd0",
+      "nomeCandidato": "",
+      "nomeCivil": "ANGELO MARIO CORONEL DE AZEVEDO MARTINS",
+      "dataNascimento": "03/05/1958",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/fb980045-fb50-4012-9fea-f6b26e45a831"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/01366d98-5998-4dda-aba4-9cc0f1651b0e",
+      "nomeCandidato": "",
+      "nomeCivil": "CARLOS TITO MARQUES CORDEIRO",
+      "dataNascimento": "17/11/1976",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/61f710c1-af2f-476c-8221-75ccb965dcda"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/2744712a-e507-45dc-9eb4-c2fb3c6b1f78",
+      "nomeCandidato": "",
+      "nomeCivil": "CARLOS FELIPE VAZQUEZ DE SOUZA LEAO",
+      "dataNascimento": "03/11/1979",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/f6332c2c-9fc8-4625-81f8-d2fbe26fb1b6"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/145942d9-d0ee-4c69-bb79-66e53f9d92f8",
+      "nomeCandidato": "",
+      "nomeCivil": "JORGE JOSE SANTOS PEREIRA SOLLA",
+      "dataNascimento": "11/04/1961",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/2ab0965f-9ed9-4cf5-9420-943d54bb2e58"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/ca95dad8-1d76-49d9-b102-af743da0542e",
+      "nomeCandidato": "",
+      "nomeCivil": "JAQUES WAGNER",
+      "dataNascimento": "16/03/1951",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/d87b2f05-b223-45f3-b7e5-f84f8396a8e7"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/e36a2246-e4c8-42e6-8861-5003420b077c",
+      "nomeCandidato": "",
+      "nomeCivil": "MARIO SILVIO MENDES NEGROMONTE JUNIOR",
+      "dataNascimento": "31/08/1980",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/21fa0b73-659c-449d-9fb1-204197cfa832"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/d1559fe0-b1a1-4ec6-802e-891ea07644c7",
+      "nomeCandidato": "",
+      "nomeCivil": "NELSON VICENTE PORTELA PELLEGRINO",
+      "dataNascimento": "27/12/1960",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/eec5a0ee-c2c2-4339-8e05-199d342d4f81"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/b2f3b109-e304-4c5a-886b-b91164589d63",
+      "nomeCandidato": "",
+      "nomeCivil": "FELIX DE ALMEIDA MENDONCA JUNIOR",
+      "dataNascimento": "29/11/1963",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/789e4096-7b3f-4381-90ec-3a6ebca6c1cd"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/d586db48-5474-4c9e-8614-279d4128f4ae",
+      "nomeCandidato": "",
+      "nomeCivil": "ALICE MAZZUCO PORTUGAL",
+      "dataNascimento": "16/05/1959",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/1f1cf95d-49f7-4ab0-8050-b66a1c8e3763"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/0018433f-6f11-4768-b108-9d429c4a3658",
+      "nomeCandidato": "",
+      "nomeCivil": "JOSIAS GOMES DA SILVA",
+      "dataNascimento": "14/10/1956",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/a1ba8cd7-fdef-4104-b629-808befa17b21"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/5e0ed9b7-cb04-47f6-bba0-7d671b5b9ed2",
+      "nomeCandidato": "",
+      "nomeCivil": "DAYANE JAMILLE CARNEIRO DOS SANTOS PIMENTEL",
+      "dataNascimento": "30/01/1986",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/80cfe197-8ac9-4360-adbf-4a1e61156489"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/66d5a554-519c-400a-b7df-1d8f68c0680b",
+      "nomeCandidato": "",
+      "nomeCivil": "ARTHUR DE OLIVEIRA MAIA DA SILVA",
+      "dataNascimento": "17/08/1964",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/0aded727-8080-4ebf-9a8c-415608c7051f"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/b93e5f31-5903-451d-96c0-060496d6fa1f",
+      "nomeCandidato": "",
+      "nomeCivil": "JOSE LEONIDAS DE MENEZES CRISTINO",
+      "dataNascimento": "03/06/1957",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/1e77478e-dcd9-4f84-9d81-816772684253"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/ca15e10f-09ba-4392-8400-c66aba7d2c4f",
+      "nomeCandidato": "",
+      "nomeCivil": "LUIS EDUARDO GRANGEIRO GIRAO",
+      "dataNascimento": "25/09/1972",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/fcc622b1-2e79-4fb6-9428-afd240e26dcb"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/5e5dee66-8fb1-4e38-b450-e4f9139baeb4",
+      "nomeCandidato": "",
+      "nomeCivil": "DENIS ANDERSON DA ROCHA BEZERRA",
+      "dataNascimento": "17/03/1980",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/220a973e-7d4a-4dae-a335-ea6cffd74377"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/72514ae4-78b0-4d1f-a983-5110bbf1c7ce",
+      "nomeCandidato": "",
+      "nomeCivil": "JOSE NOBRE GUIMARAES",
+      "dataNascimento": "13/02/1959",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/058e3789-1405-40d4-a82d-a263b3634647"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/874b9bc7-e6c9-4f39-9d5d-5acf067daac8",
+      "nomeCandidato": "",
+      "nomeCivil": "LUIZIANNE DE OLIVEIRA LINS",
+      "dataNascimento": "18/11/1968",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/ff32a50f-1bf6-41c9-850b-32a82b61c129"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/332ebedc-42e6-4b8a-9732-dcdf160e3524",
+      "nomeCandidato": "",
+      "nomeCivil": "DOMINGOS GOMES DE AGUIAR NETO",
+      "dataNascimento": "29/04/1988",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/faaf596b-33fd-4ca9-bd28-9bb7ec61f4d2"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/0cad2ad2-4323-4051-a254-c4d7368e751c",
+      "nomeCandidato": "",
+      "nomeCivil": "ANTONIO JOSE AGUIAR ALBUQUERQUE",
+      "dataNascimento": "26/09/1983",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/a7612053-2b4d-4c64-8c2b-640dddee4306"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/c4ed0528-46b6-4876-bbc7-c4a3a8ca1f99",
+      "nomeCandidato": "",
+      "nomeCivil": "ANDRE PEIXOTO FIGUEIREDO LIMA",
+      "dataNascimento": "10/11/1966",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/b91a4111-b550-4cc5-aaa3-16094317d86f"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/0e7faadb-4131-4413-bb3c-62fd2d386198",
+      "nomeCandidato": "",
+      "nomeCivil": "CARLOS MAURO BENEVIDES FILHO",
+      "dataNascimento": "09/03/1959",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/d54a067a-a709-4757-85a8-798e592f6e7c"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/00aff31b-e5f4-479a-b0b1-7f5f57207d24",
+      "nomeCandidato": "",
+      "nomeCivil": "JOSE AIRTON FELIX CIRILO DA SILVA",
+      "dataNascimento": "21/02/1957",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/322ab5e0-220a-463e-872b-d7a7ba093c4e"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/d3cee1cd-0c1f-44e7-a577-75aaeeade607",
+      "nomeCandidato": "",
+      "nomeCivil": "EDUARDO HENRIQUE MAIA BISMARCK",
+      "dataNascimento": "14/11/1981",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/198e107b-2e13-42fb-a622-db5c50a71b25"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/5ffe4ed6-d732-4be1-a815-2e56748f94b0",
+      "nomeCandidato": "",
+      "nomeCivil": "CID FERREIRA GOMES",
+      "dataNascimento": "27/04/1963",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/61bbf4e1-0d00-43d2-bcd2-e5f8b13fbeb3"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/578c92c2-838f-4f84-83a2-e7d9de445667",
+      "nomeCandidato": "",
+      "nomeCivil": "ANTONIO IDILVAN DE LIMA ALENCAR",
+      "dataNascimento": "23/09/1968",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/db8c5307-ff74-47e9-9477-bd6fc21a1311"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/f2bc85a3-1613-4255-a896-f6a93d2225af",
+      "nomeCandidato": "",
+      "nomeCivil": "MOSES HAENDEL MELO RODRIGUES",
+      "dataNascimento": "06/06/1978",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/f02432f2-2540-469f-916f-ca5362fe3b25"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/ecbfb649-415a-472e-acde-dcbea34cff8b",
+      "nomeCandidato": "",
+      "nomeCivil": "FRANCISCO VAIDON OLIVEIRA",
+      "dataNascimento": "02/04/1975",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/ce1b4a8b-cc4c-4b8b-81a3-9cd449bcc1bd"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/6541aaa0-8b12-47e5-9e7e-5f5f13079033",
+      "nomeCandidato": "",
+      "nomeCivil": "JAZIEL PEREIRA DE SOUSA",
+      "dataNascimento": "03/05/1961",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/d76c77ee-118b-44c5-8ef6-a2d9a604fcc0"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/c3947a39-268c-427c-b69a-cb7778b87a12",
+      "nomeCandidato": "",
+      "nomeCivil": "GENECIAS MATEUS NORONHA",
+      "dataNascimento": "13/03/1963",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/fa7add53-4206-4584-a8b0-0ad04e696d16"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/85d996b4-7daa-4200-8bb2-6eaa3d8d3fa1",
+      "nomeCandidato": "",
+      "nomeCivil": "ANTONIO LUIZ RODRIGUES MANO JUNIOR",
+      "dataNascimento": "16/04/1985",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/72adf8c0-4e24-43d5-812e-ee327d549a01"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/b2847a32-2da5-446b-a89b-d0fe90cf9c4a",
+      "nomeCandidato": "",
+      "nomeCivil": "PEDRO AUGUSTO GEROMEL BEZERRA DE MENEZES",
+      "dataNascimento": "11/10/1980",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/557bb186-096c-4e5f-8b5a-fedd3889ad73"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/0bac87b3-ac69-4d3e-9872-75526df25597",
+      "nomeCandidato": "",
+      "nomeCivil": "MARCOS ROBERIO RIBEIRO MONTEIRO",
+      "dataNascimento": "15/02/1970",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/651a289e-bbb5-43c0-9657-d4732e23016e"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/1ce2ff8f-7519-4f71-af7f-7d0a62ed919f",
+      "nomeCandidato": "",
+      "nomeCivil": "HEITOR RODRIGO PEREIRA FREIRE",
+      "dataNascimento": "08/10/1981",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/15537308-294e-44be-8368-2e92891441bf"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/1a920505-24a0-433a-ade3-8bf63509350c",
+      "nomeCandidato": "",
+      "nomeCivil": "CELIO STUDART BARBOSA",
+      "dataNascimento": "19/06/1987",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/43723672-5cd0-4ee3-be55-7ff1595101c9"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/b727963b-791b-4393-af47-7319684a4402",
+      "nomeCandidato": "",
+      "nomeCivil": "WAGNER SOUSA GOMES",
+      "dataNascimento": "21/01/1979",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/7c5fc039-5e6d-4c47-bac6-65c57346548f"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/39d75f42-f05f-4699-a712-416fd758ae09",
+      "nomeCandidato": "",
+      "nomeCivil": "ROBERTO SOARES PESSOA",
+      "dataNascimento": "21/05/1943",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/63916c4c-32d1-421a-93e0-dc22c495d616"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/8def968c-e359-47c2-a6d9-ed1e018d3d84",
+      "nomeCandidato": "",
+      "nomeCivil": "CELINA LEAO HIZIM",
+      "dataNascimento": "02/03/1977",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/c7ae6792-1d60-4cd4-91c0-aa4d4f558ab4"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/f8a0a539-4d64-45bd-8628-c9b5baf153e0",
+      "nomeCandidato": "",
+      "nomeCivil": "FLAVIA CAROLINA PERES",
+      "dataNascimento": "21/01/1980",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/f0d96e75-de6a-4232-bfa8-5dc478b7ba2c"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/238a9bd1-9f0b-4235-8a7b-c697fc926599",
+      "nomeCandidato": "",
+      "nomeCivil": "ERIKA JUCA KOKAY",
+      "dataNascimento": "15/08/1957",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/ab219e07-89b2-42ee-8436-a480366a467a"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/469d7475-220f-4da1-80a8-18d278a7f8b9",
+      "nomeCandidato": "",
+      "nomeCivil": "LUIS CLAUDIO FERNANDES MIRANDA",
+      "dataNascimento": "27/03/1980",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/4e91419d-1d93-4967-8424-ef6c546cc910"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/22d432d0-4e18-4bc8-879f-90e4014114f4",
+      "nomeCandidato": "",
+      "nomeCivil": "ISRAEL MATOS BATISTA",
+      "dataNascimento": "02/05/1982",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/2965d878-45f0-4fc7-b130-e40ac8b21764"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/6b2112bd-2be8-4426-b29d-9eef07725592",
+      "nomeCandidato": "",
+      "nomeCivil": "PAULA MORENO PARO BELMONTE",
+      "dataNascimento": "23/06/1973",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/27dd6a21-d4d1-4333-a0f9-9ca420fb8dfa"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/143da6ce-ac9e-4fda-b460-40356f54747c",
+      "nomeCandidato": "",
+      "nomeCivil": "BEATRIZ KICIS TORRENTS DE SORDI",
+      "dataNascimento": "19/09/1961",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/44611cb1-c5c4-480d-91da-251424134dfe"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/54962d7a-7b57-4679-a58a-bccb9f263fb4",
+      "nomeCandidato": "",
+      "nomeCivil": "IZALCI LUCAS FERREIRA",
+      "dataNascimento": "07/04/1956",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/2510a986-b3ef-495b-93cd-c2a950154121"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/98f2fe5b-e7e7-4e52-b96e-06a5a13fceec",
+      "nomeCandidato": "",
+      "nomeCivil": "JULIO CESAR RIBEIRO",
+      "dataNascimento": "24/02/1975",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/fc5b70d7-d22f-4cba-9f36-c29cc1a64f51"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/dc0a491e-8157-4f89-a498-7e569d03c25c",
+      "nomeCandidato": "",
+      "nomeCivil": "LEILA GOMES DE BARROS REGO",
+      "dataNascimento": "30/09/1971",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/7503107f-d1cc-4713-805f-a90adb02972e"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/7e99d02b-27d5-491c-a7bf-591dba2b091e",
+      "nomeCandidato": "",
+      "nomeCivil": "JOSIAS MARIO DA VITORIA",
+      "dataNascimento": "02/06/1971",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/01c0e5f0-2afd-4789-a2e8-869623e94238"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/323e2bf2-ca1d-4f8c-a476-f1aa42d9548f",
+      "nomeCandidato": "",
+      "nomeCivil": "SORAYA DE SOUZA MANNATO",
+      "dataNascimento": "10/03/1961",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/4e5e536b-2c6a-4821-895c-1d1279a84cce"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/b90c9613-6574-4fcf-b9a6-60c67faae2b9",
+      "nomeCandidato": "",
+      "nomeCivil": "AMARO ROCHA NASCIMENTO NETO",
+      "dataNascimento": "04/12/1976",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/40534145-b5ed-4905-81c3-e5389cbf90d5"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/e23ff301-faaa-4ae5-b369-3f283c7f0fc7",
+      "nomeCandidato": "",
+      "nomeCivil": "HELDER IGNACIO SALOMAO",
+      "dataNascimento": "08/03/1964",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/52c22789-ade6-4131-b1a7-5c788db40c04"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/30457229-bb79-49f8-b443-554e7745f7e5",
+      "nomeCandidato": "",
+      "nomeCivil": "FABIANO CONTARATO",
+      "dataNascimento": "20/06/1966",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/e26ff34a-a0ee-49f8-82a3-195ad939d286"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/4f77df96-26a6-453e-b1f1-c8ddb00e5355",
+      "nomeCandidato": "",
+      "nomeCivil": "MARCOS RIBEIRO DO VAL",
+      "dataNascimento": "15/06/1971",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/ae6fd490-cbbb-4385-a815-e838288f2cc9"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/875e5aee-a7cb-4757-b2a4-5b6e15c17a5a",
+      "nomeCandidato": "",
+      "nomeCivil": "NORMA AYUB ALVES",
+      "dataNascimento": "07/09/1959",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/7d3177e6-07ab-450a-a7c1-82f4d0602953"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/a63fb391-c6b4-4004-be42-49de402554fb",
+      "nomeCandidato": "",
+      "nomeCivil": "FELIPE RIGONI LOPES",
+      "dataNascimento": "13/06/1991",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/77379bc4-282e-46dd-9cd4-16d63bfdb979"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/e64f435a-b51d-4bd3-b6a7-b14fd4d6b3b1",
+      "nomeCandidato": "",
+      "nomeCivil": "LAURIETE RODRIGUES DE JESUS MALTA",
+      "dataNascimento": "23/02/1970",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/3ffd2a61-b7e0-41ce-9c85-831ae686016e"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/fda9e9b6-791b-4063-92dd-942f1bd28e88",
+      "nomeCandidato": "EVAIR VIEIRA DE MELO",
+      "nomeCivil": "EVAIR VIEIRA DE MELO",
+      "dataNascimento": "02/04/1972",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/d9e4b6c7-8c3a-4c99-b364-98bc1025f48f"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/f11cb296-ff75-4b52-8895-90b37903c030",
+      "nomeCandidato": "",
+      "nomeCivil": "PAULO ROBERTO FOLETTO",
+      "dataNascimento": "30/04/1956",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/ccdc217a-3ed0-43dd-8f94-00a9032d9a06"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/b5741bb1-2ace-4101-8f0f-7fefbbbef2a4",
+      "nomeCandidato": "",
+      "nomeCivil": "ANTONIO SERGIO ALVES VIDIGAL",
+      "dataNascimento": "08/05/1957",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/c3998cc2-83b6-4f94-b5c0-7e2302185fe0"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/6bf579b7-790a-44c2-801c-a3ef6bb18e62",
+      "nomeCandidato": "",
+      "nomeCivil": "ZACARIAS CALIL HAMU",
+      "dataNascimento": "05/11/1953",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/19ea68bd-6268-46aa-b2cf-186e34f8b02e"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/bc36fadf-d1d9-4c98-8849-dc59b8f5e310",
+      "nomeCandidato": "",
+      "nomeCivil": "ELIAS VAZ DE ANDRADE",
+      "dataNascimento": "04/07/1966",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/96c431c3-bcf6-4ea3-88d7-b37a1537343e"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/5e0aaa2a-d60b-4d10-9262-1c7851db8d40",
+      "nomeCandidato": "",
+      "nomeCivil": "JOSE NELTO LAGARES DAS MERCEZ",
+      "dataNascimento": "19/09/1960",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/75bee330-3c8e-4df8-9439-c049874040fa"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/b9804cb6-2d17-4c11-8fa6-65704d11f278",
+      "nomeCandidato": "",
+      "nomeCivil": "RUBENS OTONI GOMIDE",
+      "dataNascimento": "06/02/1956",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/79251ecc-d9f6-4a9b-86e9-35e7ba9d321a"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/38f504e0-6872-42b5-bfa6-b99bc6f7c7bd",
+      "nomeCandidato": "",
+      "nomeCivil": "VITOR HUGO DE ARAUJO ALMEIDA",
+      "dataNascimento": "31/05/1977",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/551b33e9-59f2-4038-b71e-55ff95221b0b"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/0f8affbd-6db5-4be9-9492-476969b806b1",
+      "nomeCandidato": "",
+      "nomeCivil": "LUCAS DE CASTRO SANTOS",
+      "dataNascimento": "08/04/1987",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/ca6213b7-39ce-49b9-86e1-4165ecdf67b6"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/4bd01a1b-bfe6-4bce-9547-3f7e176fbe6d",
+      "nomeCandidato": "",
+      "nomeCivil": "MAGDA MOFATTO HON",
+      "dataNascimento": "26/10/1948",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/77b45b4d-92e6-40c0-9b24-63914506c89f"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/f43c8275-30ce-4cbe-9f2c-ff5aa61ea00a",
+      "nomeCandidato": "",
+      "nomeCivil": "JOAO CAMPOS DE ARAUJO",
+      "dataNascimento": "28/12/1962",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/76a0d372-8240-4797-82f5-729f38e17bf8"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/8e0a55ca-19db-4e18-9dd5-a8573abbf80b",
+      "nomeCandidato": "",
+      "nomeCivil": "JOSE MARIO SCHREINER",
+      "dataNascimento": "08/02/1961",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/9a771d6d-e326-4401-ac7e-c5194ef8be4a"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/eb1d48f0-d1e3-4a75-92ef-d2addb4b4ab4",
+      "nomeCandidato": "",
+      "nomeCivil": "FRANCISCO RODRIGUES VALE JUNIOR",
+      "dataNascimento": "15/03/1969",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/ff8f24d8-f828-484d-b307-8b63a59680b6"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/6c0bdc6b-1a44-4e33-bfa9-45d157d56961",
+      "nomeCandidato": "",
+      "nomeCivil": "ALCIDES RODRIGUES FILHO",
+      "dataNascimento": "08/10/1950",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/259e8c8e-79ce-4067-a2b4-1027c50b5a88"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/b5ffc393-7927-41bb-85ce-2f292873e6a9",
+      "nomeCandidato": "",
+      "nomeCivil": "VANDERLAN VIEIRA CARDOSO",
+      "dataNascimento": "15/11/1962",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/971abbc4-fe5e-4688-8d3a-6c3d62a4faef"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/6252f924-0929-485c-9199-cb012ece8be8",
+      "nomeCandidato": "",
+      "nomeCivil": "FLAVIA CARREIRO ALBUQUERQUE MORAIS",
+      "dataNascimento": "26/04/1969",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/c1af3dac-f020-4cc2-8e09-6052002acd3e"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/6a61cf60-963c-48ff-b55c-ddedd9d9cf3b",
+      "nomeCandidato": "",
+      "nomeCivil": "CELIO ANTONIO DA SILVEIRA",
+      "dataNascimento": "19/09/1959",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/ff951c9c-7d69-4fc9-9e26-06d7048c297c"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/7ad01eb0-bc50-4b6a-9674-7db16fd31b41",
+      "nomeCandidato": "",
+      "nomeCivil": "WALDIR SOARES DE OLIVEIRA",
+      "dataNascimento": "28/11/1962",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/f6d42973-6e99-458f-b5f9-5ec19892a216"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/6a51002b-e92f-4864-821f-78b65c39c3fd",
+      "nomeCandidato": "",
+      "nomeCivil": "GLAUSKSTON BATISTA RIOS",
+      "dataNascimento": "22/12/1973",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/de1f88be-ef97-460a-aed1-c98a1a5d48e7"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/f71b3ace-763a-40f4-a2a2-92e499516781",
+      "nomeCandidato": "",
+      "nomeCivil": "ADRIANO ANTONIO AVELAR",
+      "dataNascimento": "06/09/1969",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/7d8ecb67-14ef-4eaa-9e94-7f484bb6944b"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/080f3b4f-39cd-4749-946c-4fe67c00e3ac",
+      "nomeCandidato": "",
+      "nomeCivil": "JORGE KAJURU REIS DA COSTA NASSER",
+      "dataNascimento": "20/01/1961",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/1770572d-7530-41b9-8ead-a47aff1734e0"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/b72a3672-caff-464e-872b-7d950bb28f34",
+      "nomeCandidato": "",
+      "nomeCivil": "ALCIDES RIBEIRO FILHO",
+      "dataNascimento": "25/10/1953",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/a4b5d869-57b2-4d17-9a80-de4455fa4eb9"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/6867e72b-7da2-4593-943b-4c41a47487cc",
+      "nomeCandidato": "",
+      "nomeCivil": "PEDRO LUCAS ANDRADE FERNANDES RIBEIRO",
+      "dataNascimento": "01/11/1979",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/28f2f226-e6b9-42f0-a4ce-121ab4a4b00c"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/439b6282-08a3-4399-bd5f-6235a9afe0c3",
+      "nomeCandidato": "",
+      "nomeCivil": "JOAO MARCELO SANTOS SOUZA",
+      "dataNascimento": "11/11/1973",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/8f67eed3-5aa0-467a-b7b7-bca19f6e9383"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/1adac2d2-6dbb-4b12-a7d9-8afcf1ad1f7e",
+      "nomeCandidato": "",
+      "nomeCivil": "ANTONIO DA CRUZ FILGUEIRA NETO",
+      "dataNascimento": "25/04/1992",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/271544f2-f406-4ea0-a80f-0572d4796531"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/04cb9842-4c60-4b10-a2f7-875f350db607",
+      "nomeCandidato": "",
+      "nomeCivil": "EDUARDO SALIM BRAIDE",
+      "dataNascimento": "12/01/1976",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/9de159ee-f821-475a-b1d4-c04a7db23b98"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/6f9da28c-5654-4419-ae3d-a652930af124",
+      "nomeCandidato": "",
+      "nomeCivil": "HILDO AUGUSTO DA ROCHA NETO",
+      "dataNascimento": "24/04/1960",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/b87504e2-7fc6-45b1-abc2-b53711418e2b"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/8e820691-fb3b-4945-9e4f-b6564eea7037",
+      "nomeCandidato": "",
+      "nomeCivil": "GILLIANO FRED NASCIMENTO CUTRIM",
+      "dataNascimento": "26/10/1979",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/10e25f3b-b74f-4778-bb63-c4ffab3aa2a0"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/9c13c8cb-398c-44ae-8b3d-99709ccd9149",
+      "nomeCandidato": "",
+      "nomeCivil": "JOSE LOURENCO BONFIM JUNIOR",
+      "dataNascimento": "18/10/1978",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/aad1069b-b725-488b-a221-a1e2e3fb4351"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/b1794cda-7abb-469b-bd7b-81d453ea812e",
+      "nomeCandidato": "",
+      "nomeCivil": "MARCIO JERRY SARAIVA BARROSO",
+      "dataNascimento": "14/11/1966",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/e3623add-46de-4594-b420-84e82b24fb65"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/7bed925d-8aa8-4ed1-9e9b-fd6b25d0bfb1",
+      "nomeCandidato": "",
+      "nomeCivil": "JOSE CARLOS NUNES JUNIOR",
+      "dataNascimento": "26/05/1955",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/e639b2d0-ae18-4c1b-8197-ca803350c7ba"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/3c4dafdd-8a0b-4fa8-880b-7aaf0b2e41e2",
+      "nomeCandidato": "",
+      "nomeCivil": "ELIZIANE PEREIRA GAMA MELO",
+      "dataNascimento": "27/02/1977",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/865e7605-1e7b-4175-8575-abe1e4cc132f"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/f172ca8c-c52c-4686-b3d2-db2b33f790f3",
+      "nomeCandidato": "",
+      "nomeCivil": "JOSIMAR CUNHA RODRIGUES",
+      "dataNascimento": "13/11/1976",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/a5baf206-3cfd-4f3c-a19f-f60222b9f9ca"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/31945dd9-5cb0-443f-af2a-5aa4f6c5d573",
+      "nomeCandidato": "",
+      "nomeCivil": "GILDENEMIR DE LIMA SOUSA",
+      "dataNascimento": "08/11/1971",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/ceea541e-85ec-4df0-a3fc-b2e7b614272c"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/592e3f98-fffb-4324-8168-64a50f3f849d",
+      "nomeCandidato": "",
+      "nomeCivil": "UBIRAJARA DO PINDARE ALMEIDA SOUSA",
+      "dataNascimento": "01/11/1968",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/c4e38cfe-61be-4046-bfc3-32adc58b0aea"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/acef4766-0dbf-4b8b-9353-4bdfe1d56df2",
+      "nomeCandidato": "",
+      "nomeCivil": "WEVERTON ROCHA MARQUES DE SOUSA",
+      "dataNascimento": "08/10/1979",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/88662006-7089-4b4f-b135-e51b2fd314da"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/ef2eef82-9e83-41f8-a442-040d8a4986e5",
+      "nomeCandidato": "",
+      "nomeCivil": "CLEBER VERDE CORDEIRO MENDES",
+      "dataNascimento": "10/05/1972",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/99090014-58de-4dd8-a6d4-8afe5a8edbb2"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/a6357e20-cd8f-42b2-9afc-24b2f7fe58f6",
+      "nomeCandidato": "",
+      "nomeCivil": "ANDRE LUIZ CARVALHO RIBEIRO",
+      "dataNascimento": "27/08/1989",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/6e264ea4-6144-4c1e-9bc9-0e1d9166be92"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/df6fb08b-a97f-4344-9326-32eee2f884d0",
+      "nomeCandidato": "",
+      "nomeCivil": "JOSE JUSCELINO DOS SANTOS REZENDE FILHO",
+      "dataNascimento": "06/11/1984",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/d3865bdb-6d1e-43a1-afcc-0bc3710c7ae0"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/c3f66f97-6504-4ef2-be32-47a0be719c23",
+      "nomeCandidato": "",
+      "nomeCivil": "ALUISIO GUIMARAES MENDES FILHO",
+      "dataNascimento": "11/11/1961",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/c4a4c626-226f-479d-bb33-b3bd5f6c21b7"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/3247f4d8-b472-473c-9e60-76f6e09d6a0c",
+      "nomeCandidato": "",
+      "nomeCivil": "EDILAZIO GOMES DA SILVA JUNIOR",
+      "dataNascimento": "04/05/1981",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/fa987875-506e-4a65-bcf9-02d833d907a7"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/63d13082-5fc7-4364-911c-9ff9b4e94232",
+      "nomeCandidato": "",
+      "nomeCivil": "RUBENS PEREIRA E SILVA JUNIOR",
+      "dataNascimento": "16/03/1984",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/5d315ea0-e6e2-4225-b740-4f3cdfd06f2c"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/6cf3b2e2-59ad-4e08-9ff0-fa6fe60ed327",
+      "nomeCandidato": "",
+      "nomeCivil": "MARCELO HENRIQUE TEIXEIRA DIAS",
+      "dataNascimento": "16/02/1974",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/b70b0502-dd46-40cf-8505-9e87aec4d8b0"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/55ba3edc-f43e-4c3c-8411-856d66f18d02",
+      "nomeCandidato": "",
+      "nomeCivil": "LUIZ GONZAGA RIBEIRO",
+      "dataNascimento": "31/05/1962",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/c706b3ea-0b7f-4243-8f43-d610d17bd1c8"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/96592dec-a315-441f-8179-5fa3478c0279",
+      "nomeCandidato": "",
+      "nomeCivil": "OLAVO BILAC PINTO NETO",
+      "dataNascimento": "08/06/1963",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/0017b9fe-cdd8-4952-afb6-6e6e687c7512"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/5c5b4576-8434-4839-a8ba-94bfe0bc1823",
+      "nomeCandidato": "",
+      "nomeCivil": "EUCLYDES MARCOS PETTERSEN NETO",
+      "dataNascimento": "15/08/1984",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/d49ba7ed-5279-40c4-b4f0-b4ea83b717ef"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/9500ded9-a774-47c7-b016-39eff0e36249",
+      "nomeCandidato": "",
+      "nomeCivil": "MARCELO GUILHERME DE ARO FERREIRA",
+      "dataNascimento": "12/06/1987",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/96f3263a-0f65-4004-8c86-446b922452a0"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/e4643aa3-f713-40ed-9e83-cff5377db8b1",
+      "nomeCandidato": "",
+      "nomeCivil": "ODAIR JOSE DA CUNHA",
+      "dataNascimento": "18/06/1976",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/de1d2148-9f79-4300-bbec-f382bd50fd07"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/07862939-c3a1-4ed1-8723-3d2fa6d6be4c",
+      "nomeCandidato": "",
+      "nomeCivil": "IGOR TARCIANO TIMO",
+      "dataNascimento": "10/04/1982",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/b541c892-941b-417f-8cb0-24b6ff131d4d"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/d10f30bf-34cc-45ae-a69f-c008e66a7b6d",
+      "nomeCandidato": "",
+      "nomeCivil": "ANDRE LUIS GASPAR JANONES",
+      "dataNascimento": "05/05/1984",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/20763cf2-aa19-480a-b637-df1d70fdef6b"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/cb8dc949-5ed2-4630-acbf-5157901afd82",
+      "nomeCandidato": "",
+      "nomeCivil": "FREDERICO DE CASTRO ESCALEIRA",
+      "dataNascimento": "24/03/1977",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/0c3dd2ac-b461-4833-a985-d073e2efeb51"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/f4ce542a-2585-40b0-8855-5d6ec809564e",
+      "nomeCandidato": "",
+      "nomeCivil": "EDUARDO LUIZ BARROS BARBOSA",
+      "dataNascimento": "25/08/1958",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/32bfeb7e-c6fb-4e28-afc9-cedc8db15c6d"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/074d1738-8f50-4577-9486-4b8951afc670",
+      "nomeCandidato": "",
+      "nomeCivil": "MAURO RIBEIRO LOPES",
+      "dataNascimento": "24/05/1936",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/2da54f23-7f74-4f66-85c3-050807fa3c62"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/fe7489eb-cc10-4460-ac75-7b11efa66577",
+      "nomeCandidato": "",
+      "nomeCivil": "GILBERTO APARECIDO ABRAMO",
+      "dataNascimento": "06/08/1966",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/08b829a6-9053-49ed-a4b0-a9d5b9e9dc5d"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/44b495e1-6268-4280-9e09-15355c510322",
+      "nomeCandidato": "",
+      "nomeCivil": "PAULO JOSE CARLOS GUEDES",
+      "dataNascimento": "01/10/1970",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/83dcb940-6ccb-4746-990d-529d49a39323"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/f7a24289-2a45-498d-9d35-61d17ee03b88",
+      "nomeCandidato": "",
+      "nomeCivil": "AUREA CAROLINA DE FREITAS E SILVA",
+      "dataNascimento": "20/11/1983",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/d56974b7-945f-42fb-a75c-8b4e8f49cdd8"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/aac8a58f-ed2d-482d-93fe-ca34f84c9b5c",
+      "nomeCandidato": "",
+      "nomeCivil": "TIAGO LIMA MITRAUD DE CASTRO LEITE",
+      "dataNascimento": "15/08/1986",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/2259b09e-fad7-40fd-a633-a3a0956f6101"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/cd3ec866-c40c-408c-ad38-c2d50a1bfa69",
+      "nomeCandidato": "",
+      "nomeCivil": "LINCOLN DINIZ PORTELA",
+      "dataNascimento": "03/11/1953",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/b9c46948-674c-4b90-82c4-deb67ac01753"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/0a782656-467e-4485-8655-13cb30ea916b",
+      "nomeCandidato": "",
+      "nomeCivil": "RODRIGO BATISTA DE CASTRO",
+      "dataNascimento": "15/07/1971",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/f6f10014-235d-48fd-a517-d1e7e76aa9a9"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/0f013ae4-1ae0-42e4-8618-ea20906ba71a",
+      "nomeCandidato": "",
+      "nomeCivil": "STEFANO AGUIAR DOS SANTOS",
+      "dataNascimento": "03/03/1976",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/d234814a-aa1b-4906-8cfa-9002a55c6d74"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/ddd080c7-d543-47ea-ac3b-03729c3c9290",
+      "nomeCandidato": "",
+      "nomeCivil": "JOSE LEONARDO COSTA MONTEIRO",
+      "dataNascimento": "09/10/1951",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/0ce89241-ee63-4701-ac02-f3fcb1da836f"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/5d475fc7-2e4b-4e5c-9ed9-89808989e9d6",
+      "nomeCandidato": "",
+      "nomeCivil": "GERALDO JUNIO DO AMARAL",
+      "dataNascimento": "30/06/1987",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/4a495e7e-23cc-471b-98c3-2893e99d34c3"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/6a1fb306-5e14-48e1-a0aa-d194b24df94a",
+      "nomeCandidato": "",
+      "nomeCivil": "FABIO AUGUSTO RAMALHO DOS SANTOS",
+      "dataNascimento": "22/12/1961",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/08fd8674-50b9-4ecc-b312-f28524b090ec"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/79057a84-0032-4d93-b1a1-701842a7707d",
+      "nomeCandidato": "",
+      "nomeCivil": "JOSE SILVA SOARES",
+      "dataNascimento": "11/05/1963",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/8b90d812-a5d3-47b7-9a37-85c703b70a26"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/8f72c3a5-0741-40b7-99b1-953a376a6289",
+      "nomeCandidato": "",
+      "nomeCivil": "NEWTON CARDOSO JUNIOR",
+      "dataNascimento": "11/11/1979",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/adff3153-7d91-4fb9-a288-de1950f148b3"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/7d0efffc-5ba3-4882-b364-4dd00045491d",
+      "nomeCandidato": "",
+      "nomeCivil": "LUIS HENRIQUE DE OLIVEIRA RESENDE",
+      "dataNascimento": "23/07/1971",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/51cd96c5-c495-4c98-9345-8cbef8f343c8"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/e0130b44-d0f6-4513-aac9-857aa688a78d",
+      "nomeCandidato": "",
+      "nomeCivil": "CHARLLES THOMACELLI EVANGELISTA",
+      "dataNascimento": "27/12/1984",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/3361a720-c389-432d-b202-1915e17a3088"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/3670e546-8b5e-4425-9f92-f3c8802c6a98",
+      "nomeCandidato": "",
+      "nomeCivil": "DOMINGOS SAVIO CAMPOS RESENDE",
+      "dataNascimento": "25/03/1957",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/36b76b09-26c4-43af-82a6-6b1595dac713"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/f5757be6-bfcb-4604-b2cc-def5f0a937d2",
+      "nomeCandidato": "",
+      "nomeCivil": "MISAEL ARTUR FERREIRA VARELLA",
+      "dataNascimento": "27/11/1959",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/a52d94e2-e025-44a4-8069-d3751c3d3a1f"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/7240d68c-1e37-43f5-b98f-c5bd4d9b09da",
+      "nomeCandidato": "",
+      "nomeCivil": "JULIO CESAR DELGADO",
+      "dataNascimento": "18/11/1966",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/4fc37eff-7cd8-4003-8b16-3d93f40c2c65"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/244c3f1c-5151-4324-8a37-47bffd4ea813",
+      "nomeCandidato": "",
+      "nomeCivil": "MARIA MARGARIDA MARTINS SALOMAO",
+      "dataNascimento": "10/06/1950",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/15e9a7d5-b8e8-4e4a-9be7-f615ad277a9d"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/4aca7dc9-61f9-4469-a92f-0cec2036162d",
+      "nomeCandidato": "",
+      "nomeCivil": "ROGERIO CORREIA DE MOURA BAPTISTA",
+      "dataNascimento": "11/01/1958",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/298935b5-2466-4894-b4aa-0df7fa18504f"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/bf85aa98-95c9-4542-bf31-0395be14c53f",
+      "nomeCandidato": "",
+      "nomeCivil": "LUCAS DE VASCONCELOS GONZALEZ",
+      "dataNascimento": "21/12/1988",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/91a6104f-2b58-4774-a1d9-ac3099dde358"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/fec0b566-ff58-46a5-9993-8ec6a3efef6d",
+      "nomeCandidato": "",
+      "nomeCivil": "AECIO NEVES DA CUNHA",
+      "dataNascimento": "10/03/1960",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/ae539f55-e164-4cb4-a411-4d64b77353f1"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/7536d449-458c-4002-950e-6a18602fff1d",
+      "nomeCandidato": "",
+      "nomeCivil": "EMIDIO ALVES MADEIRA JUNIOR",
+      "dataNascimento": "10/03/1967",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/7f7bd4d1-0aaf-4781-b76a-75149606927b"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/662975ee-dc3f-4731-8af2-88679f0bf9b7",
+      "nomeCandidato": "",
+      "nomeCivil": "DIEGO LEONARDO DE ANDRADE CARVALHO",
+      "dataNascimento": "08/08/1977",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/33367397-3d61-4798-b11e-db19ae60823a"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/27b69206-6e13-4da5-8930-2de2eeefb498",
+      "nomeCandidato": "PAULO ABI-ACKEL",
+      "nomeCivil": "PAULO ABI-ACKEL",
+      "dataNascimento": "21/06/1963",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/c9f58763-890b-42c5-b877-44ff486c7818"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/1d427336-4fc7-49de-bd8e-28a5ee2c7a9e",
+      "nomeCandidato": "",
+      "nomeCivil": "EROS FERREIRA BIONDINI",
+      "dataNascimento": "20/05/1971",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/e44a9c09-8d22-4da8-99ec-6aa3ded8a5ae"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/685f98b9-1d8f-49e9-9b11-b88e57555544",
+      "nomeCandidato": "",
+      "nomeCivil": "ALESSANDRA DA SILVA",
+      "dataNascimento": "04/07/1974",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/eb93dfea-c216-4f8a-b5c4-21c1438a79d4"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/10050833-c1a2-47a9-9b93-7742df6e0af7",
+      "nomeCandidato": "",
+      "nomeCivil": "FRANCO CARTAFINA GOMES",
+      "dataNascimento": "03/11/1986",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/60169c37-8cae-4b5f-bd71-fd6785705fc6"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/efee2c01-d627-41ea-9852-c2f683abc799",
+      "nomeCandidato": "",
+      "nomeCivil": "JOAO CARLOS SIQUEIRA",
+      "dataNascimento": "28/02/1967",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/8d90e8cc-36c0-46ba-a5fe-b4b90bafe908"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/97df17c1-0715-438a-89b9-b8acd1da1526",
+      "nomeCandidato": "",
+      "nomeCivil": "LAFAYETTE LUIZ DOORGAL DE ANDRADA",
+      "dataNascimento": "17/10/1966",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/e6c5ac4d-2113-48aa-9c1c-b4cc97fb20c6"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/3adcfaab-1384-4448-b247-d650c89bbb0b",
+      "nomeCandidato": "",
+      "nomeCivil": "GREYCE DE QUEIROZ ELIAS",
+      "dataNascimento": "15/12/1981",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/8ed4070e-7abc-491c-ac1f-4c53bfe7c764"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/96a86d97-25af-4d25-88d5-a198735f8773",
+      "nomeCandidato": "",
+      "nomeCivil": "REGINALDO LAZARO DE OLIVEIRA LOPES",
+      "dataNascimento": "02/04/1973",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/67379430-74cf-4aec-b27f-0d471558d2b8"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/d38277b0-a23d-470e-bc0a-829de1b7fe68",
+      "nomeCandidato": "",
+      "nomeCivil": "VILSON LUIZ DA SILVA",
+      "dataNascimento": "01/05/1957",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/d0b313b1-267e-4826-a26c-490ee3e1c8c8"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/4cc2e163-e847-4c28-907c-f95ad5fae219",
+      "nomeCandidato": "",
+      "nomeCivil": "RODRIGO OTAVIO SOARES PACHECO",
+      "dataNascimento": "03/11/1976",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/fba05525-10ff-4530-bf29-4f1e84221615"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/7db37d88-c317-40db-875c-ba0dfdb60ecf",
+      "nomeCandidato": "",
+      "nomeCivil": "FREDERICO BORGES DA COSTA",
+      "dataNascimento": "12/07/1977",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/24bba8ef-9c1f-4af3-9067-77adb6923ab9"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/94401225-98a5-4e07-b666-0d65749eed1e",
+      "nomeCandidato": "",
+      "nomeCivil": "JOSE VITOR DE RESENDE AGUIAR",
+      "dataNascimento": "01/11/1984",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/e016628c-44d0-463a-9054-fd9d45549a77"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/e4d752cf-1eba-4282-a661-a336fbbf0e99",
+      "nomeCandidato": "",
+      "nomeCivil": "HERCILIO ARAUJO DINIZ FILHO",
+      "dataNascimento": "14/09/1963",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/db4bf42c-54c5-4b67-9138-022433d8f11a"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/8182dffb-c70c-40eb-8847-84f260cc0608",
+      "nomeCandidato": "",
+      "nomeCivil": "ANTONIO PINHEIRO NETO",
+      "dataNascimento": "30/05/1991",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/79bed465-ca62-490e-b185-68bfe620b6ae"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/d85764f6-1909-41d6-bfdd-3de09184f144",
+      "nomeCandidato": "",
+      "nomeCivil": "ELIEL MARCIO DO CARMO",
+      "dataNascimento": "26/10/1973",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/2ea25d57-6bd5-4f47-bba9-f56108a091e0"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/063bd27e-ded4-4863-8d95-74e67a2bce9e",
+      "nomeCandidato": "",
+      "nomeCivil": "DIMAS FABIANO TOLEDO JUNIOR",
+      "dataNascimento": "23/05/1973",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/00586bf0-c7db-41c7-95bc-ab30513b7ef0"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/f3b1962f-c218-487a-abaa-b3a5283c1bc0",
+      "nomeCandidato": "",
+      "nomeCivil": "PATRUS ANANIAS DE SOUZA",
+      "dataNascimento": "26/01/1952",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/4e9425f6-f654-4948-8f8b-f71d1e57c519"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/93d0d119-5d38-4594-bceb-77dd7b868019",
+      "nomeCandidato": "",
+      "nomeCivil": "CARLOS ALBERTO DIAS VIANA",
+      "dataNascimento": "22/03/1963",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/567f0d47-a7ce-4c56-9e1f-c5dfdb0887c7"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/9c42ec3e-046c-4ee2-b71f-e2aca539b2e0",
+      "nomeCandidato": "",
+      "nomeCivil": "WELITON FERNANDES PRADO",
+      "dataNascimento": "24/08/1975",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/9771253d-a9a1-44c9-823a-00350e5ad5dd"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/13fe2bf9-c06a-48dc-ac78-ae26efb580bd",
+      "nomeCandidato": "",
+      "nomeCivil": "MARCELO EDUARDO FREITAS",
+      "dataNascimento": "04/03/1976",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/5cb30a76-3eb0-4a82-ba5d-4d169a3d497e"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/51097d42-42e3-41f3-89c9-3ce7dfdf3dc5",
+      "nomeCandidato": "",
+      "nomeCivil": "MARIO LUCIO HERINGER",
+      "dataNascimento": "30/09/1954",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/cacbf64d-5947-4a1c-bd07-6a0a0631e3e1"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/83163c2f-58b9-4c08-b550-5c429da11533",
+      "nomeCandidato": "",
+      "nomeCivil": "NELSON TRAD FILHO",
+      "dataNascimento": "05/09/1961",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/d51bdf8c-784e-45e0-bffa-0b8e7a2ea516"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/8dee6ed3-e781-4c14-81ea-d30714300d9c",
+      "nomeCandidato": "",
+      "nomeCivil": "SORAYA VIEIRA THRONICKE",
+      "dataNascimento": "01/06/1973",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/04156c04-6a97-4d23-8953-2319c60b9f2e"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/010200f7-68d6-4ac5-97f1-f67180710a27",
+      "nomeCandidato": "",
+      "nomeCivil": "VANDER LUIZ DOS SANTOS LOUBET",
+      "dataNascimento": "22/01/1964",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/08707e92-74e2-490b-91ee-ba4e90ce942a"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/14c51ff1-1a0d-4b06-8497-fea2aa91fca5",
+      "nomeCandidato": "",
+      "nomeCivil": "TEREZA CRISTINA CORREA DA COSTA DIAS",
+      "dataNascimento": "06/07/1954",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/89fbf99e-90cf-4a39-9339-184a7c86f8da"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/1e375ab0-1a7d-41b8-b581-e37bc3fbfe9b",
+      "nomeCandidato": "",
+      "nomeCivil": "DAGOBERTO NOGUEIRA FILHO",
+      "dataNascimento": "21/07/1955",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/59b2f28b-3270-4cb9-a092-38775833b1f8"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/616f1ca5-69a5-4665-b524-e65e03c246b4",
+      "nomeCandidato": "",
+      "nomeCivil": "LUIZ ALBERTO OVANDO",
+      "dataNascimento": "25/09/1949",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/0ecef9ec-9f95-4586-9d4f-8de545bace01"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/9f524d0c-9cb9-43aa-b832-854ebc17f485",
+      "nomeCandidato": "",
+      "nomeCivil": "ROSIANE MODESTO DE OLIVEIRA",
+      "dataNascimento": "20/02/1978",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/80c3be62-cf66-4014-9b4d-4409be3c9f4c"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/233237f9-9a59-4b05-90c3-29f17db4a812",
+      "nomeCandidato": "",
+      "nomeCivil": "HUMBERTO REZENDE PEREIRA",
+      "dataNascimento": "14/11/1977",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/6593b8f4-b329-454c-8ef3-e028eb62703d"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/f35b7382-52cc-42d4-b078-bf374a51b0e3",
+      "nomeCandidato": "",
+      "nomeCivil": "FABIO RICARDO TRAD",
+      "dataNascimento": "18/08/1969",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/d408f9ac-e476-4829-8a4b-a096dbd5733e"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/80aa5b9b-b1bb-4c03-b599-be97db6a7cbb",
+      "nomeCandidato": "",
+      "nomeCivil": "LOESTER CARLOS GOMES DE SOUZA",
+      "dataNascimento": "21/09/1982",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/619131df-fd59-478c-b1bb-dc84b584236e"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/21cf48c8-b9bb-41ff-b23a-ab0198bef013",
+      "nomeCandidato": "",
+      "nomeCivil": "JOSE ANTONIO DOS SANTOS MEDEIROS",
+      "dataNascimento": "19/03/1970",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/09a97355-0c64-4981-9b4c-fa6f22a62052"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/732f1069-46a0-42fb-8d99-a5288418ed78",
+      "nomeCandidato": "",
+      "nomeCivil": "NELSON NED PREVIDENTE",
+      "dataNascimento": "14/02/1960",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/c4155acb-5cfd-4f52-bc39-a0953ba6b5d5"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/819e9b77-aa6c-4680-98dc-7028ab4e319c",
+      "nomeCandidato": "",
+      "nomeCivil": "EMANUEL PINHEIRO DA SILVA PRIMO",
+      "dataNascimento": "05/01/1995",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/a87fecc5-de59-415e-99cd-6d4111e2f3a3"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/7a36430e-8087-48db-9712-37af4107f366",
+      "nomeCandidato": "",
+      "nomeCivil": "ROSA NEIDE SANDES DE ALMEIDA",
+      "dataNascimento": "08/08/1963",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/5c2cbc12-a83f-41c8-b94f-19e76a6452f5"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/b4301048-63ab-4a4e-9aff-f197ee39b49f",
+      "nomeCandidato": "",
+      "nomeCivil": "NERI GELLER",
+      "dataNascimento": "07/11/1968",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/457cca88-783b-42f0-a596-b85c5b27c561"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/82b1f616-d9ca-434e-8e39-6b64487041cb",
+      "nomeCandidato": "",
+      "nomeCivil": "SELMA ROSANE SANTOS ARRUDA",
+      "dataNascimento": "20/01/1963",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/45b6fd2a-3114-4f83-a896-6a2faaa794ee"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/f7647511-ee36-4d7a-bd81-86ae158294f8",
+      "nomeCandidato": "",
+      "nomeCivil": "CARLOS GOMES BEZERRA",
+      "dataNascimento": "04/11/1941",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/cd007f66-cd88-4b26-8794-7ffb98cadab3"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/c09670b6-7e1b-4c69-9386-25772a83cf43",
+      "nomeCandidato": "",
+      "nomeCivil": "JUAREZ ALVES DA COSTA",
+      "dataNascimento": "20/01/1960",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/76b9be5b-fc99-4857-8dde-07ceb0fd2f50"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/742e4d7a-df85-4db0-bb58-c1c95be88d5e",
+      "nomeCandidato": "",
+      "nomeCivil": "JAYME VERISSIMO DE CAMPOS",
+      "dataNascimento": "13/09/1951",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/3c7e55d9-0a9d-428d-a794-cfd9aa9a98ff"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/c5fc609e-f3cc-4fb3-a835-f3ca7283c68e",
+      "nomeCandidato": "",
+      "nomeCivil": "LEONARDO RIBEIRO ALBUQUERQUE",
+      "dataNascimento": "14/06/1978",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/f2089ac9-ee35-4ae5-b025-a15f01779f88"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/b6fed4e2-2df9-4d36-92c8-8a02c09c1093",
+      "nomeCandidato": "",
+      "nomeCivil": "NILSON PINTO DE OLIVEIRA",
+      "dataNascimento": "25/03/1952",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/c1816d92-4068-481d-8ba8-95473f1322db"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/5a749649-e3f2-45ba-8b8e-aeabb30316df",
+      "nomeCandidato": "",
+      "nomeCivil": "AIRTON LUIZ FALEIRO",
+      "dataNascimento": "16/03/1959",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/3a8b8879-dd42-4597-8947-984e88136fb6"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/5132cdad-0dc3-41c5-9633-7a703e8b1948",
+      "nomeCandidato": "",
+      "nomeCivil": "EDMILSON BRITO RODRIGUES",
+      "dataNascimento": "26/05/1957",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/3098393a-8e06-4395-92a8-7f0fcd8fa5e4"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/8747d764-56df-4258-ac98-598707a06db2",
+      "nomeCandidato": "",
+      "nomeCivil": "PAULO EDUARDO MAESTRI BENGTSON",
+      "dataNascimento": "06/01/1974",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/6dab4799-306f-479d-af45-0cb9421213ea"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/a910c018-4cf2-4e10-a802-c8f23855cde8",
+      "nomeCandidato": "",
+      "nomeCivil": "JOAQUIM PASSARINHO PINTO DE SOUZA PORTO",
+      "dataNascimento": "02/12/1961",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/549d4866-c0cd-4800-8e76-b5a81bed1a58"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/6e33aad6-1c7f-40b2-a979-34902d4dcbb2",
+      "nomeCandidato": "",
+      "nomeCivil": "CRISTIANO DUTRA VALE",
+      "dataNascimento": "10/04/1970",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/fbbaf0a4-b465-4282-95e4-6a16d74d5182"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/5f687283-3d70-4147-b4c2-4e14864114d8",
+      "nomeCandidato": "",
+      "nomeCivil": "CASSIO COELHO ANDRADE",
+      "dataNascimento": "12/09/1981",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/6f77ea22-43b1-48a0-a9b6-3b99d01d9384"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/19614552-02ee-4604-ab32-14801121b762",
+      "nomeCandidato": "",
+      "nomeCivil": "ELCIONE THEREZINHA ZAHLUTH BARBALHO",
+      "dataNascimento": "05/10/1944",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/71b2ac75-cce6-42f3-a7f9-cd92e3b076cf"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/69d40ad3-3775-46fc-9faf-694842af0063",
+      "nomeCandidato": "",
+      "nomeCivil": "JOSE DA CRUZ MARINHO",
+      "dataNascimento": "18/09/1959",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/ed234515-b17d-49e7-866b-3c05f0ad5377"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/9a0b18ca-278e-432d-afc5-19926217b25e",
+      "nomeCandidato": "",
+      "nomeCivil": "OLIVAL HENRIQUE MARQUES DE SOUZA",
+      "dataNascimento": "09/01/1982",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/f8b2d560-6ab5-4894-bbc2-870d707e2eb3"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/c751d1f5-b23e-49d9-b82a-58a49ae0dd2b",
+      "nomeCandidato": "",
+      "nomeCivil": "JADER FONTENELLE BARBALHO",
+      "dataNascimento": "27/10/1944",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/2a273528-b34e-44e2-9261-314141e918b1"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/4b135d7e-0f6f-40b6-9c4a-48ea7230a0c4",
+      "nomeCandidato": "",
+      "nomeCivil": "CELSO SABINO DE OLIVEIRA",
+      "dataNascimento": "29/08/1978",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/22805030-181c-4320-bd6d-c43b6d70d39b"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/1f7a80b7-71a0-45a2-ab1f-95e36f51a659",
+      "nomeCandidato": "",
+      "nomeCivil": "JOAO FERRARI JUNIOR",
+      "dataNascimento": "13/07/1967",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/560bf991-7159-45af-b59c-35c4f088c604"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/f47a1d44-5f34-4c79-acf3-577d057f71a8",
+      "nomeCandidato": "",
+      "nomeCivil": "JOSE ROBERTO OLIVEIRA FARO",
+      "dataNascimento": "20/06/1969",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/4a50e5e7-3fd1-46b5-8e8d-53fb0d0a3759"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/c444b5a6-32c6-49be-aa53-936d535f9cf5",
+      "nomeCandidato": "",
+      "nomeCivil": "JOSE BENITO PRIANTE JUNIOR",
+      "dataNascimento": "02/12/1963",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/11a15b46-d7e2-4852-ad8d-b5e5f72f7cd2"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/195fcc99-d1a3-4777-8b00-4b4c53955da3",
+      "nomeCandidato": "",
+      "nomeCivil": "WAGNER BACH MARTINS",
+      "dataNascimento": "03/06/1982",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/37b88314-d44a-4c3e-94c7-7b6958c50500"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/6d676b4f-c883-4dde-ba89-35d29277a72f",
+      "nomeCandidato": "",
+      "nomeCivil": "HELIO LEITE DA SILVA",
+      "dataNascimento": "09/12/1957",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/2dcacc53-5921-44a4-a0be-3dff941c781b"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/ed3eeea7-df20-46ff-a318-b0b4721fea17",
+      "nomeCandidato": "",
+      "nomeCivil": "JOSE EDUARDO PEREIRA DA COSTA",
+      "dataNascimento": "16/02/1968",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/8c247086-a172-4f65-a54b-b7a31fbe2534"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/b09d758d-f6cf-4e89-9785-d62a3a40f690",
+      "nomeCandidato": "",
+      "nomeCivil": "EDER MAURO CARDOSO BARRA",
+      "dataNascimento": "14/12/1960",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/cedbe990-62c9-4c22-8952-ffbf7aba3adf"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/e19e724b-9285-4c58-b880-d918394e6194",
+      "nomeCandidato": "",
+      "nomeCivil": "JOSE WELLINGTON ROBERTO",
+      "dataNascimento": "19/05/1959",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/a5b8f662-99ed-4f16-b3a0-b99ac7571f03"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/ffc98ab4-71dd-4c03-87c5-45840f501ca1",
+      "nomeCandidato": "",
+      "nomeCivil": "DANIELLA VELLOSO BORGES RIBEIRO",
+      "dataNascimento": "26/03/1972",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/66c62a1a-ab63-4378-861c-afffa4236cac"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/de6975df-d90b-4109-94df-943011e986e2",
+      "nomeCandidato": "",
+      "nomeCivil": "JOSE WILSON SANTIAGO",
+      "dataNascimento": "10/06/1957",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/45381542-1f85-453c-8a32-5585ac64d517"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/b9badd2f-20f2-4ba9-bf8c-a27c723c6896",
+      "nomeCandidato": "",
+      "nomeCivil": "GERVASIO AGRIPINO MAIA",
+      "dataNascimento": "14/04/1975",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/5ad7be96-1e95-419e-9502-1823580b7369"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/b9a060cb-571a-475a-9fc6-579955a65e31",
+      "nomeCandidato": "",
+      "nomeCivil": "AGUINALDO VELLOSO BORGES RIBEIRO",
+      "dataNascimento": "13/02/1969",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/ac4c21d6-4329-4b3a-a651-0428b4177bcf"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/93ed7c0b-dfad-4ad3-a969-82a6ad482b56",
+      "nomeCandidato": "",
+      "nomeCivil": "PEDRO OLIVEIRA CUNHA LIMA",
+      "dataNascimento": "15/08/1988",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/9277b9ba-5035-4475-ab35-2437d234fa3c"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/dd7e0449-8da1-4c22-9f19-dcb2e70b30f2",
+      "nomeCandidato": "",
+      "nomeCivil": "GULLIEM CHARLES BEZERRA LEMOS",
+      "dataNascimento": "05/01/1976",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/3da426ae-7aa7-4ba3-81c3-1a546e13c3ac"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/43fbef0c-9d73-436e-8454-3d7b01369cb0",
+      "nomeCandidato": "",
+      "nomeCivil": "RUY MANUEL CARNEIRO BARBOSA DE ACA BELCHIOR",
+      "dataNascimento": "17/08/1970",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/45a01bca-592d-4cf4-abe7-727bbdbe736c"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/92befadd-ef95-4dd4-bc5e-3b6244eaf962",
+      "nomeCandidato": "",
+      "nomeCivil": "ANTONIO RIBEIRO",
+      "dataNascimento": "03/03/1944",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/eb90bcf9-6dca-424c-8979-b93c3bfc7b23"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/e526d783-513b-4e78-967c-518c57634db4",
+      "nomeCandidato": "",
+      "nomeCivil": "VENEZIANO VITAL DO REGO SEGUNDO NETO",
+      "dataNascimento": "17/07/1970",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/d4a015ab-5d14-4978-8779-8c1a99caa8c5"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/11eeffc3-a74a-4dff-93f0-0b3510e6aabe",
+      "nomeCandidato": "",
+      "nomeCivil": "DAMIAO FELICIANO DA SILVA",
+      "dataNascimento": "28/04/1952",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/3fa3638a-00d3-4de9-879a-22afcf0173a7"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/d4bc95fe-1869-44e3-81d4-eb02ac92c81e",
+      "nomeCandidato": "",
+      "nomeCivil": "EFRAIM DE ARAUJO MORAIS FILHO",
+      "dataNascimento": "18/03/1979",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/4d61c00d-6eba-4875-aa93-ecee1de1f354"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/eab36ad5-747c-42cc-95a9-5f68abfcdb0b",
+      "nomeCandidato": "",
+      "nomeCivil": "EDNACE ALVES SILVESTRE HENRIQUE",
+      "dataNascimento": "04/09/1958",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/70bd56dd-897d-4c9d-9e4a-4e4d5218823b"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/4733a442-b430-409c-9b24-411fe5fe057d",
+      "nomeCandidato": "",
+      "nomeCivil": "HUGO MOTTA WANDERLEY DA NOBREGA",
+      "dataNascimento": "11/09/1989",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/dab1846c-b7b1-4504-867f-07a484a3f7ac"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/426db735-79e8-48f2-981a-d9bbd63ce06d",
+      "nomeCandidato": "",
+      "nomeCivil": "FERNANDO RODOLFO TENORIO DE VASCONCELOS",
+      "dataNascimento": "17/11/1983",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/82d71896-22ce-4dd6-89d4-c278f7c8ef9f"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/9bd2de03-bc45-4f30-8289-2e89b4ac663c",
+      "nomeCandidato": "",
+      "nomeCivil": "FELIPE AUGUSTO LYRA CARRERAS",
+      "dataNascimento": "16/04/1975",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/10d73412-4550-4f4b-943a-d62dd5725e28"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/a6b64fe9-9624-4c1c-bc85-2d0031a45c22",
+      "nomeCandidato": "",
+      "nomeCivil": "SILVIO SERAFIM COSTA FILHO",
+      "dataNascimento": "05/03/1982",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/84645159-4bac-4c18-b12d-2b79a128d2a8"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/981621c6-b437-46b1-acc2-4468f2ceacc4",
+      "nomeCandidato": "",
+      "nomeCivil": "DANIEL PIRES COELHO",
+      "dataNascimento": "04/11/1978",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/02215138-556e-4d48-9189-5cb9f158fd4a"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/13070766-75a5-417e-90b3-4819483067ab",
+      "nomeCandidato": "",
+      "nomeCivil": "HUMBERTO SERGIO COSTA LIMA",
+      "dataNascimento": "07/07/1957",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/954c0df7-a2be-462f-81c3-49a260ad6e1b"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/efb23fb3-4489-43d7-bfa7-755a5f300eda",
+      "nomeCandidato": "",
+      "nomeCivil": "LUCIANO CALDAS BIVAR",
+      "dataNascimento": "29/11/1944",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/4e00d91d-3956-441b-9f88-71fee35bbd36"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/e8392b10-625e-4bca-96ae-bed7e4c0bc98",
+      "nomeCandidato": "",
+      "nomeCivil": "TULIO GADELHA SALES DE MELO",
+      "dataNascimento": "12/11/1987",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/9eef7f1d-e7aa-4b12-830a-8de73a5ada16"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/3071cf53-d9a7-483c-bc39-7b335034d52c",
+      "nomeCandidato": "",
+      "nomeCivil": "MARILIA VALENCA ROCHA ARRAES DE ALENCAR",
+      "dataNascimento": "12/04/1984",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/42732bcc-c6c7-4eec-a6b8-af5f83dea6e6"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/dcc11661-92c9-4f26-80db-f6a2107840f2",
+      "nomeCandidato": "",
+      "nomeCivil": "SEBASTIAO IGNACIO DE OLIVEIRA JUNIOR",
+      "dataNascimento": "31/08/1968",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/474f0979-b435-4d69-864f-3fc91b0ede31"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/39bbe6b1-a328-4d14-8ccf-8226f5438357",
+      "nomeCandidato": "",
+      "nomeCivil": "ANDRE CARLOS ALVES DE PAULA FILHO",
+      "dataNascimento": "22/07/1961",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/3f78302b-63bb-4c9a-b05c-148f04cadf26"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/e48c9d34-9522-42d3-aaff-3645d838f25b",
+      "nomeCandidato": "",
+      "nomeCivil": "LUIZ GONZAGA PATRIOTA",
+      "dataNascimento": "26/04/1946",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/02007bf0-850c-4f52-bd67-e20ff7c2ce16"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/21bd1fd8-6175-4dec-9d46-92430471e037",
+      "nomeCandidato": "",
+      "nomeCivil": "EDUARDO HENRIQUE DA FONTE DE ALBUQUERQUE SILVA",
+      "dataNascimento": "17/10/1972",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/0b8eff44-9653-42ca-9ee2-e44ae53a372b"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/db118102-ce23-42cc-9b26-76f812523fcc",
+      "nomeCandidato": "",
+      "nomeCivil": "RAUL JEAN LOUIS HENRY JUNIOR",
+      "dataNascimento": "06/06/1964",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/fd3c5d8f-acd2-4d0f-9d48-8012f474acab"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/be886e3a-ccbe-44a3-98e0-277af42a0fd1",
+      "nomeCandidato": "",
+      "nomeCivil": "ANDRE FERREIRA RODRIGUES",
+      "dataNascimento": "10/12/1972",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/fe9b6d41-3ce4-41e1-ae80-98e6c8b123ce"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/57b2b496-0703-4aa6-a6a2-bb37cc3e9022",
+      "nomeCandidato": "",
+      "nomeCivil": "WOLNEY QUEIROZ MACIEL",
+      "dataNascimento": "12/12/1972",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/214b84d1-9537-4e5b-8698-20419b09dfa3"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/7d995eea-1c6f-4959-a4da-17be50ac77f5",
+      "nomeCandidato": "",
+      "nomeCivil": "AUGUSTO RODRIGUES COUTINHO DE MELO",
+      "dataNascimento": "22/10/1962",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/5f62a1fe-2d39-43c2-b3cd-9aa8c2cc101f"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/67e9b97b-9389-4c68-b394-091bde26eb47",
+      "nomeCandidato": "",
+      "nomeCivil": "OSSESIO JOSE DA SILVA",
+      "dataNascimento": "09/12/1954",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/78b63670-2f86-4633-9f48-903d92b07421"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/8b56a735-e0bd-47b2-a7f0-1752e11672ab",
+      "nomeCandidato": "",
+      "nomeCivil": "FRANCISCO EURICO DA SILVA",
+      "dataNascimento": "12/09/1962",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/303ee2d7-ba42-4224-9c29-e9f16c8d6e81"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/d9473ca6-e39c-45ed-aba1-4862a9718919",
+      "nomeCandidato": "",
+      "nomeCivil": "FERNANDO BEZERRA DE SOUZA COELHO FILHO",
+      "dataNascimento": "28/02/1984",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/d0bb2e0e-1e8f-4ffc-a019-a13fd9eb29e2"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/a264fe3d-791c-4c1e-a7fb-1bfca40afe7e",
+      "nomeCandidato": "",
+      "nomeCivil": "DANILO JORGE DE BARROS CABRAL",
+      "dataNascimento": "21/04/1967",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/65f9c7f1-dfcc-4a02-ada8-4f170de22a94"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/dbf4e1c1-fd57-450d-afd4-c2d8e034bc01",
+      "nomeCandidato": "",
+      "nomeCivil": "FRANCISCO TADEU BARBOSA DE ALENCAR",
+      "dataNascimento": "08/04/1963",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/4c2398b9-1852-4de7-acfc-720eb059089e"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/f0904d84-e104-4393-bc47-e10c04e48e41",
+      "nomeCandidato": "",
+      "nomeCivil": "JOAO HENRIQUE DE ANDRADE LIMA CAMPOS",
+      "dataNascimento": "26/11/1993",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/de32cd14-f557-4d1d-86b1-4494e0d9d921"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/cf2ca9dd-86bc-4374-990f-d7a73e3235c8",
+      "nomeCandidato": "",
+      "nomeCivil": "JARBAS DE ANDRADE VASCONCELOS",
+      "dataNascimento": "23/08/1942",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/33c398f8-6cfe-425c-a439-0e291947a438"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/f8580d8d-26a8-42be-9f94-a3ee355a6fa3",
+      "nomeCandidato": "",
+      "nomeCivil": "FERNANDO MONTEIRO DE ALBUQUERQUE",
+      "dataNascimento": "17/09/1976",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/7ab3102f-4866-46a1-a5b7-9f4e257da5c2"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/ad3b390f-1fb1-4c99-86c6-35ba5f8454db",
+      "nomeCandidato": "",
+      "nomeCivil": "RICARDO TEOBALDO CAVALCANTI",
+      "dataNascimento": "18/10/1965",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/36c25bb3-221b-4d8b-ab13-c3ae385fd103"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/495a35da-5f7f-4f23-8100-573a394a4ec7",
+      "nomeCandidato": "",
+      "nomeCivil": "JOSE CARLOS VERAS DOS SANTOS",
+      "dataNascimento": "10/08/1981",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/ebf9895a-de81-4118-91b0-45d007536407"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/9cc3e1f7-a9d5-468f-b037-0523e440c700",
+      "nomeCandidato": "",
+      "nomeCivil": "RENILDO VASCONCELOS CALHEIROS",
+      "dataNascimento": "20/04/1959",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/85397f32-7e7f-4fb5-90cd-e1e6f769c0ad"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/290c3ee4-e66c-412e-8dc8-bbd88117f317",
+      "nomeCandidato": "",
+      "nomeCivil": "MARCOS AURELIO PADUA RIBEIRO GONCALVES DE SAMPAIO",
+      "dataNascimento": "19/09/1991",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/09196c94-e0b6-4680-966f-53bfd99756df"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/64e049cd-b78c-4622-9441-7716dd056e44",
+      "nomeCandidato": "",
+      "nomeCivil": "REJANE RIBEIRO SOUSA DIAS",
+      "dataNascimento": "04/09/1972",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/32e779e0-00b1-459b-95d7-3635c35f0126"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/3f63b65d-36b9-4190-8b50-fa1dd1224d69",
+      "nomeCandidato": "",
+      "nomeCivil": "IRACEMA MARIA PORTELLA NUNES NOGUEIRA LIMA",
+      "dataNascimento": "23/04/1966",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/8f131044-60ee-4370-8e9f-0cd108625295"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/083107a4-879c-4535-8ac5-43a8080c0290",
+      "nomeCandidato": "",
+      "nomeCivil": "JULIO CESAR DE CARVALHO LIMA",
+      "dataNascimento": "25/08/1948",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/9c4e95e9-658b-4c03-85f6-f28143c94889"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/3447d6eb-6342-4b54-b5e3-1c04b5f946b1",
+      "nomeCandidato": "",
+      "nomeCivil": "FLAVIO RODRIGUES NOGUEIRA",
+      "dataNascimento": "27/02/1953",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/8d0c65bd-b505-4ac9-aef7-a0ad3239384f"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/d6d4a94e-e7f7-4155-bf0b-41a2c15aa062",
+      "nomeCandidato": "",
+      "nomeCivil": "FABIO ABREU COSTA",
+      "dataNascimento": "31/12/1972",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/92aedcba-f00d-471e-8565-31166c240a1c"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/eedbe0d4-046f-4283-8859-e9eccb53c281",
+      "nomeCandidato": "",
+      "nomeCivil": "MARGARETE DE CASTRO COELHO",
+      "dataNascimento": "12/03/1961",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/bbe5c633-4672-47bd-acf8-c0114c412ad2"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/499236bf-4fb2-4287-b5eb-c02d0507c144",
+      "nomeCandidato": "",
+      "nomeCivil": "MARINA SANTOS BATISTA DIAS",
+      "dataNascimento": "13/09/1980",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/be275156-0a90-4374-a3eb-f2f1732cc95b"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/4491787c-2b29-4e56-abac-ee0cdfcd64c6",
+      "nomeCandidato": "",
+      "nomeCivil": "ATILA FREITAS LIRA",
+      "dataNascimento": "07/04/1947",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/670cef9a-ddc9-447e-a75e-20e633f092b3"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/e8dab87f-c2eb-4d5a-8a46-c532ed8f801a",
+      "nomeCandidato": "",
+      "nomeCivil": "MARCELO COSTA E CASTRO",
+      "dataNascimento": "09/06/1950",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/42fc2f83-6d78-41c2-8444-dcd71ac45b5d"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/1ecede90-139c-4708-a9b3-7c7c858af30d",
+      "nomeCandidato": "",
+      "nomeCivil": "CIRO NOGUEIRA LIMA FILHO",
+      "dataNascimento": "21/11/1968",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/0475c926-08f6-49fd-90ff-dd15819ffe88"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/51ba4da0-4e07-44bc-9e37-e8c25f19c595",
+      "nomeCandidato": "",
+      "nomeCivil": "FRANCISCO DE ASSIS CARVALHO GONCALVES",
+      "dataNascimento": "09/09/1961",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/f1f4379e-ca13-40c7-a3bf-43d1f9380345"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/c0b245c6-6e98-42ac-a474-3118fc69a885",
+      "nomeCandidato": "",
+      "nomeCivil": "LUIS FELIPE BONATTO FRANCISCHINI",
+      "dataNascimento": "02/10/1991",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/5c5e9f6f-8410-444e-93b3-26f33700a3c3"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/5286cd21-73c7-48d5-be33-0b6b64f5f533",
+      "nomeCandidato": "",
+      "nomeCivil": "SERGIO DE SOUZA",
+      "dataNascimento": "13/03/1971",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/7ce9a82f-f608-47ac-9bdd-75357ac662db"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/bbdc292b-b0d8-47e7-9bef-b6aa6c93e82c",
+      "nomeCandidato": "",
+      "nomeCivil": "JOSE CARLOS BECKER DE OLIVEIRA E SILVA",
+      "dataNascimento": "21/06/1978",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/b8e0112d-d62c-44af-83c6-6de820c52572"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/2eeaf9c2-537e-4b3b-a18e-e83180c26ce8",
+      "nomeCandidato": "HERMES PARCIANELLO",
+      "nomeCivil": "HERMES PARCIANELLO",
+      "dataNascimento": "25/04/1958",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/78517f1a-eff1-4ce7-9cc9-4599c3a52207"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/9d99293b-f1ff-45ce-9b50-c1d68fafb68b",
+      "nomeCandidato": "",
+      "nomeCivil": "LEANDRE DAL PONTE",
+      "dataNascimento": "20/12/1975",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/b03f69b4-cf1c-4887-a264-ad19b523299d"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/019bceef-198c-4523-9df7-27c6f799e2f3",
+      "nomeCandidato": "RUBENS BUENO",
+      "nomeCivil": "RUBENS BUENO",
+      "dataNascimento": "23/05/1948",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/1cb9316e-81ff-4d20-9ab7-88f3e69e35af"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/081d511c-8506-446a-9da1-9e143eb6b4e9",
+      "nomeCandidato": "",
+      "nomeCivil": "EMERSON MIGUEL PETRIV",
+      "dataNascimento": "07/08/1971",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/5eb0c071-a701-4474-9460-96a199c6941e"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/be7ab495-6bdc-4791-92ca-dc2b247ef3e8",
+      "nomeCandidato": "",
+      "nomeCivil": "SANDRO ALEX CRUZ DE OLIVEIRA",
+      "dataNascimento": "25/11/1972",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/ac7d8558-6615-4e0b-8230-5e9d318a4736"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/b8aab906-5137-46fd-9e99-4fb52b770c2e",
+      "nomeCandidato": "",
+      "nomeCivil": "ALINE SLEUTJES",
+      "dataNascimento": "26/07/1979",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/4ebde217-d0f4-472d-b184-03ccd0d6135a"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/02431484-f869-4f2f-a141-f4e9bfc6612f",
+      "nomeCandidato": "",
+      "nomeCivil": "LUIZ GOULARTE ALVES",
+      "dataNascimento": "06/06/1962",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/72fc36bf-0c9f-46a4-b2ba-f22b01d819f4"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/4d03934f-0f31-4f9b-a181-94de10a80e03",
+      "nomeCandidato": "",
+      "nomeCivil": "NEY LEPREVOST NETO",
+      "dataNascimento": "26/10/1973",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/5f4cc024-ea67-44b4-af9b-4da555a482aa"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/299073bc-550a-42a6-8711-6012b8af5ec5",
+      "nomeCandidato": "",
+      "nomeCivil": "FLAVIO JOSE ARNS",
+      "dataNascimento": "09/11/1950",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/04a668ba-bcec-4232-bd32-6e43f675dded"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/f37c16b9-df3e-4a0d-87af-283307a46ce9",
+      "nomeCandidato": "",
+      "nomeCivil": "PEDRO DEBONI LUPION MELLO",
+      "dataNascimento": "04/06/1983",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/ae55d4d9-43cb-4190-b1e4-c6d9323e5d70"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/7427f224-4063-418d-8fdb-a7b89c97c4a2",
+      "nomeCandidato": "",
+      "nomeCivil": "ORIOVISTO GUIMARAES",
+      "dataNascimento": "12/08/1945",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/55e07373-8bef-4d6b-b4da-13817b0ff3a2"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/1ff96f53-c74e-4508-a6af-f68587f3e6cd",
+      "nomeCandidato": "",
+      "nomeCivil": "LUIZ HILOSHI NISHIMORI",
+      "dataNascimento": "09/04/1949",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/ada66dfd-7c53-4809-9f0e-a576bca0de7d"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/283f762c-ba6c-4d56-91b3-26ff050590c7",
+      "nomeCandidato": "",
+      "nomeCivil": "JOSE CARLOS SCHIAVINATO",
+      "dataNascimento": "12/09/1954",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/fe8bff64-c132-4cf3-bf1a-8831f5bcdb24"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/af9f5aa9-fba3-4323-8e7c-28ef339480dd",
+      "nomeCandidato": "",
+      "nomeCivil": "FILIPE BARROS BAPTISTA DE TOLEDO RIBEIRO",
+      "dataNascimento": "29/05/1991",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/23e3824c-6c01-48cc-b4cc-d9aa55eacc02"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/a01da848-205a-4637-b6a8-b4cefba90509",
+      "nomeCandidato": "",
+      "nomeCivil": "NELSI COGUETTO MARIA",
+      "dataNascimento": "01/03/1959",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/4e87b1fb-d87b-45ea-90d5-0147fa011136"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/25a7283a-1ab7-4bbf-a4c0-be3295c7b38b",
+      "nomeCandidato": "",
+      "nomeCivil": "FERNANDO LUCIO GIACOBO",
+      "dataNascimento": "17/12/1970",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/56df8543-880f-4bb3-b8a6-5684b46791cb"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/d1843b55-4e03-4c6d-8d3c-39b669a70d37",
+      "nomeCandidato": "",
+      "nomeCivil": "JOSE AROLDO SOUZA MARTINS",
+      "dataNascimento": "03/07/1961",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/bb6d259d-abb7-4b86-9ce0-795c59440fea"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/60a9ecde-f162-435a-b97f-3c31a954efd1",
+      "nomeCandidato": "LUCIANO DUCCI",
+      "nomeCivil": "LUCIANO DUCCI",
+      "dataNascimento": "23/03/1955",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/a83a07db-d959-4fa0-94bb-3f75c6a332d6"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/494c6b61-e39b-4249-9757-27bd963a6910",
+      "nomeCandidato": "",
+      "nomeCivil": "PAULO EDUARDO LIMA MARTINS",
+      "dataNascimento": "20/04/1981",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/b2e43f23-79f6-4600-bd09-e4d82cf4a21f"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/276180f4-38ed-42b0-a55b-054b43a1e840",
+      "nomeCandidato": "",
+      "nomeCivil": "GLEISI HELENA HOFFMANN",
+      "dataNascimento": "06/09/1965",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/0ecf37be-03aa-4d1f-bd6e-fc880bfeabf4"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/aaad6eeb-ca31-45de-bba4-e7555c723224",
+      "nomeCandidato": "",
+      "nomeCivil": "ANTONIO WANDSCHEER",
+      "dataNascimento": "31/08/1950",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/fd7649ea-66f2-4d11-86fd-53cfef2af331"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/c5f92f81-2766-4b20-8121-c626ecc6b4bd",
+      "nomeCandidato": "",
+      "nomeCivil": "ALIEL MACHADO BARK",
+      "dataNascimento": "26/02/1989",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/e09b30fd-ad99-4914-891d-7b9102bb56b8"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/dca2fccb-d025-4ec0-b712-e0ea34a24346",
+      "nomeCandidato": "",
+      "nomeCivil": "DIEGO ALEXSANDER GONCALO PAULA GARCIA",
+      "dataNascimento": "10/10/1984",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/b656a614-c31f-4c0d-85c6-8cb3d289d339"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/64418218-4c81-4a5b-a2f2-d871695b118a",
+      "nomeCandidato": "CHRISTIANE DE SOUZA YARED",
+      "nomeCivil": "CHRISTIANE DE SOUZA YARED",
+      "dataNascimento": "23/02/1960",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/e6074532-f0f5-485a-90ba-485aa0925161"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/6e2286ce-3497-474e-865b-73e77ea0f2e9",
+      "nomeCandidato": "",
+      "nomeCivil": "LUISA DOS SANTOS SILVEIRA",
+      "dataNascimento": "11/04/1996",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/17ac7630-bc61-459a-9bf4-55320477c096"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/6e8be908-c6e6-4f23-93e3-5bbbfbd30050",
+      "nomeCandidato": "",
+      "nomeCivil": "RICARDO JOSE MAGALHAES BARROS",
+      "dataNascimento": "15/11/1959",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/e0bb3572-cb35-470b-8935-ecef090d9dd1"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/1ae3bee8-99dd-4022-b5b0-7b1fd3971c42",
+      "nomeCandidato": "",
+      "nomeCivil": "GILSON CARDOSO FAHUR",
+      "dataNascimento": "06/11/1963",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/05851c8f-03b8-448b-bcf4-de04a22b048e"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/545a427e-d03d-46f4-b3b4-fb22dc189722",
+      "nomeCandidato": "",
+      "nomeCivil": "ENIO JOSE VERRI",
+      "dataNascimento": "27/03/1961",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/3acf0e34-606b-48da-89d7-400b3597777c"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/cdb47fcf-a952-41f5-a955-e79dd071df87",
+      "nomeCandidato": "",
+      "nomeCivil": "GUSTAVO BONATO FRUET",
+      "dataNascimento": "18/04/1963",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/19aa3a85-3b12-4785-b3b3-baa389293a99"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/b7e58a37-fb00-4f6f-8b63-22ac5fe5c58a",
+      "nomeCandidato": "",
+      "nomeCivil": "DANIEL LUCIO DA SILVEIRA",
+      "dataNascimento": "25/11/1982",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/1380ce0b-6bd3-44ae-a79a-fe5bcce895ac"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/439929c0-660d-47df-8437-9eb1c909c566",
+      "nomeCandidato": "",
+      "nomeCivil": "ROSANGELA DE SOUZA GOMES",
+      "dataNascimento": "27/12/1966",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/4f1ef1a1-cc08-49da-beb0-5aa9e3df7815"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/0b385636-b540-4f8a-9899-2d907ff9f298",
+      "nomeCandidato": "",
+      "nomeCivil": "MARCIO DA SILVEIRA LABRE",
+      "dataNascimento": "27/02/1974",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/c1de04e9-d7b8-40e3-a5c6-f625dad7c6b8"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/9b367de4-58ed-471c-807b-badbfed41b5e",
+      "nomeCandidato": "",
+      "nomeCivil": "JOAO FRANCISCO INACIO BRAZAO",
+      "dataNascimento": "22/02/1962",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/8a4e639e-3520-4306-8e63-55bf032b8198"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/ffdd6311-ab97-4b2f-a018-03d4844d4dee",
+      "nomeCandidato": "",
+      "nomeCivil": "ALTINEU CORTES FREITAS COUTINHO",
+      "dataNascimento": "13/09/1968",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/e7a37d24-05fe-4647-bdbf-734869961109"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/0a43c68b-1ecf-45ff-bc52-928280e5a175",
+      "nomeCandidato": "",
+      "nomeCivil": "MARCELO CALERO FARIA GARCIA",
+      "dataNascimento": "07/07/1982",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/13b37793-2fd9-46e2-b236-e8bd43348422"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/035a6965-f810-4592-b0e6-78cf1acf8459",
+      "nomeCandidato": "",
+      "nomeCivil": "ROGERIO TEIXEIRA JUNIOR",
+      "dataNascimento": "23/10/1976",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/183c85e9-b019-4e2b-984e-2b7b61591ba1"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/24cc3a65-accc-48f5-b7a7-0cbd815d2ec2",
+      "nomeCandidato": "",
+      "nomeCivil": "FRANCISCO JOSE D ANGELO PINTO",
+      "dataNascimento": "11/02/1953",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/302a28c1-d18b-4420-88aa-4ff9ee20dbeb"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/89b1c424-757d-46e0-8566-d2f2b2ef9cd2",
+      "nomeCandidato": "",
+      "nomeCivil": "LUIZ ANTONIO DA COSTA CARVALHO CORREA DA SILVA",
+      "dataNascimento": "27/12/1940",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/727588ca-1931-4ca6-8b72-1420b66ed9b9"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/1fd61048-af27-408c-8f70-1326dfc5827d",
+      "nomeCandidato": "",
+      "nomeCivil": "ANTONIO DA LUZ FURTADO",
+      "dataNascimento": "06/01/1972",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/45bb16e5-d135-4c67-9be5-46fef8b9d29c"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/8c49691b-fb47-4ec7-8747-012f67cda93b",
+      "nomeCandidato": "",
+      "nomeCivil": "CLARISSA GAROTINHO BARROS ASSED MATHEUS DE OLIVEIRA",
+      "dataNascimento": "02/07/1982",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/a12a06c8-1693-4446-8502-63a548a38ffe"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/62946c18-29d2-4cad-b4d9-e3717e06bd5d",
+      "nomeCandidato": "",
+      "nomeCivil": "FLORDELIS DOS SANTOS DE SOUZA",
+      "dataNascimento": "05/02/1961",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/33418c1b-511d-4f31-bbb3-c2c1ce5fe032"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/03fa37a1-e871-4854-897f-342d3878bd40",
+      "nomeCandidato": "",
+      "nomeCivil": "LUIZ ANTONIO DE SOUZA TEIXEIRA JUNIOR",
+      "dataNascimento": "15/12/1973",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/0eefcf55-6229-40d0-9816-cb6d8a4aa0ee"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/acfb40bd-297b-41a8-be81-a45c40689616",
+      "nomeCandidato": "",
+      "nomeCivil": "PEDRO PAULO CARVALHO TEIXEIRA",
+      "dataNascimento": "29/06/1972",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/ade18edc-0b23-4125-be16-f5d660e8a6cb"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/e389bad9-0c3f-46ed-878a-451c3e909ae0",
+      "nomeCandidato": "",
+      "nomeCivil": "TALIRIA PETRONE SOARES",
+      "dataNascimento": "09/04/1985",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/254dc14e-5d1d-43b8-8555-07e50a8d5d6c"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/98c1548e-f781-4bde-a6ac-9e26d208cd0b",
+      "nomeCandidato": "",
+      "nomeCivil": "LOURIVAL GOMES DE ALMEIDA",
+      "dataNascimento": "22/07/1955",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/342804ab-f803-4d0a-bd70-06ee2f0bb202"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/f9d7e1c1-833b-489e-a484-49617c23ed18",
+      "nomeCandidato": "",
+      "nomeCivil": "OTONI MOURA DE PAULO JUNIOR",
+      "dataNascimento": "22/11/1976",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/f2fff397-d872-4cda-b6ef-b49cc32a0b51"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/9421099b-661a-4124-b0d2-8397b0c882ce",
+      "nomeCandidato": "",
+      "nomeCivil": "SOSTENES SILVA CAVALCANTE",
+      "dataNascimento": "16/01/1975",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/21a40557-be2b-47a8-8cbe-fab50b4adb79"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/2a21fca5-5d68-4d7f-9a37-967b5ab14226",
+      "nomeCandidato": "",
+      "nomeCivil": "VINICIUS MEDEIROS FARAH",
+      "dataNascimento": "21/06/1965",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/06726440-6ba4-411c-831b-12e8d3bddce4"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/5af2f050-3ba2-4acf-8045-a36ebbaad21b",
+      "nomeCandidato": "",
+      "nomeCivil": "GELSON DE AZEVEDO ALMEIDA",
+      "dataNascimento": "10/01/1965",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/6b35b01f-5f93-4786-8c01-00a0e880be0a"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/14a5610a-0ad8-452b-8ddc-83cf4250d947",
+      "nomeCandidato": "",
+      "nomeCivil": "GUTEMBERG REIS DE OLIVEIRA",
+      "dataNascimento": "09/09/1979",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/c8d7f37d-c554-4ec4-bf07-071b9ced6245"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/c8899af4-7aa4-4b7d-b50b-f8e10f151aca",
+      "nomeCandidato": "",
+      "nomeCivil": "BENEDITA SOUZA DA SILVA SAMPAIO",
+      "dataNascimento": "26/04/1942",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/d2aa6e3d-b356-4d01-8994-799cb06e32f0"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/79d19612-2eb2-4c4f-b889-de31d901cc49",
+      "nomeCandidato": "AROLDE DE OLIVEIRA",
+      "nomeCivil": "AROLDE DE OLIVEIRA",
+      "dataNascimento": "11/03/1937",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/27ed9338-c4b1-4796-89d2-d976af80b79a"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/b12e2ae2-dd1b-42f0-b56a-773ddc4c557e",
+      "nomeCandidato": "",
+      "nomeCivil": "JOAO CARLOS SOARES GURGEL",
+      "dataNascimento": "02/12/1980",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/e6f7a962-4f53-4f3d-88bc-050c5c3b96d6"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/57f969d8-0994-4242-a313-f8cd4c757f3d",
+      "nomeCandidato": "",
+      "nomeCivil": "JOZIEL FERREIRA CARLOS",
+      "dataNascimento": "22/04/1966",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/74677b1a-4a6c-471f-9422-6eabb2095c01"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/b39d7993-75f1-4a00-bc81-30f2d4558948",
+      "nomeCandidato": "",
+      "nomeCivil": "DANIELA MOTE DE SOUZA CARNEIRO",
+      "dataNascimento": "10/02/1976",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/ed382ace-c351-45aa-a497-67a3b05e0a03"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/5442ced6-5092-4f24-b28c-f630e4678b78",
+      "nomeCandidato": "",
+      "nomeCivil": "GLAUBER DE MEDEIROS BRAGA",
+      "dataNascimento": "26/06/1982",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/2731fd73-1cf6-42e5-8429-ed84c6069827"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/5e7e115f-b184-4796-9b7b-7e0ab86783c3",
+      "nomeCandidato": "",
+      "nomeCivil": "PAULO SERGIO RAMOS BARBOZA",
+      "dataNascimento": "18/10/1944",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/ad454f3e-d460-4b45-a84b-667a88fb4d42"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/2fc65877-2d39-4eb3-912b-0fbea4b21e72",
+      "nomeCandidato": "",
+      "nomeCivil": "JEAN WYLLYS DE MATOS SANTOS",
+      "dataNascimento": "10/03/1974",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/3f2d1375-16f2-4229-a126-6c67dc3b495c"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/46c0d178-1d81-429b-90f6-d7f422eef3ad",
+      "nomeCandidato": "",
+      "nomeCivil": "ALESSANDRO LUCCIOLA MOLON",
+      "dataNascimento": "28/10/1971",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/7bfc428a-f5dd-43d9-8886-4fb0fea08ca1"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/90003b62-597e-4238-ad9e-797f19844033",
+      "nomeCandidato": "",
+      "nomeCivil": "RODRIGO FELINTO IBARRA EPITACIO MAIA",
+      "dataNascimento": "12/06/1970",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/8a8aafc2-9b66-441e-a867-8181cd46154f"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/d31c40ba-9765-4e96-8e84-be00ad4618aa",
+      "nomeCandidato": "",
+      "nomeCivil": "SORAYA ALENCAR DOS SANTOS",
+      "dataNascimento": "04/12/1958",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/dd158dcb-7a98-406b-8cae-abc87fdb4248"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/165420c5-3214-4e59-a6d4-44958dd844d5",
+      "nomeCandidato": "",
+      "nomeCivil": "MARCELO RIBEIRO FREIXO",
+      "dataNascimento": "12/04/1967",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/2ae0ce08-f5cf-453c-b146-0ac609568c41"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/84f25bef-d683-428c-8fb0-39fe652ba18a",
+      "nomeCandidato": "",
+      "nomeCivil": "FABIANA SILVA DE SOUZA",
+      "dataNascimento": "09/01/1980",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/c694a98f-2171-4d14-a679-e75a8e5ff355"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/112dcea2-1c68-428e-bf34-f134a11a39a4",
+      "nomeCandidato": "",
+      "nomeCivil": "FELICIO LATERCA DE ALMEIDA",
+      "dataNascimento": "26/05/1967",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/dcbba1fd-4581-4942-b8bc-13ee527e5eba"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/58405721-2ea7-4d60-ba6e-48e2c48661d5",
+      "nomeCandidato": "",
+      "nomeCivil": "CARLOS ROBERTO COELHO DE MATTOS JUNIOR",
+      "dataNascimento": "08/02/1982",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/b4b66835-af1b-4894-8b02-3a3f881172c0"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/99a43ef5-ded5-48bf-9792-dd1d74c5cd9c",
+      "nomeCandidato": "JANDIRA FEGHALI",
+      "nomeCivil": "JANDIRA FEGHALI",
+      "dataNascimento": "17/05/1957",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/61c4032b-172f-4d34-a572-9c0fd3ba900b"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/3d7bb2a9-4ed3-4f9a-8149-611d2a57ba3b",
+      "nomeCandidato": "",
+      "nomeCivil": "FLAVIO NANTES BOLSONARO",
+      "dataNascimento": "30/04/1981",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/e9850c5f-16d6-4ae7-bbf9-2d2c97d871d7"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/6176fb5c-c25f-41c6-8b81-b31738e12713",
+      "nomeCandidato": "",
+      "nomeCivil": "HELIO FERNANDO BARBOSA LOPES",
+      "dataNascimento": "28/03/1969",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/e0c5db9f-9049-427b-a125-ca533e96aca8"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/8dc4774a-d040-43ae-9d59-cf89a2a3811b",
+      "nomeCandidato": "",
+      "nomeCivil": "LUIZ EDUARDO CARNEIRO DA SILVA DE SOUZA LIMA",
+      "dataNascimento": "10/12/1977",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/2e763615-110a-4a39-85ad-b400cee4ac1d"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/6f4584b4-9c55-4593-af6f-1199bae00ed0",
+      "nomeCandidato": "",
+      "nomeCivil": "WAGNER MONTES DOS SANTOS",
+      "dataNascimento": "18/07/1954",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/0c58b2ed-bae5-4e43-bdbd-5919b8bf6feb"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/ed231763-bdc1-41df-b2a8-429e6ed0bacc",
+      "nomeCandidato": "",
+      "nomeCivil": "PAULO GUSTAVO GANIME ALVES TEIXEIRA",
+      "dataNascimento": "19/04/1983",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/53cfb46e-035f-4f89-a6ec-909b9a811607"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/177d45b3-0373-4f9e-a646-3f147152ac18",
+      "nomeCandidato": "",
+      "nomeCivil": "ALEXANDRE AUGUSTUS SERFIOTIS",
+      "dataNascimento": "29/11/1975",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/dde43c38-72a3-4c96-95c9-75e55f42e8f4"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/1d69f5c4-f20c-4cfb-9a1a-202dcb250643",
+      "nomeCandidato": "",
+      "nomeCivil": "CHRISTINO AUREO DA SILVA",
+      "dataNascimento": "26/04/1962",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/a44e2b82-ec77-41bf-9e86-fb68eeaea7d2"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/093c8c89-f4f1-4eca-b94e-496f6c1f45a8",
+      "nomeCandidato": "",
+      "nomeCivil": "HUGO LEAL MELO DA SILVA",
+      "dataNascimento": "06/08/1962",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/c8017b87-30d6-42e7-95f7-d33a6006f0c8"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/f5927eb6-b90e-4a52-9a0a-3cf1d3517884",
+      "nomeCandidato": "",
+      "nomeCivil": "AUREO LIDIO MOREIRA RIBEIRO",
+      "dataNascimento": "17/02/1979",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/8b26cff1-d347-4b0b-bd77-2c02bc71e8c1"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/ecd76ff3-060e-4e92-a99f-09d47ee00162",
+      "nomeCandidato": "",
+      "nomeCivil": "CHRISTINE NOGUEIRA DOS REIS TONIETTO",
+      "dataNascimento": "14/05/1991",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/56060002-58aa-4b6f-9919-354945ccd32e"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/9c5cf52f-4647-4d82-ba93-49a654e79816",
+      "nomeCandidato": "",
+      "nomeCivil": "WLADIMIR BARROS ASSED MATHEUS DE OLIVEIRA",
+      "dataNascimento": "13/01/1985",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/e82c0651-4446-412c-911e-ad1be0004f54"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/83ce4f09-ab5d-4f77-892b-be11c1b77f1b",
+      "nomeCandidato": "",
+      "nomeCivil": "WALTER PEREIRA ALVES",
+      "dataNascimento": "27/02/1980",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/e573a7df-e2be-4706-947f-8b32ed7e3d75"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/a88ffa6a-0988-494c-bd7b-80841866a363",
+      "nomeCandidato": "",
+      "nomeCivil": "JOAO DA SILVA MAIA",
+      "dataNascimento": "20/09/1953",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/cd9aefb4-4da7-4236-9617-95b9fe73ba1a"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/5cc17836-ab0d-4292-bc1a-8869dfe49b64",
+      "nomeCandidato": "",
+      "nomeCivil": "FERNANDO WANDERLEY VARGAS DA SILVA",
+      "dataNascimento": "06/12/1956",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/5766bb3b-d493-4335-b9d4-2668146c3da8"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/0b329c42-a396-4c0d-88bd-24aca30388ea",
+      "nomeCandidato": "",
+      "nomeCivil": "EANN STYVENSON VALENTIM MENDES",
+      "dataNascimento": "07/02/1977",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/7d043ae6-a0a2-4e57-9a0c-646a7b707a44"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/a9231b74-b438-45f2-ad0c-984efa6f5db6",
+      "nomeCandidato": "",
+      "nomeCivil": "RAFAEL HUETE DA MOTTA",
+      "dataNascimento": "15/08/1986",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/ba2f236c-d02f-4fd7-93f6-d26c5c410d89"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/f34fe0cc-0cb9-43df-a56c-05babc35c3b9",
+      "nomeCandidato": "",
+      "nomeCivil": "NATALIA BASTOS BONAVIDES",
+      "dataNascimento": "15/06/1988",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/03021c99-47f6-4daa-bad3-e68f752f7721"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/7ece6eb8-cf30-4655-a9b0-49ef4d28b6ad",
+      "nomeCandidato": "",
+      "nomeCivil": "LUIZ BENES LEOCADIO DE ARAUJO",
+      "dataNascimento": "22/04/1966",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/6985308a-5f27-46ec-9ea6-8b74dc94dff1"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/54961d0f-b768-4451-8dad-b2c2de617446",
+      "nomeCandidato": "",
+      "nomeCivil": "ZENAIDE MAIA CALADO PEREIRA DOS SANTOS",
+      "dataNascimento": "27/11/1954",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/907b08a1-9578-4b8d-85ce-7eb32d25f8e4"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/ca2c0c7a-233c-4db0-838d-6ab731b1eabe",
+      "nomeCandidato": "",
+      "nomeCivil": "ELIESER GIRAO MONTEIRO FILHO",
+      "dataNascimento": "08/05/1955",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/e23fe1df-e8f3-4eae-a7c0-15bee4b0fa75"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/ed13d3ed-e85a-4b05-bffc-92b99c9311d1",
+      "nomeCandidato": "",
+      "nomeCivil": "FABIO SALUSTINO MESQUITA DE FARIA",
+      "dataNascimento": "01/09/1977",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/bb724acd-b804-423b-94f3-733865a2d6f0"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/b66f44a4-9089-406b-ab68-c41384a08f2c",
+      "nomeCandidato": "",
+      "nomeCivil": "LEONARDO BARRETO DE MORAES",
+      "dataNascimento": "11/01/1984",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/dfebe4c3-92be-466d-9791-7fd5f820fc1b"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/088199df-68a9-4e7e-9776-09aca67be9d9",
+      "nomeCandidato": "",
+      "nomeCivil": "DIRLAINE JAQUELINE CASSOL",
+      "dataNascimento": "03/12/1974",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/ae374b54-4eaf-4739-a68c-bf287e822c46"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/7b844881-98db-4233-867b-52f0532f8c1c",
+      "nomeCandidato": "",
+      "nomeCivil": "JOAO CHRISOSTOMO DE MOURA",
+      "dataNascimento": "23/06/1959",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/eab1bf69-44a4-4d45-aa2c-bc5c91cab7ee"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/fb509686-1641-41ec-bbf5-ffca3831c21f",
+      "nomeCandidato": "",
+      "nomeCivil": "SILVIA CRISTINA AMANCIO CHAGAS",
+      "dataNascimento": "15/01/1974",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/365266a6-8c8f-4e45-9ca8-47057497e56e"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/a84dd556-cbc1-4a08-b4dc-a7292a591379",
+      "nomeCandidato": "",
+      "nomeCivil": "CONFUCIO AIRES MOURA",
+      "dataNascimento": "16/05/1948",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/1f49c7e2-9c19-4221-9bf6-f51f430cfc3f"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/6cda1e59-4515-46ff-9748-8b2af590d0b4",
+      "nomeCandidato": "",
+      "nomeCivil": "EXPEDITO GONCALVES FERREIRA NETTO",
+      "dataNascimento": "05/10/1988",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/c5ddd9e3-c5da-4049-b666-c8fcb8730124"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/306b85be-66ae-40cf-9c8d-f103bc5d6698",
+      "nomeCandidato": "",
+      "nomeCivil": "MARIANA FONSECA RIBEIRO CARVALHO DE MORAES",
+      "dataNascimento": "26/11/1986",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/65f47b8b-8996-4021-a957-45a429f3ebcb"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/9a817ffd-a20a-45b0-8174-9da30d2047e3",
+      "nomeCandidato": "",
+      "nomeCivil": "MARCOS ROGERIO DA SILVA BRITO",
+      "dataNascimento": "07/07/1978",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/0df414aa-2018-4e91-b1cd-8aee9473f2c0"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/30e5efe9-4471-45cc-9841-ee9cd6f19fd5",
+      "nomeCandidato": "",
+      "nomeCivil": "LUCIO ANTONIO MOSQUINI",
+      "dataNascimento": "23/07/1969",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/2804bc37-25c6-494c-9d72-977261ccfe6c"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/7c8c9e71-4d31-4181-a9a5-a009c0fce190",
+      "nomeCandidato": "",
+      "nomeCivil": "MAURO NAZIF RASUL",
+      "dataNascimento": "30/01/1959",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/c0d905bb-65c7-4504-a03b-85e21347badd"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/a5b1023d-de89-475b-8864-137d9c17b013",
+      "nomeCandidato": "",
+      "nomeCivil": "ANTONIO MECIAS PEREIRA DE JESUS",
+      "dataNascimento": "08/02/1962",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/733e39a0-cc6b-4cff-a9b3-b98ec63efe10"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/cbe154dc-8634-4a5a-a9e7-d3203e94df20",
+      "nomeCandidato": "",
+      "nomeCivil": "JOENIA BATISTA DE CARVALHO",
+      "dataNascimento": "20/04/1973",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/a413d39b-f762-4a8d-8a34-15081fb04647"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/9876eb0a-f3d7-4326-9964-4d392372e94b",
+      "nomeCandidato": "",
+      "nomeCivil": "EDIO VIEIRA LOPES",
+      "dataNascimento": "04/01/1952",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/eef132c2-65b4-4482-8fd6-5f56422a1faa"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/1cf116e3-f279-401b-831c-adfb92ab4dbb",
+      "nomeCandidato": "",
+      "nomeCivil": "FRANCISCO DE ASSIS RODRIGUES",
+      "dataNascimento": "23/04/1951",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/5f4a2b90-5d17-40a9-baef-956bd8444212"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/c6b95500-7e38-42b5-bf21-10ad7e7d2055",
+      "nomeCandidato": "",
+      "nomeCivil": "SHERIDAN ESTERFANY OLIVEIRA DE ANCHIETA",
+      "dataNascimento": "11/04/1984",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/8539ef76-34fc-4127-8c5a-c43ebdeb5411"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/e6cf56ff-c9f8-4fb4-ad9b-0fa848a37b88",
+      "nomeCandidato": "",
+      "nomeCivil": "JOHNATHAN PEREIRA DE JESUS",
+      "dataNascimento": "03/09/1983",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/b533a5cd-1cf1-4a4e-94d1-dc86ddaa250b"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/34ad054f-b90a-4e55-9d9e-0fa406164948",
+      "nomeCandidato": "",
+      "nomeCivil": "ANTONIO CARLOS NICOLETTI",
+      "dataNascimento": "21/07/1981",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/dc709815-1585-4860-9c04-12dcbf9e16e7"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/dfb48cc7-041c-4046-bec6-27992fc00da1",
+      "nomeCandidato": "",
+      "nomeCivil": "JOSE OTACI BARROSO DO NASCIMENTO",
+      "dataNascimento": "18/08/1977",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/586aaa6a-4306-44fe-9e78-1043460413fe"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/cec4a9de-3806-4d66-bc1a-081e6da5ee5d",
+      "nomeCandidato": "",
+      "nomeCivil": "HIRAN MANUEL GONCALVES DA SILVA",
+      "dataNascimento": "19/06/1957",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/80d38882-9a4e-4245-a8b0-40d68049b99c"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/8ae98ebc-e099-44f1-a2d8-c02903b98668",
+      "nomeCandidato": "",
+      "nomeCivil": "HAROLDO ALVES CAMPOS",
+      "dataNascimento": "11/05/1953",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/38377735-48ac-4e1a-a288-f5ad8585caa2"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/bbfae2a4-3961-46e6-8f65-c9998fbd1ac5",
+      "nomeCandidato": "",
+      "nomeCivil": "ANTONIO CARLOS GOMES DA SILVA",
+      "dataNascimento": "13/06/1972",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/b51e402c-6c98-4818-9b31-27afd06106db"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/87f9454d-a219-4adc-887d-259bb99bd30b",
+      "nomeCandidato": "DANRLEI DE DEUS HINTERHOLZ",
+      "nomeCivil": "DANRLEI DE DEUS HINTERHOLZ",
+      "dataNascimento": "18/04/1973",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/bfdeee42-336c-4096-8bf8-525626e540b8"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/3b572e87-12d1-40e0-9a60-8d6a39455dc6",
+      "nomeCandidato": "",
+      "nomeCivil": "UBIRATAN ANTUNES SANDERSON",
+      "dataNascimento": "01/12/1969",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/09d1d3b1-5f96-492d-ac9f-a23592393929"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/ff983966-a102-42bb-ac2d-b3c171741236",
+      "nomeCandidato": "LUIS CARLOS HEINZE",
+      "nomeCivil": "LUIS CARLOS HEINZE",
+      "dataNascimento": "14/09/1950",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/d92bb5cc-da9e-45c5-95ad-eefb5b041a68"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/68f3977f-84f1-41ca-ac2a-579c4c4c663b",
+      "nomeCandidato": "",
+      "nomeCivil": "ONYX DORNELLES LORENZONI",
+      "dataNascimento": "03/10/1954",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/f7f08ae3-cb60-4686-8405-416c73aeb30f"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/6975e547-bd4d-40ff-b715-ce16fced9a3d",
+      "nomeCandidato": "",
+      "nomeCivil": "LUIS ANTONIO FRANCISCATTO COVATTI",
+      "dataNascimento": "25/07/1987",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/6549deab-39ad-46ac-b145-28e090da3a94"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/494b9497-74f3-4f31-91c9-485ac28c02cf",
+      "nomeCandidato": "",
+      "nomeCivil": "DIONILSO MATEUS MARCON",
+      "dataNascimento": "21/09/1964",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/9b2d21d3-8db0-4aff-8a6a-95da31353360"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/02bb4bfd-36fe-40c6-a470-412b5ce61dd8",
+      "nomeCandidato": "",
+      "nomeCivil": "GIOVANI BATISTA FELTES",
+      "dataNascimento": "10/04/1957",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/0f783288-95a3-4cde-a358-9a41a7a8799a"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/894f4aef-4b1e-4178-8e31-a134b04189ca",
+      "nomeCandidato": "",
+      "nomeCivil": "PAULO ROBERTO SEVERO PIMENTA",
+      "dataNascimento": "19/03/1965",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/b6731539-4a7d-476d-8dbd-b20f78258f70"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/6f60a714-e67f-4a03-bbc8-1edb6b19bfc2",
+      "nomeCandidato": "",
+      "nomeCivil": "NEREU CRISPIM",
+      "dataNascimento": "21/07/1963",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/62142bcd-d439-46f4-ac71-988bcd306816"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/6f0c1f2d-5509-4204-973a-15d19e38ce96",
+      "nomeCandidato": "",
+      "nomeCivil": "OSMAR GASPARINI TERRA",
+      "dataNascimento": "18/02/1950",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/e795b909-4670-4a79-9539-7f9b71e9170a"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/3dc46154-87cb-4474-b3c5-f8d794bc53b0",
+      "nomeCandidato": "",
+      "nomeCivil": "MAURICIO ALEXANDRE DZIEDRICKI",
+      "dataNascimento": "26/07/1979",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/e04d3153-1da1-499e-b38a-c9bed24cfdc0"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/3fedb8b0-113e-42d4-8afc-cae631d5aa03",
+      "nomeCandidato": "",
+      "nomeCivil": "HEITOR JOSE SCHUCH",
+      "dataNascimento": "25/03/1962",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/65f07b66-c402-4b6a-bf77-61f44792d146"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/836d6ceb-6b9d-4046-b0f6-c74b316e3374",
+      "nomeCandidato": "",
+      "nomeCivil": "AFONSO ANTUNES DA MOTTA",
+      "dataNascimento": "08/01/1950",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/d0a1a033-91b8-4086-b7fe-5b19490271a0"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/5c8a46da-2d8c-4688-8702-b7bfc2ae670b",
+      "nomeCandidato": "",
+      "nomeCivil": "MARCIO DELLA VALLE BIOLCHI",
+      "dataNascimento": "23/05/1979",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/a469accf-e734-4d95-8e9a-560def7542c0"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/9ac1a3b0-78d2-439a-950c-b8ae3cef8a9e",
+      "nomeCandidato": "GIOVANI CHERINI",
+      "nomeCivil": "GIOVANI CHERINI",
+      "dataNascimento": "23/06/1960",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/39173380-5586-4cc0-b6d7-3c54fe9b8f4c"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/7e211bd4-a5cf-45d6-b0b1-910f77786184",
+      "nomeCandidato": "",
+      "nomeCivil": "JOSE ALFONSO EBERT HAMM",
+      "dataNascimento": "25/04/1962",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/7f763d1e-8657-4d9e-a99b-630ec8efb015"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/f84b8c5f-6f78-4773-9b2d-c0f86f863675",
+      "nomeCandidato": "",
+      "nomeCivil": "ALCEU MOREIRA DA SILVA",
+      "dataNascimento": "04/06/1954",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/196beb0d-21ff-4f96-8903-6e36867113bb"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/8edbe86a-1b91-4393-a6f1-3c8e102e930e",
+      "nomeCandidato": "",
+      "nomeCivil": "MARIA DO ROSARIO NUNES",
+      "dataNascimento": "22/11/1966",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/925b9062-09fc-4caa-81f0-18ad01b1c3fc"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/4ff2e653-8010-4346-8d10-4cdeef8dca85",
+      "nomeCandidato": "",
+      "nomeCivil": "DARCI POMPEO DE MATTOS",
+      "dataNascimento": "12/07/1958",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/c1fc1047-9d30-420d-ae65-3b6a09d11c0a"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/7db02fba-7d63-4ec7-8ca1-14e39aeac01a",
+      "nomeCandidato": "",
+      "nomeCivil": "MARCEL VAN HATTEM",
+      "dataNascimento": "08/11/1985",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/398ea006-1d97-4145-977a-f2a32893cbe2"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/500e3bf5-c0dd-44a6-8811-9b26e47c56a1",
+      "nomeCandidato": "",
+      "nomeCivil": "LIZIANE BAYER DA COSTA",
+      "dataNascimento": "24/01/1981",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/3f03dee6-2cd1-4630-92d6-70fc871b0a91"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/479e2fdf-443f-4cef-80a5-a64222bff302",
+      "nomeCandidato": "",
+      "nomeCivil": "MARLON ARATOR SANTOS DA ROSA",
+      "dataNascimento": "25/09/1975",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/a7216750-9f78-4fc9-a58a-fbd944321ea4"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/147f5ca0-342b-4b2e-81a6-831681d53e40",
+      "nomeCandidato": "",
+      "nomeCivil": "JERONIMO PIZZOLOTTO GOERGEN",
+      "dataNascimento": "20/01/1976",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/549fa03a-ca43-4c9d-ac2d-ba2c8e6759fd"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/afb29614-b20b-46b2-8fc8-8564d778e80e",
+      "nomeCandidato": "",
+      "nomeCivil": "ALCIBIO MESQUITA BIBO NUNES",
+      "dataNascimento": "09/01/1957",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/dc501cda-b85d-4bd5-a7fb-f78f5edce87c"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/c876d105-1d81-4039-b3d7-a03c499fa48e",
+      "nomeCandidato": "",
+      "nomeCivil": "DANIEL TRZECIAK DUARTE",
+      "dataNascimento": "04/11/1986",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/84ebb693-60fe-48d2-86de-58cd99bbb468"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/884c30c9-d86e-44d1-983e-b7dd20a3685d",
+      "nomeCandidato": "",
+      "nomeCivil": "PEDRO BANDARRA WESTPHALEN",
+      "dataNascimento": "19/12/1950",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/0d8f3a2f-88f4-4d33-8938-ede57488cebf"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/7aece44b-2c09-4c17-8468-a399b6309819",
+      "nomeCandidato": "",
+      "nomeCivil": "ELVINO JOSE BOHN GASS",
+      "dataNascimento": "05/02/1962",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/ebb130a4-b317-4831-9aac-8ea140c4491a"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/de5d3fbd-67ee-4981-95f0-3f09942eb6a7",
+      "nomeCandidato": "",
+      "nomeCivil": "FERNANDA MELCHIONNA E SILVA",
+      "dataNascimento": "02/02/1984",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/2309b088-ebe9-43c5-903c-fba0b2192394"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/10a804c2-80d3-4289-884d-028e9a738a68",
+      "nomeCandidato": "",
+      "nomeCivil": "MARCELO PIRES MORAES",
+      "dataNascimento": "07/08/1979",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/e25a6df5-7503-40ae-a5ed-733efb61948d"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/0f4f8242-23d2-47e4-98e8-c9b5556709b0",
+      "nomeCandidato": "",
+      "nomeCivil": "PAULO RENATO PAIM",
+      "dataNascimento": "15/03/1950",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/9c192add-8490-412d-8dda-cdbba454d1d2"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/0584b7bf-05ad-499f-b702-fe8ec08184e9",
+      "nomeCandidato": "",
+      "nomeCivil": "LUCAS BELLO REDECKER",
+      "dataNascimento": "26/05/1981",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/4d83d04d-deb2-4a93-8793-6dc3fafa34fa"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/0b403151-e2d9-46d6-8af5-563cd57b6810",
+      "nomeCandidato": "",
+      "nomeCivil": "HENRIQUE FONTANA JUNIOR",
+      "dataNascimento": "18/01/1960",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/e7d2cc0a-b910-4db2-ba57-52415bfbd672"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/212e3252-0f8e-4012-800a-081978ed5b31",
+      "nomeCandidato": "",
+      "nomeCivil": "DANIEL COSTA DE FREITAS",
+      "dataNascimento": "03/04/1982",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/0f5cf381-bdf6-4c20-8799-32949e866d6c"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/74a5c51c-8305-47a1-aa33-5afa960dd1a7",
+      "nomeCandidato": "",
+      "nomeCivil": "HELIO FRANCISCO DA COSTA",
+      "dataNascimento": "03/03/1954",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/f37ce46d-3d3c-4dbb-8198-892ce97ef2ce"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/6191ec4b-738d-442a-8330-489866af3d13",
+      "nomeCandidato": "",
+      "nomeCivil": "FABIO LUIZ SCHIOCHET FILHO",
+      "dataNascimento": "31/05/1988",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/8ff98260-f170-470d-a3bd-b0adabe9c1b7"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/156029a4-8725-4590-a35c-2f7c504538b8",
+      "nomeCandidato": "",
+      "nomeCivil": "DARCI DE MATOS",
+      "dataNascimento": "08/11/1961",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/060cafcf-38e2-49a7-b20b-6aef0248d25f"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/4ca837b8-8326-4d21-8a41-8641e4301a21",
+      "nomeCandidato": "",
+      "nomeCivil": "GILSON MARQUES VIEIRA",
+      "dataNascimento": "12/04/1981",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/45685eae-fd2d-4362-97d7-4d4d85510ab1"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/72edd8c2-56f8-4f72-aa00-adeaac740784",
+      "nomeCandidato": "",
+      "nomeCivil": "PEDRO FRANCISCO UCZAI",
+      "dataNascimento": "10/03/1963",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/a394ed00-697a-46c6-872a-1be8927c7031"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/ab8c3b74-4d53-4026-95a1-e26b2b052370",
+      "nomeCandidato": "CELSO MALDANER",
+      "nomeCivil": "CELSO MALDANER",
+      "dataNascimento": "30/08/1953",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/21e62968-34dd-441c-8de5-b8f178bcc071"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/321649cb-851c-4aa0-9487-986afc5f3298",
+      "nomeCandidato": "",
+      "nomeCivil": "LUIZ ARMANDO SCHROEDER REIS",
+      "dataNascimento": "23/06/1957",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/355fe708-1768-4272-bd2b-20f1830b5d39"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/4d0c8299-101f-4318-8a90-7a9ebba85ee8",
+      "nomeCandidato": "",
+      "nomeCivil": "ANGELA REGINA HEINZEN AMIN HELOU",
+      "dataNascimento": "20/12/1953",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/427effad-63ce-4f52-9ca3-16985c09e811"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/22a99540-f86d-4587-baa3-221f903b0114",
+      "nomeCandidato": "",
+      "nomeCivil": "CARMEN EMILIA BONFA ZANOTTO",
+      "dataNascimento": "06/10/1962",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/2486746b-ee73-4748-9b7c-ae7d83213be5"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/781eccb3-c31b-4cfb-9af2-f085f894d3a0",
+      "nomeCandidato": "",
+      "nomeCivil": "ROGERIO MENDONCA",
+      "dataNascimento": "27/01/1953",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/d57114bc-7dc5-4e29-a82e-18654e1ecb4e"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/9d91b779-82db-4da5-9db0-049d983ee7d4",
+      "nomeCandidato": "",
+      "nomeCivil": "CARLOS ALBERTO CHIODINI",
+      "dataNascimento": "08/03/1982",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/2965e597-7c32-4a0b-964d-3fd625de2a5b"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/7b292cea-3bfb-43ec-a40c-fd98b31e7c3c",
+      "nomeCandidato": "",
+      "nomeCivil": "ESPERIDIAO AMIN HELOU FILHO",
+      "dataNascimento": "21/12/1947",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/fe75d9f1-a398-4459-b5bb-a002c6656448"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/14cd98fe-1677-4e00-9834-5032ac756524",
+      "nomeCandidato": "",
+      "nomeCivil": "CAROLINE RODRIGUES DE TONI",
+      "dataNascimento": "01/09/1986",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/dd35e730-ff6f-477f-a136-8ca78d25c63a"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/4d2eb937-1a2e-405f-888d-bddd70a651d0",
+      "nomeCandidato": "",
+      "nomeCivil": "JORGINHO DOS SANTOS MELLO",
+      "dataNascimento": "15/07/1956",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/661cf83f-a754-40db-a5a7-58ae968f590e"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/e0ab856b-8b48-4493-ae15-afac5e09f1bd",
+      "nomeCandidato": "",
+      "nomeCivil": "GEOVANIA DE SA RODRIGUES",
+      "dataNascimento": "30/03/1972",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/72a1a59d-2b69-4eab-a44a-358f3a833a84"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/738a451f-c4eb-4dc6-9de0-97adab1aa1b4",
+      "nomeCandidato": "",
+      "nomeCivil": "RODRIGO COELHO",
+      "dataNascimento": "29/06/1980",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/25120492-f16e-436f-ba65-fa2a38ecc9a9"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/2de8443f-a16b-4377-af85-d9d938dd1bda",
+      "nomeCandidato": "",
+      "nomeCivil": "RICARDO ZANATTA GUIDI",
+      "dataNascimento": "28/09/1977",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/53235fb0-f231-4ad9-a9b3-85a702d2dee7"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/e10cf60c-c34a-44cd-af46-e71ce8935bee",
+      "nomeCandidato": "",
+      "nomeCivil": "LAERCIO JOSE DE OLIVEIRA",
+      "dataNascimento": "15/04/1959",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/a80b993c-a964-4eb1-b2a7-b3a7e7f02362"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/0616daaa-28fe-4261-ad6c-e8c267975b0b",
+      "nomeCandidato": "",
+      "nomeCivil": "FABIO HENRIQUE SANTANA DE CARVALHO",
+      "dataNascimento": "19/06/1972",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/3f5c7e6c-827c-4b6e-a2dc-348f55f08744"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/04454cd8-3c1e-44d9-b4fd-0024c40eb754",
+      "nomeCandidato": "",
+      "nomeCivil": "FABIO DE ALMEIDA REIS",
+      "dataNascimento": "15/04/1977",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/c84e98a3-8dfc-4413-9741-6f71ef654354"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/439feb19-203f-4a08-b0c9-844328936fe2",
+      "nomeCandidato": "",
+      "nomeCivil": "JOAO SOMARIVA DANIEL",
+      "dataNascimento": "22/08/1967",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/125980f8-7f38-411e-a39f-38db4e2a1e81"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/9ae45340-9cec-4ad3-8a82-1305d9c9af14",
+      "nomeCandidato": "",
+      "nomeCivil": "ALESSANDRO VIEIRA",
+      "dataNascimento": "03/04/1975",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/a8303382-c50c-465e-911b-4d5d90858972"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/ed999508-f6c5-48d9-865f-29dc1344031d",
+      "nomeCandidato": "",
+      "nomeCivil": "FABIO CRUZ MITIDIERI",
+      "dataNascimento": "14/02/1977",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/150f9b87-238e-4a2e-aac2-8bbc3d45ed0a"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/53d6a28d-7621-46e0-854b-309cc3aa7b43",
+      "nomeCandidato": "",
+      "nomeCivil": "JOAO BOSCO DA COSTA",
+      "dataNascimento": "28/09/1950",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/dfe71d1d-eb04-4954-941f-fe30d20ef61b"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/ceff86d1-93bb-470f-91be-f63b1335286b",
+      "nomeCandidato": "",
+      "nomeCivil": "JOSE VALDEVAN DE JESUS SANTOS",
+      "dataNascimento": "20/06/1969",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/85d1fdda-a953-44b2-b608-16007b258461"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/6fc7a769-67f7-48d0-8d45-5f36c199c53b",
+      "nomeCandidato": "",
+      "nomeCivil": "LUIZ AUGUSTO CARVALHO RIBEIRO FILHO",
+      "dataNascimento": "16/02/1982",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/8fbcd2c4-5ffd-4aa4-a5bf-1217e62e9285"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/de62461e-c8d3-469a-8432-7395c2fa07f4",
+      "nomeCandidato": "",
+      "nomeCivil": "ROGERIO CARVALHO SANTOS",
+      "dataNascimento": "02/08/1968",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/fdc13660-ff11-44a3-af52-81b0d2a3fc0a"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/555abc4b-9807-4843-aa53-2973c50246d0",
+      "nomeCandidato": "",
+      "nomeCivil": "PAULO ROBERTO FREIRE DA COSTA",
+      "dataNascimento": "14/02/1955",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/37c770ac-cf53-462a-b05d-cb3e48989c13"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/5f9522d9-f335-4098-a29d-812d31feaa73",
+      "nomeCandidato": "",
+      "nomeCivil": "ARLINDO CHIGNALIA JUNIOR",
+      "dataNascimento": "24/12/1949",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/fcfd4afa-4208-42e5-9b01-f1521fd83395"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/61884513-cd6d-445c-9a00-3ea457ecee26",
+      "nomeCandidato": "VANDERLEI MACRIS",
+      "nomeCivil": "VANDERLEI MACRIS",
+      "dataNascimento": "20/05/1950",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/5de6ef94-78c3-48c0-be77-8341a4f61a8f"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/ba67cbc5-ed65-4d37-9024-bd6a45183a5b",
+      "nomeCandidato": "IVAN VALENTE",
+      "nomeCivil": "IVAN VALENTE",
+      "dataNascimento": "05/07/1946",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/4ab968de-d13f-475d-9903-19c8466047f7"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/08506a88-c999-4c81-8cf1-3a11dca2336b",
+      "nomeCandidato": "",
+      "nomeCivil": "LUIZ FELIPE BALEIA TENUTO ROSSI",
+      "dataNascimento": "09/06/1972",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/2ce11584-c030-4dac-83e0-0645ec84a7c0"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/7f7fa349-579e-495d-bfe9-bb00bab4ad86",
+      "nomeCandidato": "",
+      "nomeCivil": "ANTONIO CEZAR CORREIA FREIRE",
+      "dataNascimento": "12/12/1973",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/4f407bbc-a7f3-488e-a015-8337bab3c95a"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/2e05fad7-a223-433f-9a8d-80afba1ea472",
+      "nomeCandidato": "",
+      "nomeCivil": "GILBERTO NASCIMENTO SILVA",
+      "dataNascimento": "09/07/1956",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/ff0d8bfc-2cc9-4eba-b62d-6131a79614fd"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/2b055670-54bf-4187-8fd3-ef93f61e9c91",
+      "nomeCandidato": "",
+      "nomeCivil": "ALEXANDRE FROTA DE ANDRADE",
+      "dataNascimento": "14/10/1963",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/ccac52e0-f6ef-4e1f-962c-adeb2d19df6a"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/fe1fa586-1a33-4f88-b656-f697e696a3d8",
+      "nomeCandidato": "",
+      "nomeCivil": "LUIZ FLAVIO GOMES",
+      "dataNascimento": "06/05/1957",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/2a725cef-c13a-4bd8-a0d8-f50cc720f0b2"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/564e222f-bd47-417f-be31-70b5cd8a003c",
+      "nomeCandidato": "",
+      "nomeCivil": "NICOLINO BOZZELLA JUNIOR",
+      "dataNascimento": "17/08/1980",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/f1c94014-80f4-4aad-928f-d1d7ee760c08"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/bd19a195-4372-4835-b6a7-5d8e784b63ae",
+      "nomeCandidato": "",
+      "nomeCivil": "ARNALDO CALIL PEREIRA JARDIM",
+      "dataNascimento": "08/05/1955",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/1b010c07-d88c-4c94-80aa-97562f5aba31"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/714666ef-b786-4c6e-896f-0cd6f4c7a005",
+      "nomeCandidato": "",
+      "nomeCivil": "HERCULANO CASTILHO PASSOS JUNIOR",
+      "dataNascimento": "04/08/1956",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/c14f4d97-f343-461c-83fc-41d38961ad59"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/0b7b4d92-fad4-41e1-b7b3-83072232d9e1",
+      "nomeCandidato": "",
+      "nomeCivil": "VICENTE PAULO DA SILVA",
+      "dataNascimento": "08/04/1956",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/e8561651-cff3-42a9-8166-4ed4c0c87cd7"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/48b79ffc-fb52-40b5-9d2d-1ffec97f3c99",
+      "nomeCandidato": "",
+      "nomeCivil": "BENEDITO ROBERTO ALVES FERREIRA",
+      "dataNascimento": "27/05/1960",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/7e280951-023a-4361-b748-b21379d54ede"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/57708292-e33c-43f3-8cd9-6aa8149b889e",
+      "nomeCandidato": "",
+      "nomeCivil": "ALEXANDRE LEITE DA SILVA",
+      "dataNascimento": "18/04/1989",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/d2d108c4-f89d-48a7-b12a-8bd508bc23b7"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/6f01af96-abd9-4cee-9b66-889fc744ea76",
+      "nomeCandidato": "",
+      "nomeCivil": "MARCOS ANTONIO PEREIRA",
+      "dataNascimento": "04/04/1972",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/501a6128-4165-421c-adf0-8bee37218ad0"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/2c167f77-f538-4b88-a76b-f16860f3feed",
+      "nomeCandidato": "",
+      "nomeCivil": "NILTO IGNACIO TATTO",
+      "dataNascimento": "31/07/1963",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/fcac062e-5e7f-4cda-a797-9cc018fc0a17"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/5bdc2d51-f610-4294-b46b-5954ddb7dc37",
+      "nomeCandidato": "",
+      "nomeCivil": "ENRICO VAN BLARCUM DE GRAAFF MISASI",
+      "dataNascimento": "06/08/1994",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/80fd9809-7724-47c0-a441-e1c4c7985093"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/9736a4d4-3870-45d7-9279-85ee128f2cc8",
+      "nomeCandidato": "",
+      "nomeCivil": "EUGENIO JOSE ZULIANI",
+      "dataNascimento": "13/01/1976",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/18b765fe-c1e2-4a66-a7e8-48fcfe300ef9"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/a0ff7a72-083a-4483-ab7e-0296eb955f2c",
+      "nomeCandidato": "",
+      "nomeCivil": "FRANCISCO EVERARDO OLIVEIRA SILVA",
+      "dataNascimento": "01/05/1965",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/22955425-60c4-4bc9-ad73-68f36c732020"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/7676cdf5-b59e-4c60-852f-7210b80d081b",
+      "nomeCandidato": "",
+      "nomeCivil": "LUIZ PHILIPPE DE ORLEANS BRAGANCA",
+      "dataNascimento": "03/04/1969",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/f8a91a13-26db-42d3-9195-93fa4cf8342f"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/d33b7aa8-5769-488e-91fd-5af163f50f6b",
+      "nomeCandidato": "",
+      "nomeCivil": "ALENCAR SANTANA BRAGA",
+      "dataNascimento": "14/03/1976",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/95d15940-9787-477e-b354-0e9cf00bf185"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/27e645a3-d1fe-410e-87a4-5d96635a06c6",
+      "nomeCandidato": "",
+      "nomeCivil": "ALEX SPINELLI MANENTE",
+      "dataNascimento": "22/08/1979",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/11cb3ee4-1436-4b12-b419-17f58288f6df"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/91a8f1bb-dbfd-4fd3-9f5e-1e0d9163304c",
+      "nomeCandidato": "",
+      "nomeCivil": "JEFFERSON ALVES DE CAMPOS",
+      "dataNascimento": "26/10/1964",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/ab556c67-44a6-4c41-a8af-925c3d713cb4"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/e6c3acd9-a69c-479f-96f2-5386b01f59a9",
+      "nomeCandidato": "",
+      "nomeCivil": "KIM PATROCA KATAGUIRI",
+      "dataNascimento": "28/01/1996",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/cfb63aec-924a-415e-b505-784b7c78bd63"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/6812dce8-3948-4e2e-baac-a19f4183ba86",
+      "nomeCandidato": "",
+      "nomeCivil": "MARCIO LUIZ ALVINO DE SOUZA",
+      "dataNascimento": "14/06/1969",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/26becfdf-0f4d-40ae-81f9-66dbd1581e8a"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/1b44a7c3-a396-4cda-9783-4e3a29701c9a",
+      "nomeCandidato": "",
+      "nomeCivil": "KATIA DA SILVA SASTRE",
+      "dataNascimento": "04/04/1976",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/31b2988d-cfeb-48ec-9133-c5bfb4a8dd16"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/043384d3-0d0f-4e75-8a58-40f9eeeb7bd9",
+      "nomeCandidato": "",
+      "nomeCivil": "BRUNA DIAS FURLAN",
+      "dataNascimento": "28/04/1983",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/afb5c53a-7d0d-4bfe-887a-895f54c018bd"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/4b54cb9b-8a05-4f55-aae9-c0d05e1a40d4",
+      "nomeCandidato": "",
+      "nomeCivil": "RICARDO IZAR JUNIOR",
+      "dataNascimento": "01/08/1968",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/ca3b34c6-8d28-4e57-b91d-a68a3a312d74"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/9fa758c5-73b5-4ec1-b29f-d60288f67806",
+      "nomeCandidato": "",
+      "nomeCivil": "ADRIANO ELI CORREA",
+      "dataNascimento": "13/01/1976",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/c5b32734-018e-4cb2-9938-016640728da7"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/b61c7e21-7441-40db-a1d9-916187b07f2a",
+      "nomeCandidato": "",
+      "nomeCivil": "LUIZ PAULO TEIXEIRA FERREIRA",
+      "dataNascimento": "06/05/1961",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/b475359f-6fec-49c6-9654-89392fb7226c"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/0fa2107d-3d64-4072-aba0-5f30ba2dbdc0",
+      "nomeCandidato": "",
+      "nomeCivil": "SAMUEL MOREIRA DA SILVA JUNIOR",
+      "dataNascimento": "09/02/1963",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/bf9bfb5d-b6a2-4ceb-8c20-bcb3624307fe"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/32b7704b-7ccb-42a4-9864-0d10fad81f98",
+      "nomeCandidato": "MIGUEL LOMBARDI",
+      "nomeCivil": "MIGUEL LOMBARDI",
+      "dataNascimento": "29/01/1964",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/c7664e63-c746-4e93-8ee7-975a18e6d02b"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/78c901ab-6c2e-4053-814d-09544a38d504",
+      "nomeCandidato": "",
+      "nomeCivil": "RENATA HELLMEISTER DE ABREU",
+      "dataNascimento": "15/04/1982",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/72951f93-f2ea-4e0c-bdce-f71a180a21c4"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/bb4a136b-3c9c-4d74-b499-b13bdab09b2d",
+      "nomeCandidato": "",
+      "nomeCivil": "CARLA ZAMBELLI SALGADO",
+      "dataNascimento": "03/07/1980",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/f94ef0b8-32e1-47a0-87bb-f15f91b6ef82"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/d93a8634-34ef-4a02-a7c5-9008904892dc",
+      "nomeCandidato": "",
+      "nomeCivil": "JOICE CRISTINA HASSELMANN",
+      "dataNascimento": "29/01/1978",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/141c3eec-fe43-46be-b091-b1a1e5fc4ba9"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/57151b33-0d4c-454f-b850-92544693ba51",
+      "nomeCandidato": "",
+      "nomeCivil": "CARLOS ALBERTO ROLIM ZARATTINI",
+      "dataNascimento": "08/06/1959",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/4e9cf160-786d-4d70-a373-e51ab1c5deb5"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/6ad1a50b-c873-45f6-9ece-91faa48ec9d3",
+      "nomeCandidato": "",
+      "nomeCivil": "MARIA DO PARTO MENDES ROSAS",
+      "dataNascimento": "01/10/1965",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/3a27aaa5-7b26-4345-a20a-14272cdbc8f2"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/b85a5a9d-4e8e-4e62-ba33-5f219d113abc",
+      "nomeCandidato": "",
+      "nomeCivil": "MILTON VIEIRA PINTO",
+      "dataNascimento": "16/09/1962",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/8618bbbe-38f0-4661-8aa8-e40281a3c8e5"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/a93ba00c-3a83-4048-8126-442899532422",
+      "nomeCandidato": "",
+      "nomeCivil": "ORLANDO SILVA DE JESUS JUNIOR",
+      "dataNascimento": "27/05/1971",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/712ca817-8ab6-43e2-903d-03bca27b94a4"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/c87b238d-6fe4-4700-b8db-1e4f1dc077ab",
+      "nomeCandidato": "",
+      "nomeCivil": "CELSO UBIRAJARA RUSSOMANNO",
+      "dataNascimento": "20/08/1956",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/8875f937-33ad-4501-b299-bd1d9a529548"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/ef503c96-ed23-4521-ab4b-14185529a416",
+      "nomeCandidato": "",
+      "nomeCivil": "LUIZA ERUNDINA DE SOUSA",
+      "dataNascimento": "30/11/1934",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/2b203b5c-67b8-4524-b2d0-4f20d77526dc"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/60e2177d-d5ea-4843-8000-1b9bd7b49892",
+      "nomeCandidato": "",
+      "nomeCivil": "GUILHERME MUSSI FERREIRA",
+      "dataNascimento": "14/10/1982",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/944cdb2f-294a-462f-ba6a-59c2b8d81adc"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/30589215-cad6-4d7a-a118-8a31024d2c4e",
+      "nomeCandidato": "",
+      "nomeCivil": "MARA CRISTINA GABRILLI",
+      "dataNascimento": "28/09/1967",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/a8fd83bc-5beb-4342-8bcc-a1ce45a039cf"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/5956ec56-f9a7-4f1f-965c-45c12ae360cb",
+      "nomeCandidato": "",
+      "nomeCivil": "SAMIA DE SOUZA BOMFIM",
+      "dataNascimento": "22/08/1989",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/9dbff4c7-42e0-4c3a-b29c-45ae128349cf"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/09804d45-ca70-4624-84de-41dd1a77f98e",
+      "nomeCandidato": "",
+      "nomeCivil": "ALEXANDRE ROCHA SANTOS PADILHA",
+      "dataNascimento": "14/09/1971",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/44da3667-95ae-4074-b15c-8d819e030551"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/dadff5c3-add7-4643-b692-047807b1db56",
+      "nomeCandidato": "",
+      "nomeCivil": "GUILHERME MURARO DERRITE",
+      "dataNascimento": "10/10/1984",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/09b1fbc5-abed-4f1c-a62a-d7e430f61485"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/ac885fde-b88d-46ab-9a01-c45f16ee1a8a",
+      "nomeCandidato": "",
+      "nomeCivil": "ROSANA DE OLIVEIRA VALLE",
+      "dataNascimento": "08/05/1969",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/9cafb8e2-1079-4b63-aae5-ce188754ed9b"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/85c583a4-e9a7-4b33-a93b-98ee176b63a0",
+      "nomeCandidato": "",
+      "nomeCivil": "EDUARDO PEDROSA CURY",
+      "dataNascimento": "19/09/1963",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/913f3ba6-6366-41fd-8f5a-2176dd570998"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/7506cd0e-1ccf-40ec-b7a2-f8b3a06eea3e",
+      "nomeCandidato": "",
+      "nomeCivil": "JOSE GUILHERME NEGRAO PEIXOTO",
+      "dataNascimento": "13/11/1961",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/3fc76c71-c393-4e69-9e0d-80bdf6007976"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/9c6ffc2d-fd8d-43fc-be5f-5935ba501dd3",
+      "nomeCandidato": "",
+      "nomeCivil": "RODRIGO ANTONIO DE AGOSTINHO MENDONCA",
+      "dataNascimento": "12/12/1977",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/98c89f2b-82be-469b-a3eb-fb44339f2742"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/b314e162-fb67-4187-9281-706a07d89930",
+      "nomeCandidato": "",
+      "nomeCivil": "VINICIUS LAZZER POIT",
+      "dataNascimento": "31/01/1986",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/ab0e7f7c-c55f-4bb0-8094-077d3e1ad848"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/12109230-3b90-4870-b2b4-1ed5dade002b",
+      "nomeCandidato": "",
+      "nomeCivil": "JOSE AUGUSTO ROSA",
+      "dataNascimento": "04/10/1966",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/81ccace3-1659-4c66-983f-b31c8822620f"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/8d1e8528-34b8-4eae-bc7c-d0f6bd45ec3e",
+      "nomeCandidato": "",
+      "nomeCivil": "VINICIUS RAPOZO DE CARVALHO",
+      "dataNascimento": "07/01/1966",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/49591779-7c49-4d7e-aff2-7327f62d1217"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/e93bfe95-aeda-4f08-a337-65d6b2635bc6",
+      "nomeCandidato": "",
+      "nomeCivil": "MARCO AURELIO BERTAIOLLI",
+      "dataNascimento": "30/04/1968",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/0475b82b-83c2-439a-9ff0-81e91e20f17b"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/7512a9bd-d10e-47d0-abbd-542cd4d120a5",
+      "nomeCandidato": "",
+      "nomeCivil": "ADRIANA MIGUEL VENTURA",
+      "dataNascimento": "06/03/1969",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/9d417cee-2e31-499f-82e5-90c7af2d5609"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/992be780-6982-4912-9534-509966490401",
+      "nomeCandidato": "",
+      "nomeCivil": "TABATA CLAUDIA AMARAL DE PONTES",
+      "dataNascimento": "14/11/1993",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/8f30b983-811a-4966-85dc-0b125303e630"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/e8fccb5e-7e21-455e-a6a2-b400cb91604e",
+      "nomeCandidato": "VITOR LIPPI",
+      "nomeCivil": "VITOR LIPPI",
+      "dataNascimento": "18/05/1959",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/f61eb1a4-fdd5-4e89-8d53-884436a0d12e"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/ae52d6a7-19c6-4d5d-900d-0cc23b0f8ffe",
+      "nomeCandidato": "",
+      "nomeCivil": "SERGIO OLIMPIO GOMES",
+      "dataNascimento": "20/03/1962",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/41316545-31fb-48ef-9228-d679eb27290c"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/2443eb3a-eafa-432b-bf85-c6bc5a4c0780",
+      "nomeCandidato": "",
+      "nomeCivil": "ROBERTO SEBASTIAO PETERNELLI JUNIOR",
+      "dataNascimento": "06/08/1954",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/03b82503-8e05-42ff-9552-6a5f2f731ebc"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/ea611754-0164-46d8-94a3-9cfd07bae4b1",
+      "nomeCandidato": "PAULO PEREIRA DA SILVA",
+      "nomeCivil": "PAULO PEREIRA DA SILVA",
+      "dataNascimento": "25/02/1956",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/daa70fad-cd8b-4026-b1e5-3c6c4af7bcd9"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/60dbc4a7-ee81-4727-903d-21eb02ffdc2e",
+      "nomeCandidato": "",
+      "nomeCivil": "EDUARDO NANTES BOLSONARO",
+      "dataNascimento": "10/07/1984",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/3407f0bf-804d-40a6-ac2c-299dc33121ee"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/f27e8756-5a6e-4fd7-b3b8-657ded578079",
+      "nomeCandidato": "",
+      "nomeCivil": "RUI GOETHE DA COSTA FALCAO",
+      "dataNascimento": "26/11/1943",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/dffabfff-991a-45fd-b3b2-cbe1fc59fa63"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/dade00d1-6ac0-4a45-9fb2-8fdf0262f907",
+      "nomeCandidato": "",
+      "nomeCivil": "MARCIO TADEU ANHAIA DE LEMOS",
+      "dataNascimento": "30/09/1965",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/39281896-f9ef-4765-8173-0dbe423a0a38"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/4ecbf6b8-428f-4d73-a407-69ea6326cb56",
+      "nomeCandidato": "",
+      "nomeCivil": "DAVID BEZERRA RIBEIRO SOARES",
+      "dataNascimento": "21/12/1973",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/1c18e445-b00e-482d-8d84-8f04d6e0aeb3"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/821564e8-ded3-47ed-bf2e-5a759e9fba2f",
+      "nomeCandidato": "",
+      "nomeCivil": "ROBERTO ALVES DE LUCENA",
+      "dataNascimento": "18/04/1966",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/1df0db90-ddc2-41f9-8a1d-62fa3efe421c"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/f2571ec6-0f8f-430f-88de-2a8734646ef0",
+      "nomeCandidato": "",
+      "nomeCivil": "CARLOS HENRIQUE FOCESI SAMPAIO",
+      "dataNascimento": "31/03/1963",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/8fe2dd5f-8f89-4785-b8c6-5698d43adf08"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/839fb3fc-cdbd-420a-b8d8-976f9f3914e9",
+      "nomeCandidato": "",
+      "nomeCivil": "MARCO ANTONIO FELICIANO",
+      "dataNascimento": "12/10/1972",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/66417860-f1dc-4be0-abf7-ae4b0180b947"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/67e83361-ffa1-4f5f-a0c2-b782a1b9b0d2",
+      "nomeCandidato": "",
+      "nomeCivil": "PAULO SERGIO ABOU ANNI",
+      "dataNascimento": "06/11/1966",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/b650ca3b-9739-46d1-8b4e-2350b68eb368"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/598f1d53-6c58-49dc-bd0e-8d44d6cf4a28",
+      "nomeCandidato": "",
+      "nomeCivil": "FAUSTO RUY PINATO",
+      "dataNascimento": "01/06/1977",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/9d756983-4cff-446f-8d4e-550197886162"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/73458a85-0dfc-4d99-bf33-d9405c47ae23",
+      "nomeCandidato": "",
+      "nomeCivil": "LUIZ CARLOS MOTTA",
+      "dataNascimento": "24/04/1959",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/7926cb6a-685f-4dc6-846c-0373dc3f4ec3"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/a0aa8fb6-849d-43e9-8835-de9be9879219",
+      "nomeCandidato": "",
+      "nomeCivil": "ALEXIS JOSEPH STEVERLYNCK FONTEYNE",
+      "dataNascimento": "19/08/1967",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/f36d8119-9d52-47d3-9881-ef40273e0515"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/0af0c826-412e-4997-91af-5ff9a7671edb",
+      "nomeCandidato": "",
+      "nomeCivil": "MARIA AUXILIADORA SEABRA REZENDE",
+      "dataNascimento": "01/10/1964",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/27e2a436-4ff1-4706-8d7a-5356fc359397"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/eef45957-bbfa-4295-9269-62381f911534",
+      "nomeCandidato": "",
+      "nomeCivil": "TIAGO BRAGA PEREIRA",
+      "dataNascimento": "04/08/1988",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/ddf6a0a5-dc2f-4186-abff-dca8d43c4b20"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/104b7345-fd9f-428d-bf33-81df0412fab3",
+      "nomeCandidato": "",
+      "nomeCivil": "OSIRES RODRIGUES DAMASO",
+      "dataNascimento": "16/04/1963",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/d6632505-f1fb-4c9f-a24c-19c0254e1c29"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/c5aa531f-a6a1-4ced-af5e-c1150942a10d",
+      "nomeCandidato": "",
+      "nomeCivil": "ELI DIAS BORGES",
+      "dataNascimento": "01/09/1960",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/43fda944-577f-4436-90c7-06d2faa416ba"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/e84a952b-16c3-44c1-87bc-45f21cd78056",
+      "nomeCandidato": "",
+      "nomeCivil": "CARLOS EDUARDO TORRES GOMES",
+      "dataNascimento": "28/04/1966",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/6607a4cb-332f-46ab-aa9a-f10e30302db4"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/490e4100-1cf9-4ac3-a8cd-e7c4f733a0c2",
+      "nomeCandidato": "",
+      "nomeCivil": "VICENTE ALVES DE OLIVEIRA JUNIOR",
+      "dataNascimento": "11/04/1985",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/c75c2ecc-8e7a-4444-8734-c6e6141fb095"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/52992f54-92b2-45d2-94bc-a01a8b265a8c",
+      "nomeCandidato": "",
+      "nomeCivil": "IRAJA SILVESTRE FILHO",
+      "dataNascimento": "03/02/1983",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/3d057b82-d447-4e45-81ab-d73cba8a9127"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/ebec6ff5-8e6a-44f3-b210-21ebaed20838",
+      "nomeCandidato": "",
+      "nomeCivil": "DULCE FERREIRA PAGANI MIRANDA",
+      "dataNascimento": "15/12/1963",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/3d813892-5802-41e6-988b-f8b135d67091"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/308e23f1-776d-495e-9f98-69cd12fa5dfb",
+      "nomeCandidato": "",
+      "nomeCivil": "CARLOS HENRIQUE AMORIM",
+      "dataNascimento": "21/04/1961",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/490bb736-1061-4c19-9d78-3790f107eee9"
+    },
+    {
+      "url": "http://www.seliganapolitica.org/resource/9da3ac9a-f842-44dd-9ffc-c89640812782",
+      "nomeCandidato": "",
+      "nomeCivil": "CELIO ALVES DE MOURA",
+      "dataNascimento": "13/08/1953",
+      "urlPartido": "",
+      "hasPost": "http://www.w3.org/ns/org#Post/c565f5fb-140d-43bd-a328-798146199beb"
+    }
+  ]
+}
