@@ -3,6 +3,7 @@ from rdflib import URIRef, Namespace, RDF, Graph
 
 ONTOLOGY_PATH = './ontology/agent-180422.owl'
 NAMESPACE = Namespace('http://www.w3.org/ns/org#')
+POST_IRI_PREFIX ='http://www.w3.org/ns/org#Post'
 FEATURE_IRI_PREFIX = 'http://www.geonames.org/ontology#Feature'
 SNLP_IRI_PREFIX = 'http://www.seliganapolitica.org/resource'
 
@@ -30,10 +31,9 @@ class Agent:
     def new_post(self, elected, uri):
         jurisdiction = elected.electoral_unity
 
-        post_uri = URIRef('{prefix}/{uuid}'.format(prefix=SNLP_IRI_PREFIX, uuid=uri))
+        post_uri = URIRef('{prefix}/{uuid}'.format(prefix=POST_IRI_PREFIX, uuid=uri))
         jurisdiction_uri = URIRef('{prefix}/{initials}'.format(prefix=FEATURE_IRI_PREFIX, initials=jurisdiction))
 
         self.graph.add((post_uri, RDF.type, NAMESPACE['Post']))
         self.graph.add((post_uri, NAMESPACE['hasJurisdiction'], jurisdiction_uri))
-        # self.graph.add(post_uri, NAMESPACE['held by'], elected)
         self.save()

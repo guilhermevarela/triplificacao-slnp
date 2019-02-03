@@ -1,0 +1,11 @@
+JURISDICTION_PROPORTION = {'AC': 9, 'AL': 10, 'AM': 8, 'AP': 8, 'BA': 39, 'CE': 22, 'DF': 8, 'ES': 11,
+                           'GO': 17, 'MA': 20, 'MG': 52, 'MS': 9, 'MT': 8, 'PA': 17, 'PB': 13, 'PE': 25,
+                           'PI': 10, 'PR': 30, 'RJ': 46, 'RN': 8, 'RO': 8, 'RR': 8, 'RS': 32, 'SC': 16,
+                           'SE': 8, 'SP': 70, 'TO': 8}
+
+
+# 81 senadores
+# 513 deputados federais
+
+Segundo o site da câmara, temos 520 deputados federais em exercício, pesquisando estado por estado:
+http://www2.camara.leg.br/deputados/pesquisa/layouts_deputados_resultado_pesquisa?nome=&Partido=QQ&UF=TO&SX=QQ&Legislatura=56&condic=QQ&ordem=nome&forma=lista&Pesquisa=Buscar

@@ -1,17 +1,12 @@
 # -*- coding:utf-8 -*-
 import click
 
-from .classes import ElectionResults, Identity, Agent, generate_uri
+from .classes import ElectionResults, Identity, Agent, JsonMapper
+from .helpers import generate_uri
 
-# 4. Criar um JSON com uma entrada para politico, incluindo a URL dele, o nome do candidato, \
-#    o nome civil, a data de nascimento, a url do partido (ORG),   e de um  POST que vc criou para o estado dele (\
-#    usar um diferente para cada eleito).
+
 # 5. A partir deste JSON, gerar um mapeamento no KARMA (https://usc-isi-i2.github.io/karma/) \
 #    para gerar o RDF conforme a ontologia AGENTS que está no diretório.
-
-
-# 81 senadores
-# 513 deputados federais
 
 
 @click.group()
@@ -24,17 +19,25 @@ def import_all_elected():
     ontology = Agent()
     identity = Identity()
     election_results = ElectionResults()
-    elected_2018 = election_results.get_all_elected()
+    json_mapper = JsonMapper()
 
+    elected_2018 = election_results.get_all_elected()
     ontology.add_all_jurisdictions()
 
     for elected in elected_2018:
-        uri = generate_uri()
-        ontology.new_post(elected, uri)
+        post_uri = generate_uri()
+        ontology.new_post(elected, post_uri)
 
-        if not identity.find(elected.name):
-            identity.update_data(uri, elected)
+        previous_elected_congressman = identity.find(elected.name)
+        if previous_elected_congressman:
+            json_mapper.generate_resource(elected, previous_elected_congressman.resource_uri, post_uri, previous_elected_congressman.name)
 
+        else:
+            elected_uri = generate_uri()
+            json_mapper.generate_resource(elected, elected_uri, post_uri, '')
+            identity.update_data(elected_uri, elected)
+
+    json_mapper.save_file()
 
 cli.add_command(import_all_elected)
 
