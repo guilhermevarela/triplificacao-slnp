@@ -29,14 +29,14 @@ class JsonMapper:
             "hasVersion": VERSION
         }
 
-    def generate_resource(self, data, uuid, post_uri, candidate_name=''):
+    def generate_resource(self, resource):
         self.body_data.append({
-            'url': '{prefix}/{uuid}'.format(prefix=SNLP_IRI_PREFIX, uuid=uuid),
-            'nomeCandidato': candidate_name,
-            'nomeCivil': data.name,
-            'dataNascimento': data.birth_date,
-            'urlPartido': '',
-            'hasPost': '{prefix}/{uuid}'.format(prefix=POST_IRI_PREFIX, uuid=post_uri),
+            'url': resource.url,
+            'nomeCandidato': resource.candidate_name,
+            'nomeCivil': resource.civil_name,
+            'dataNascimento': resource.birth_date,
+            'urlPartido': resource.party_url,
+            'hasPost': resource.hasPost,
         })
 
     def save_file(self):

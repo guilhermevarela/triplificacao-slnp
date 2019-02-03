@@ -6,6 +6,5 @@ class Senator:
         self.name = data.get('sen:NomeCompletoParlamentar', '')
         self.parlamentar_name = data.get('sen:NomeParlamentar', '')
 
-
     def __repr__(self):
         return "{name}".format(name=self.name)

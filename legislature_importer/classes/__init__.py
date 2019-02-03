@@ -5,3 +5,5 @@ from .identity import Identity
 from .senator import Senator
 from .agent import Agent
 from .json_mapper import JsonMapper
+from .party_list import PartyList
+from .resource import Resource
