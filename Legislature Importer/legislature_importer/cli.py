@@ -6,9 +6,10 @@ from .helpers import generate_uri
 
 
 ## TODO:
+#  Documentação
 #  Refactoring
 #  Testes
-#  Documentação
+#  Testar ontologia aplicada
 
 
 @click.group()
