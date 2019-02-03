@@ -1,4 +1,5 @@
 # -*- coding:utf-8 -*-
+import io
 import json
 
 VERSION = '0.0.1'
@@ -43,5 +44,5 @@ class JsonMapper:
         document['Info'] = self.header
         document['Resource'] = self.body_data
 
-        with open(LEGISLATURE_FILE, 'w') as out_file:
-            json.dump(document, out_file)
+        with io.open(LEGISLATURE_FILE, 'w', encoding='utf8') as out_file:
+            json.dump(document, out_file, ensure_ascii=False)

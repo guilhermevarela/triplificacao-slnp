@@ -6,8 +6,8 @@ class Deputy:
         self.death_date = data.get('cam:dataFalecimento', '')
         self.birth_date = data.get('cam:dataNascimento', '')
         self.id = data.get('cam:ideCadastro', '')
-        self.civil_name = data.get('cam:nomeCivil', '')
-        self.name = data.get('cam:nomeParlamentarAtual', '')
+        self.name = data.get('cam:nomeCivil', '')
+        self.parlamentar_name = data.get('cam:nomeParlamentarAtual', '')
 
     def __repr__(self):
-        return "{civil_name}".format(civil_name=self.civil_name)
+        return "{name}".format(name=self.name)
