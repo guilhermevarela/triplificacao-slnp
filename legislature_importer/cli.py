@@ -6,7 +6,6 @@ from .helpers import generate_uri
 
 
 ## TODO:
-#  Mapeamento no Karma
 #  Refactoring
 #  Testes
 #  Documentação

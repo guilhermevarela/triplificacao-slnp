@@ -3,7 +3,7 @@ import io
 import json
 
 VERSION = '0.0.1'
-LEGISLATURE_FILE = 'files/legislature_56.json'
+LEGISLATURE_FILE = 'generated-data/legislature_56.json'
 POST_IRI_PREFIX = 'http://www.w3.org/ns/org#Post'
 SNLP_IRI_PREFIX = 'http://www.seliganapolitica.org/resource'
 

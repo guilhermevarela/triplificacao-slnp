@@ -6,7 +6,7 @@ from .deputy import Deputy
 from .senator import Senator
 
 
-IDENTITY_FILE = './files/identity_final.csv'
+IDENTITY_FILE = './generated-data/identity_final.csv'
 
 
 class Identity:
@@ -14,7 +14,7 @@ class Identity:
         self.deputies = []
         self.senators = []
 
-        with open('./files/identity.csv', 'rt') as csvfile:
+        with open('./initial-data/identity.csv', 'rt') as csvfile:
             spamreader = csv.DictReader(csvfile, delimiter=';')
             for row in spamreader:
                 if row.get('cam:ideCadastro'):

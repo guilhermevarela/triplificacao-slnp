@@ -4,7 +4,7 @@ import csv
 from .elected import Elected
 from .agent import  Agent
 
-RESULTS_FILE = './files/candidatos+resultados+2018.csv'
+RESULTS_FILE = './initial-data/candidatos+resultados+2018.csv'
 
 
 class ElectionResults:
