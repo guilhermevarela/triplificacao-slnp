@@ -53,6 +53,7 @@ def import_all_elected():
 
     json_mapper.save_file()
 
+
 cli.add_command(import_all_elected)
 
 
