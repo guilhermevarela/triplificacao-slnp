@@ -1,3 +1,6 @@
 Click==7.0
+pytest==4.2.0
 python-dateutil==2.7.5
+rdflib==4.2.2
 requests==2.21.0
+requests-mock==1.5.2

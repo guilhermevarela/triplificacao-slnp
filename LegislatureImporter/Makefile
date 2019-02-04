@@ -24,3 +24,7 @@ run:
 ## Instala as dependêncis do projeto
 setup:
 	pip install -r requirements.txt
+
+## Executa a suite de testes
+test:
+	python -m pytest

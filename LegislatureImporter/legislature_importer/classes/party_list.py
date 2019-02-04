@@ -29,13 +29,16 @@ class PartyList:
 
     def get_party(self, initials):
         """
-        Look for a political party based on his initials, if not found in memory, request the original data in
+        Look for a political party based on his initials, if not found in memory, request the original data in Dados Abertos
+        da Câmara API
         :param initials:
         :return:
         """
+        # Look for political party in self.parties list
         party = self.find(initials)
 
         if not party:
+            # Request the data in Dados Abertos API, if initials have spaces it must be removed
             r = requests.get(DADOS_ABERTOS_PATH.format(initials=initials).replace(" ", ""))
             if r.status_code == requests.codes.ok:
                 data = r.json().get('dados', [])[0]
@@ -45,4 +48,7 @@ class PartyList:
 
 
     def get_all_parties(self):
+        """
+        :return: all political parties found in memory
+        """
         return self.parties
