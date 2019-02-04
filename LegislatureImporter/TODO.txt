@@ -1,0 +1,5 @@
+- Membership gerada no etl só com start_date
+- Post com end_date
+- Alteração no código variável 2018, hasPost (variável de Resource)
+- Não tenho que alterar o .owl, gerar num arquivo separado
+- Provenance
