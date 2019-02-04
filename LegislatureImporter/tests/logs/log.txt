@@ -1,0 +1,15 @@
+=========================================================================================== test session starts ============================================================================================
+platform darwin -- Python 3.7.2, pytest-4.2.0, py-1.7.0, pluggy-0.8.1
+rootdir: /Users/rebecabordini/Documents/Mestrado/Knowledge Graphs/Projeto Final/triplificacao-slnp/LegislatureImporter, inifile:
+plugins: requests-mock-1.5.2, metadata-1.8.0, html-1.20.0
+collected 10 items
+
+tests/classes/test_deputy.py .                                                                                                                                                                       [ 10%]
+tests/classes/test_elected.py .                                                                                                                                                                      [ 20%]
+tests/classes/test_json_mapper.py .                                                                                                                                                                  [ 30%]
+tests/classes/test_party.py .                                                                                                                                                                        [ 40%]
+tests/classes/test_party_list.py ...                                                                                                                                                                 [ 70%]
+tests/classes/test_resource.py ..                                                                                                                                                                    [ 90%]
+tests/classes/test_senator.py .                                                                                                                                                                      [100%]
+
+------------------------------ generated html file: /Users/rebecabordini/Documents/Mestrado/Knowledge Graphs/Projeto Final/triplificacao-slnp/LegislatureImporter/report.html ------------------------------

@@ -11,6 +11,9 @@
 - [[legislature-importer]](https://github.com/rebecabordini/triplificacao-slnp/tree/master/Legislature%20Importer/legislature_importer) Pasta do módulo do projeto
 - [[ontology]](https://github.com/rebecabordini/triplificacao-slnp/tree/master/Legislature%20Importer/ontology) Contém a ontologia original 
 	* [[agent-180422.owl]](https://github.com/rebecabordini/triplificacao-slnp/blob/master/Legislature%20Importer/ontology/agent-180422.owl) Ontologia **POLARE** original no formato *.owl*. Obs.: no momento em que o projeto for executado esse arquivo será alterado para conter as instâncias da classe *Post* geradas automaticamente pelo [legislature_importer](https://github.com/rebecabordini/triplificacao-slnp/tree/master/Legislature%20Importer/legislature_importer).
+- [[tests]](https://github.com/rebecabordini/triplificacao-slnp/tree/master/LegislatureImporter/tests) Contém os arquivos de teste do projeto
+	* [[logs]](https://github.com/rebecabordini/triplificacao-slnp/blob/master/Legislature%20Importer/tests/logs) Contém o arquivo de log da última execução dos testes
+- [[assets]](https://github.com/rebecabordini/triplificacao-slnp/tree/master/LegislatureImporter/assets) Contém os assets necessários para o reltório da execução dos testes
 
 
 ## Conjunto de passos a ser executado
@@ -39,3 +42,6 @@ make setup
 
 Obs.: O projeto demora a executar, a biblioteca RDFLib (utilizada 
 para criar os *Posts* dinamicamente) tem um custo muito alto de I/O.
+
+## Rodando os testes
+`make test` 
