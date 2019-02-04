@@ -27,7 +27,7 @@ Obs.: Esse JSON é utilizado a posteriori para gerar um mapeamento na ferramenta
 	
 `python3`
 
-## Instalação do Projeto
+## Instalação do projeto
 ```
 git clone git@github.com:rebecabordini/triplificacao-slnp.git
 cd triplificacao-slnp/
