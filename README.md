@@ -3,7 +3,9 @@ Projeto de triplificação dos dados da Câmara dos Deputados e do Senado para a
 
 ## Arquitetura do projeto
 
-![alt text](https://github.com/rebecabordini/triplificacao-slnp/tree/master/arquitetura.png "Arquitetura do projeto")
+![Arquitetura do projeto](https://raw.githubusercontent.com/rebecabordini/triplificacao-slnp/master/arquitetura.png)
+
+
 ## Organização do projeto
 
 [[Karma]](https://github.com/rebecabordini/triplificacao-slnp/tree/master/Karma) Contém os arquivos referentes
