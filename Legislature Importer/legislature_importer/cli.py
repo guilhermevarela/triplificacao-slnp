@@ -4,13 +4,7 @@ import click
 from .classes import ElectionResults, Identity, Agent, JsonMapper, PartyList, Resource
 from .helpers import generate_uri
 
-
-## TODO:
-#  Documentação
-#  Refactoring
-#  Testes
-#  Testar ontologia aplicada
-
+__author__ = 'Rebeca Bordini <bordini.rebeca@gmail.com>'
 
 @click.group()
 def cli():

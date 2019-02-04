@@ -1,4 +1,11 @@
 # -*- coding:utf-8 -*-
+r"""Party objects
+
+This module provides a object to represent Parties.
+
+"""
+
+__author__ = 'Rebeca Bordini <bordini.rebeca@gmail.com>'
 
 class Party:
     def __init__(self, data):

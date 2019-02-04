@@ -7,3 +7,5 @@ from .agent import Agent
 from .json_mapper import JsonMapper
 from .party_list import PartyList
 from .resource import Resource
+
+__author__ = 'Rebeca Bordini <bordini.rebeca@gmail.com>'

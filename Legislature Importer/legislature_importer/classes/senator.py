@@ -1,4 +1,12 @@
 # -*- coding:utf-8 -*-
+r"""Senator objects
+
+This module provides a object to represent Senators.
+
+"""
+
+__author__ = 'Rebeca Bordini <bordini.rebeca@gmail.com>'
+
 class Senator:
 
     def __init__(self, data):

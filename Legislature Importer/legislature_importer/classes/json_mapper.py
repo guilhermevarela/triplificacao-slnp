@@ -2,6 +2,8 @@
 import io
 import json
 
+__author__ = 'Rebeca Bordini <bordini.rebeca@gmail.com>'
+
 VERSION = '0.0.1'
 LEGISLATURE_FILE = 'generated-data/legislature_56.json'
 POST_IRI_PREFIX = 'http://www.w3.org/ns/org#Post'

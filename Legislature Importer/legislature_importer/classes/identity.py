@@ -5,6 +5,7 @@ from dateutil.parser import parse
 from .deputy import Deputy
 from .senator import Senator
 
+__author__ = 'Rebeca Bordini <bordini.rebeca@gmail.com>'
 
 IDENTITY_FILE = './generated-data/identity_final.csv'
 

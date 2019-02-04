@@ -1,5 +1,20 @@
 # -*- coding:utf-8 -*-
+r"""Agent objects
+
+This module provides a object according to an ontology specified in ONTOLOGY_PATH. In this ontology you can:
+
+    1. Add all jurisdictions based on JURISDICTION_LIST content, in the context of this usage all jurisdictions belong to
+    electoral unities in Brasil.
+
+    2. Add specific jurisdiction based on jurisdiction name.
+
+    3. Add a post based on an existing jurisdiction.
+
+"""
+
 from rdflib import URIRef, Namespace, RDF, Graph
+
+__author__ = 'Rebeca Bordini <bordini.rebeca@gmail.com>'
 
 ONTOLOGY_PATH = './ontology/agent-180422.owl'
 NAMESPACE = Namespace('http://www.w3.org/ns/org#')
@@ -20,15 +35,32 @@ class Agent:
         self.graph.serialize(ONTOLOGY_PATH, format='n3')
 
     def add_all_jurisdictions(self):
+        """
+            Add all jurisdictions based on JURISDICTION_LIST content, in the context of this usage all jurisdictions belong to
+            electoral unities in Brasil.
+        """
         for jurisdiction in JURISDICTION_LIST:
             self.new_jurisdiction(jurisdiction)
 
     def new_jurisdiction(self, jurisdiction):
+        """
+        Add a jurisdiction instance in ontology in the following form: http://www.geonames.org/ontology#Feature/:param
+
+        :param jurisdiction:
+
+        """
         jurisdiction_uri = URIRef('{prefix}/{initials}'.format(prefix=FEATURE_IRI_PREFIX, initials=jurisdiction))
         self.graph.add((jurisdiction_uri, RDF.type, NAMESPACE['geonames:Feature']))
         self.save()
 
     def new_post(self, elected, uri):
+        """
+        Add a post based on an existing jurisdiction :param.electoral_unity.
+
+        :param elected: Instance of Elected class
+        :param uri: An uuid
+        """
+
         jurisdiction = elected.electoral_unity
 
         post_uri = URIRef('{prefix}/{uuid}'.format(prefix=POST_IRI_PREFIX, uuid=uri))

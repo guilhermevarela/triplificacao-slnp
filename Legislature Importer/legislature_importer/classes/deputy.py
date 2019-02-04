@@ -1,4 +1,12 @@
 # -*- coding:utf-8 -*-
+r"""Deputy objects
+
+This module provides a object to represent Deputies.
+
+"""
+
+__author__ = 'Rebeca Bordini <bordini.rebeca@gmail.com>'
+
 class Deputy:
 
     def __init__(self, data):

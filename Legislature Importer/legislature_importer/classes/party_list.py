@@ -3,6 +3,8 @@ import requests
 
 from .party import Party
 
+__author__ = 'Rebeca Bordini <bordini.rebeca@gmail.com>'
+
 DADOS_ABERTOS_PATH = 'https://dadosabertos.camara.leg.br/api/v2/partidos?sigla={initials}&sigla=&ordem=ASC&ordenarPor=sigla'
 
 class PartyList:

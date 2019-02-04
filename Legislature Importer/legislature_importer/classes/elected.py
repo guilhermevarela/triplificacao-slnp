@@ -1,4 +1,13 @@
 # -*- coding:utf-8 -*-
+r"""Elected objects
+
+This module provides a object to represent Elected people.
+
+"""
+
+
+__author__ = 'Rebeca Bordini <bordini.rebeca@gmail.com>'
+
 class Elected:
 
     def __init__(self, data):
