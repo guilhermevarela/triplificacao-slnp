@@ -40,8 +40,5 @@ make setup
 ## Executando o projeto
 `make run` 
 
-Obs.: O projeto demora a executar, a biblioteca RDFLib (utilizada 
-para criar os *Posts* dinamicamente) tem um custo muito alto de I/O.
-
 ## Rodando os testes
 `make test` 
