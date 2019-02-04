@@ -1,7 +1,10 @@
 # Triplificação Se Liga na Política
 Projeto de triplificação dos dados da Câmara dos Deputados e do Senado para a Legislatura 56 (Eleições 2018).
 
-## Organização do Projeto
+## Arquitetura do projeto
+
+![alt text](https://github.com/rebecabordini/triplificacao-slnp/tree/master/arquitetura.png "Arquitetura do projeto")
+## Organização do projeto
 
 [[Karma]](https://github.com/rebecabordini/triplificacao-slnp/tree/master/Karma) Contém os arquivos referentes
 ao processo de mapeamento da ferramenta [Karma](https://usc-isi-i2.github.io/karma/). Dentro dessa pasta, encontram-se dois arquivos:
