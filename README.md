@@ -21,3 +21,7 @@ Consiste no resultado da execução do processo em formato *.rdf*
 [[Congressman Importer]](https://github.com/rebecabordini/triplificacao-slnp/tree/master/CongressmanImporter)
 Contém um projeto Python responsável por filtrar entre todos os candidatos às eleições 2018, quais serão incluídos dentro da ontologia SLNP. A documentação relativa a ele encontra-se [aqui](https://github.com/rebecabordini/triplificacao-slnp/tree/master/CongressmanImporter/README.md).
 
+
+## Referências
+
+[[1]](https://arxiv.org/abs/1804.06015v1)  Laufer, C.; Schwabe, D.; Busson, A.; Ontologies for Representing Relations among Political Agents.
