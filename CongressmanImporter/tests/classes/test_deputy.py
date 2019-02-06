@@ -1,7 +1,7 @@
 # -*- coding:utf-8 -*-
 import logging
 
-from LegislatureImporter.legislature_importer import Deputy
+from CongressmanImporter.legislature_importer import Deputy
 
 __author__ = 'Rebeca Bordini <bordini.rebeca@gmail.com>'
 

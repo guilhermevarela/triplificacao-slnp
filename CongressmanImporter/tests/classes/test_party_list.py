@@ -1,7 +1,7 @@
 # -*- coding:utf-8 -*-
 import requests_mock
 
-from LegislatureImporter.legislature_importer import PartyList, Party
+from CongressmanImporter.legislature_importer import PartyList, Party
 
 __author__ = 'Rebeca Bordini <bordini.rebeca@gmail.com>'
 

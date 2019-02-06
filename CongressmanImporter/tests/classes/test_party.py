@@ -1,6 +1,6 @@
 # -*- coding:utf-8 -*-
 
-from LegislatureImporter.legislature_importer import Party
+from CongressmanImporter.legislature_importer import Party
 
 __author__ = 'Rebeca Bordini <bordini.rebeca@gmail.com>'
 

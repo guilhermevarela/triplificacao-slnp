@@ -18,6 +18,6 @@ Consiste na descrição do mapeamento executado dentro da ferramenta
 - [[ontology-applied.ttl]](https://github.com/rebecabordini/triplificacao-slnp/blob/master/Karma/ontology-applied.ttl)
 Consiste no resultado da execução do processo em formato *.rdf*
 
-[[Legislature Importer]](https://github.com/rebecabordini/triplificacao-slnp/tree/master/LegislatureImporter)
-Contém um projeto Python responsável por filtrar entre todos os candidatos às eleições 2018, quais serão incluídos dentro da ontologia SLNP. A documentação relativa a ele encontra-se [aqui](https://github.com/rebecabordini/triplificacao-slnp/tree/master/LegislatureImporter/README.md).
+[[Congressman Importer]](https://github.com/rebecabordini/triplificacao-slnp/tree/master/CongressmanImporter)
+Contém um projeto Python responsável por filtrar entre todos os candidatos às eleições 2018, quais serão incluídos dentro da ontologia SLNP. A documentação relativa a ele encontra-se [aqui](https://github.com/rebecabordini/triplificacao-slnp/tree/master/CongressmanImporter/README.md).
 
