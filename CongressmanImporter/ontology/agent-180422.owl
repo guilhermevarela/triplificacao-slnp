@@ -1364,8 +1364,14 @@ skos:prefLabel a owl:DatatypeProperty .
 <http://www.w3.org/ns/org#Post/a73cad94-1167-40e9-b4ef-0102d18ce89b> a org:Post ;
     org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SP> .
 
+<http://www.w3.org/ns/org#Post/a79bbe80-6746-4d45-a7e1-b131d87fca32> a org:Post ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/AC> .
+
 <http://www.w3.org/ns/org#Post/a7c9ca8f-c855-4f4d-8d2d-b537983e57fc> a org:Post ;
     org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SE> .
+
+<http://www.w3.org/ns/org#Post/a8201be4-a49f-4c02-ac26-f996c84e1dc7> a org:Post ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/AC> .
 
 <http://www.w3.org/ns/org#Post/a913c25d-3987-4c06-90c5-cf4d5736022c> a org:Post ;
     org:hasJurisdiction <http://www.geonames.org/ontology#Feature/AC> .
@@ -1509,6 +1515,9 @@ skos:prefLabel a owl:DatatypeProperty .
     org:hasJurisdiction <http://www.geonames.org/ontology#Feature/CE> .
 
 <http://www.w3.org/ns/org#Post/bb6c39ba-e4d4-4dfb-9d0a-4fe1e9a7777b> a org:Post ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/AC> .
+
+<http://www.w3.org/ns/org#Post/bb899689-5d1a-4159-ae23-67268bf710da> a org:Post ;
     org:hasJurisdiction <http://www.geonames.org/ontology#Feature/AC> .
 
 <http://www.w3.org/ns/org#Post/bbbbf200-6bcc-42b5-80ed-f224192a6e7e> a org:Post ;
@@ -1657,6 +1666,9 @@ skos:prefLabel a owl:DatatypeProperty .
 
 <http://www.w3.org/ns/org#Post/ccaea64d-8cf1-485b-a48f-b56de61e38c9> a org:Post ;
     org:hasJurisdiction <http://www.geonames.org/ontology#Feature/AL> .
+
+<http://www.w3.org/ns/org#Post/ccc26f19-7d38-44ca-a65c-375d69b4f947> a org:Post ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/AC> .
 
 <http://www.w3.org/ns/org#Post/cd3c798b-a792-41bc-acba-4dfe3c741ddc> a org:Post ;
     org:hasJurisdiction <http://www.geonames.org/ontology#Feature/MG> .
@@ -1982,6 +1994,9 @@ skos:prefLabel a owl:DatatypeProperty .
 <http://www.w3.org/ns/org#Post/f1a72137-f7f2-4f58-a921-886b04a0621b> a org:Post ;
     org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RS> .
 
+<http://www.w3.org/ns/org#Post/f1c5f4a6-61e5-419c-890b-db9248a31639> a org:Post ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/AC> .
+
 <http://www.w3.org/ns/org#Post/f2004d5c-1c89-494d-bf34-7bf6c2545faf> a org:Post ;
     org:hasJurisdiction <http://www.geonames.org/ontology#Feature/BA> .
 
@@ -2276,8 +2291,6 @@ foaf:Agent a owl:Class .
 
 <http://www.geonames.org/ontology#Feature/PA> a <http://www.w3.org/ns/org#geonames:Feature> .
 
-<http://www.geonames.org/ontology#Feature/AC> a <http://www.w3.org/ns/org#geonames:Feature> .
-
 <http://www.geonames.org/ontology#Feature/AM> a <http://www.w3.org/ns/org#geonames:Feature> .
 
 <http://www.geonames.org/ontology#Feature/AP> a <http://www.w3.org/ns/org#geonames:Feature> .
@@ -2285,6 +2298,8 @@ foaf:Agent a owl:Class .
 <http://www.geonames.org/ontology#Feature/MA> a <http://www.w3.org/ns/org#geonames:Feature> .
 
 <http://www.geonames.org/ontology#Feature/AL> a <http://www.w3.org/ns/org#geonames:Feature> .
+
+<http://www.geonames.org/ontology#Feature/AC> a <http://www.w3.org/ns/org#geonames:Feature> .
 
 <http://www.geonames.org/ontology#Feature/PE> a <http://www.w3.org/ns/org#geonames:Feature> .
 

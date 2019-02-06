@@ -1,6 +1,6 @@
 # -*- coding:utf-8 -*-
 
-from CongressmanImporter.legislature_importer import JsonMapper
+from CongressmanImporter.congressman_importer import JsonMapper
 
 __author__ = 'Rebeca Bordini <bordini.rebeca@gmail.com>'
 

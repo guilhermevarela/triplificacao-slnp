@@ -18,7 +18,7 @@ help:
 
 ## Importa os deputados e senadores eleitos
 run:
-	python -m legislature_importer.cli import-all-elected
+	python -m congressman_importer.cli import-all-elected
 
 
 ## Instala as dependêncis do projeto
