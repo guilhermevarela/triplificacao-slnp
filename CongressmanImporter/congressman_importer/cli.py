@@ -15,7 +15,7 @@ This module is responsible to call every step of the project, consisted of:
 import click
 
 from .classes import ElectionResults, Identity, Agent, JsonMapper, PartyList, Resource
-from .helpers import generate_uri
+from .helpers import generate_uuid
 
 __author__ = 'Rebeca Bordini <bordini.rebeca@gmail.com>'
 
@@ -38,18 +38,18 @@ def import_all_elected():
     party_list = PartyList()
 
     # Retrieve the elected Deputies and Senators
-    elected_2018 = election_results.get_all_elected()
+    elected_data = election_results.get_all_elected()
 
     # Add all 27 jurisdictions (federal unities)
     ontology.add_all_jurisdictions()
 
-    for elected in elected_2018:
+    for elected in elected_data:
 
         # Every Post created must have a unique identifier
-        post_uri = generate_uri()
+        post_uuid = generate_uuid()
 
         # Creates Post instance and saves in the ontology agent-180422.owl file
-        ontology.new_post(elected, post_uri)
+        ontology.new_post(elected, post_uuid)
 
         # Look if the current elected has been elected before (based on legislature 55)
         previous_elected_congressman = identity.find(elected.name)
@@ -57,20 +57,20 @@ def import_all_elected():
         # If the elected has been elected before, he has an unique identifier already
         if previous_elected_congressman:
             resource = Resource(elected=elected,
-                                elected_uri=previous_elected_congressman.resource_uri,
-                                post_uri=post_uri,
+                                elected_uuid=previous_elected_congressman.resource_uri,
+                                post_uuid=post_uuid,
                                 party_uri=party_list.get_party(elected.party_name).uri,
                                 candidate_name=previous_elected_congressman.parlamentar_name)
 
         # If the elected has never been elected before, is necessary to generate a new unique identifier and update identity file
         else:
-            elected_uri = generate_uri()
+            elected_uuid = generate_uuid()
             resource = Resource(elected=elected,
-                                elected_uri=elected_uri,
-                                post_uri=post_uri,
+                                elected_uuid=elected_uuid,
+                                post_uuid=post_uuid,
                                 party_uri=party_list.get_party(elected.party_name).uri,
                                 candidate_name='')
-            identity.update_data(elected_uri, elected)
+            identity.update_data(elected_uuid, elected)
 
         # Updates legislature_56.json file based on current elected
         json_mapper.generate_resource(resource)

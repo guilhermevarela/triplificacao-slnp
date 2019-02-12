@@ -1,7 +1,7 @@
 # -*- coding:utf-8 -*-
 r"""Party objects
 
-This module provides a object to represent Parties.
+This module provides an object to represent Parties.
 
 """
 

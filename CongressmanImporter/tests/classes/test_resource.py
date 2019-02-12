@@ -22,7 +22,7 @@ def test_resource_initialization_with_candidate_name():
     assert resource.civil_name == expected['civil_name']
     assert resource.birth_date == expected['birth_date']
     assert resource.party_url == expected['party_url']
-    assert resource.hasPost == expected['hasPost']
+    assert resource.postUri == expected['hasPost']
 
 def test_resouruce_initialization_without_candidate_name():
     elected = Elected({
@@ -43,4 +43,4 @@ def test_resouruce_initialization_without_candidate_name():
     assert resource.civil_name == expected['civil_name']
     assert resource.birth_date == expected['birth_date']
     assert resource.party_url == expected['party_url']
-    assert resource.hasPost == expected['hasPost']
+    assert resource.postUri == expected['hasPost']

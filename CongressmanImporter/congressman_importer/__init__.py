@@ -9,4 +9,4 @@ from .classes import PartyList
 from .classes import Party
 from .classes import Resource
 
-from .helpers import generate_uri
+from .helpers import generate_uuid
