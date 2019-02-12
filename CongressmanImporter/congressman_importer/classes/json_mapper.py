@@ -16,7 +16,7 @@ This module provides an abstraction to writing JSON files in the following signa
           "nomeCivil": "",
           "dataNascimento": "",
           "urlPartido": "",
-          "hasPost": ""
+          "postUri": ""
         }
       ]
     }
@@ -28,23 +28,14 @@ the method save_file must be called.
 import io
 import json
 
+from ..helpers import generate_timestamp
+
 __author__ = 'Rebeca Bordini <bordini.rebeca@gmail.com>'
 
 VERSION = '0.0.1'
 LEGISLATURE_FILE = 'generated-data/legislature_56.json'
 POST_IRI_PREFIX = 'http://www.w3.org/ns/org#Post'
 SNLP_IRI_PREFIX = 'http://www.seliganapolitica.org/resource'
-
-
-def generate_timestamp():
-    """
-    Return the actual time based on the format %d-%m-%Y %H:%M
-    """
-    import time
-    from datetime import datetime
-
-    timestamp = time.time()
-    return datetime.fromtimestamp(timestamp).strftime('%d-%m-%Y %H:%M')
 
 
 class JsonMapper:
@@ -73,7 +64,7 @@ class JsonMapper:
             'nomeCivil': resource.civil_name,
             'dataNascimento': resource.birth_date,
             'urlPartido': resource.party_url,
-            'hasPost': resource.hasPost,
+            'postUri': resource.postUri,
         })
 
     def save_file(self):

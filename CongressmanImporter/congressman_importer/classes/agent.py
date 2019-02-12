@@ -1,7 +1,7 @@
 # -*- coding:utf-8 -*-
 r"""Agent objects
 
-This module provides a object according to an ontology specified in ONTOLOGY_PATH. In this ontology you can:
+This module provides a object according to an ontology specified in T_BOX_PATH. In this ontology you can:
 
     1. Add all jurisdictions based on JURISDICTION_LIST content, in the context of this usage all jurisdictions belong to
     electoral unities in Brasil.
@@ -14,9 +14,13 @@ This module provides a object according to an ontology specified in ONTOLOGY_PAT
 
 from rdflib import URIRef, Namespace, RDF, Graph
 
+from ..helpers import generate_timestamp
+
 __author__ = 'Rebeca Bordini <bordini.rebeca@gmail.com>'
 
-ONTOLOGY_PATH = './ontology/agent-180422.owl'
+T_BOX_PATH = './ontology/agent-180422.owl'
+A_BOX_PATH = './generated-data/instances-{timestamp}.owl'.format(timestamp=generate_timestamp(string_format='%y%m%d'))
+
 NAMESPACE = Namespace('http://www.w3.org/ns/org#')
 POST_IRI_PREFIX ='http://www.w3.org/ns/org#Post'
 FEATURE_IRI_PREFIX = 'http://www.geonames.org/ontology#Feature'
@@ -29,10 +33,10 @@ JURISDICTION_LIST = ['AC', 'AL', 'AM', 'AP', 'BA', 'CE', 'DF', 'ES', 'GO', 'MA',
 class Agent:
     def __init__(self):
         self.graph = Graph()
-        self.graph.load(ONTOLOGY_PATH, format='n3')
+        self.graph.load(T_BOX_PATH, format='n3')
 
     def save(self):
-        self.graph.serialize(ONTOLOGY_PATH, format='n3')
+        self.graph.serialize(A_BOX_PATH, format='n3')
 
     def add_all_jurisdictions(self):
         """
@@ -51,7 +55,6 @@ class Agent:
         """
         jurisdiction_uri = URIRef('{prefix}/{initials}'.format(prefix=FEATURE_IRI_PREFIX, initials=jurisdiction))
         self.graph.add((jurisdiction_uri, RDF.type, NAMESPACE['geonames:Feature']))
-        self.save()
 
     def new_post(self, elected, uri):
         """
@@ -68,4 +71,3 @@ class Agent:
 
         self.graph.add((post_uri, RDF.type, NAMESPACE['Post']))
         self.graph.add((post_uri, NAMESPACE['hasJurisdiction'], jurisdiction_uri))
-        self.save()

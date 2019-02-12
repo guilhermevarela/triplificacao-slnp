@@ -48,7 +48,7 @@ def import_all_elected():
         # Every Post created must have a unique identifier
         post_uuid = generate_uuid()
 
-        # Creates Post instance and saves in the ontology agent-180422.owl file
+        # Creates Post instance
         ontology.new_post(elected, post_uuid)
 
         # Look if the current elected has been elected before (based on legislature 55)
@@ -77,6 +77,9 @@ def import_all_elected():
 
     # Saves legislature_56.json file
     json_mapper.save_file()
+
+    # Saves ontology A-Box file
+    ontology.save()
 
 
 cli.add_command(import_all_elected)
