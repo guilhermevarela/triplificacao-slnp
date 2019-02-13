@@ -1,9 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rel: <http://purl.org/vocab/relationship/> .
+@prefix ns: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix geo: <http://www.geonames.org/> .
+@prefix schema: <http://schema.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix gn: <http://www.geonames.org/ontology#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wot: <http://xmlns.com/wot/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rr: <http://www.w3.org/ns/r2rml#> .
 @prefix km-dev: <http://isi.edu/integration/karma/dev#> .
 
-_:node1d2qouh77x1 a km-dev:R2RMLMapping ;
+_:node1d3i7snv6x1 a km-dev:R2RMLMapping ;
 	km-dev:sourceName "legislature_56.json" ;
-	km-dev:modelPublicationTime "1549234291945"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	km-dev:modelPublicationTime "1550021713895"^^xsd:long ;
 	km-dev:modelVersion "1.7" ;
 	km-dev:hasModelLabel "legislature_56.json" ;
 	km-dev:hasBaseURI "http://localhost:8080/source/" ;
@@ -38,23 +54,23 @@ _:node1d2qouh77x1 a km-dev:R2RMLMapping ;
             {
                 \"name\": \"metaPropertyUri\",
                 \"type\": \"other\",
-                \"value\": \"http://xmlns.com/foaf/0.1/Agent\"
+                \"value\": \"http://xmlns.com/foaf/0.1/Person\"
             },
             {
                 \"name\": \"metaPropertyId\",
                 \"type\": \"other\",
-                \"value\": \"http://xmlns.com/foaf/0.1/Agent1\"
+                \"value\": \"http://xmlns.com/foaf/0.1/Person1\"
             },
             {
                 \"name\": \"SemanticTypesArray\",
                 \"type\": \"other\",
                 \"value\": [{
-                    \"DomainUri\": \"http://xmlns.com/foaf/0.1/Agent\",
-                    \"DomainId\": \"http://xmlns.com/foaf/0.1/Agent1\",
+                    \"DomainUri\": \"http://xmlns.com/foaf/0.1/Person\",
+                    \"DomainId\": \"http://xmlns.com/foaf/0.1/Person1\",
                     \"isPrimary\": true,
                     \"isProvenance\": false,
                     \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
-                    \"DomainLabel\": \"foaf:Agent1 (add)\"
+                    \"DomainLabel\": \"foaf:Person1 (add)\"
                 }]
             },
             {
@@ -94,7 +110,7 @@ _:node1d2qouh77x1 a km-dev:R2RMLMapping ;
                 \"type\": \"hNodeId\",
                 \"value\": [
                     {\"columnName\": \"Resource\"},
-                    {\"columnName\": \"nomeCivil\"}
+                    {\"columnName\": \"startDate\"}
                 ]
             },
             {
@@ -111,12 +127,12 @@ _:node1d2qouh77x1 a km-dev:R2RMLMapping ;
                 \"name\": \"SemanticTypesArray\",
                 \"type\": \"other\",
                 \"value\": [{
-                    \"DomainUri\": \"http://xmlns.com/foaf/0.1/Agent\",
-                    \"DomainId\": \"http://xmlns.com/foaf/0.1/Agent1\",
+                    \"DomainUri\": \"http://www.w3.org/ns/org#Membership\",
+                    \"DomainId\": \"http://www.w3.org/ns/org#Membership1\",
                     \"isPrimary\": true,
                     \"isProvenance\": false,
-                    \"FullType\": \"http://xmlns.com/foaf/0.1/name\",
-                    \"DomainLabel\": \"foaf:Agent1\"
+                    \"FullType\": \"http://schema.org/startDate\",
+                    \"DomainLabel\": \"org:Membership1\"
                 }]
             },
             {
@@ -137,12 +153,89 @@ _:node1d2qouh77x1 a km-dev:R2RMLMapping ;
             {
                 \"name\": \"inputColumns\",
                 \"type\": \"hNodeIdList\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Resource\\\"},{\\\"columnName\\\":\\\"nomeCivil\\\"}]}]\"
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Resource\\\"},{\\\"columnName\\\":\\\"startDate\\\"}]}]\"
             },
             {
                 \"name\": \"outputColumns\",
                 \"type\": \"hNodeIdList\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Resource\\\"},{\\\"columnName\\\":\\\"nomeCivil\\\"}]}]\"
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Resource\\\"},{\\\"columnName\\\":\\\"startDate\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"Resource\"},
+                    {\"columnName\": \"postUri\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://www.w3.org/ns/org#Post\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://www.w3.org/ns/org#Post1\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.w3.org/ns/org#Post\",
+                    \"DomainId\": \"http://www.w3.org/ns/org#Post1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"org:Post1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Resource\\\"},{\\\"columnName\\\":\\\"postUri\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Resource\\\"},{\\\"columnName\\\":\\\"postUri\\\"}]}]\"
             }
         ],
         \"tags\": [\"SemanticType\"]
@@ -225,6 +318,68 @@ _:node1d2qouh77x1 a km-dev:R2RMLMapping ;
         \"tags\": [\"SemanticType\"]
     },
     {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"Resource\"},
+                    {\"columnName\": \"nomeCivil\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://xmlns.com/foaf/0.1/Person\",
+                    \"DomainId\": \"http://xmlns.com/foaf/0.1/Person1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://xmlns.com/foaf/0.1/name\",
+                    \"DomainLabel\": \"foaf:Person1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Resource\\\"},{\\\"columnName\\\":\\\"nomeCivil\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Resource\\\"},{\\\"columnName\\\":\\\"nomeCivil\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
         \"commandName\": \"SetMetaPropertyCommand\",
         \"model\": \"new\",
         \"inputParameters\": [
@@ -233,7 +388,7 @@ _:node1d2qouh77x1 a km-dev:R2RMLMapping ;
                 \"type\": \"hNodeId\",
                 \"value\": [
                     {\"columnName\": \"Resource\"},
-                    {\"columnName\": \"hasPost\"}
+                    {\"columnName\": \"membershipUri\"}
                 ]
             },
             {
@@ -254,24 +409,12 @@ _:node1d2qouh77x1 a km-dev:R2RMLMapping ;
             {
                 \"name\": \"metaPropertyUri\",
                 \"type\": \"other\",
-                \"value\": \"http://www.w3.org/ns/org#Post\"
+                \"value\": \"http://xmlns.com/foaf/0.1/Person\"
             },
             {
                 \"name\": \"metaPropertyId\",
                 \"type\": \"other\",
-                \"value\": \"http://www.w3.org/ns/org#Post1\"
-            },
-            {
-                \"name\": \"SemanticTypesArray\",
-                \"type\": \"other\",
-                \"value\": [{
-                    \"DomainUri\": \"http://www.w3.org/ns/org#Post\",
-                    \"DomainId\": \"http://www.w3.org/ns/org#Post1\",
-                    \"isPrimary\": true,
-                    \"isProvenance\": false,
-                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
-                    \"DomainLabel\": \"org:Post1 (add)\"
-                }]
+                \"value\": \"http://xmlns.com/foaf/0.1/Person1\"
             },
             {
                 \"name\": \"trainAndShowUpdates\",
@@ -291,18 +434,18 @@ _:node1d2qouh77x1 a km-dev:R2RMLMapping ;
             {
                 \"name\": \"inputColumns\",
                 \"type\": \"hNodeIdList\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Resource\\\"},{\\\"columnName\\\":\\\"hasPost\\\"}]}]\"
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Resource\\\"},{\\\"columnName\\\":\\\"membershipUri\\\"}]}]\"
             },
             {
                 \"name\": \"outputColumns\",
                 \"type\": \"hNodeIdList\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Resource\\\"},{\\\"columnName\\\":\\\"hasPost\\\"}]}]\"
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Resource\\\"},{\\\"columnName\\\":\\\"membershipUri\\\"}]}]\"
             }
         ],
         \"tags\": [\"SemanticType\"]
     },
     {
-        \"commandName\": \"SetSemanticTypeCommand\",
+        \"commandName\": \"SetMetaPropertyCommand\",
         \"model\": \"new\",
         \"inputParameters\": [
             {
@@ -310,7 +453,7 @@ _:node1d2qouh77x1 a km-dev:R2RMLMapping ;
                 \"type\": \"hNodeId\",
                 \"value\": [
                     {\"columnName\": \"Resource\"},
-                    {\"columnName\": \"nomeCandidato\"}
+                    {\"columnName\": \"membershipUri\"}
                 ]
             },
             {
@@ -324,15 +467,30 @@ _:node1d2qouh77x1 a km-dev:R2RMLMapping ;
                 \"value\": \"DEFAULT_TEST\"
             },
             {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://www.w3.org/ns/org#Membership\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://www.w3.org/ns/org#Membership1\"
+            },
+            {
                 \"name\": \"SemanticTypesArray\",
                 \"type\": \"other\",
                 \"value\": [{
-                    \"DomainUri\": \"http://xmlns.com/foaf/0.1/Agent\",
-                    \"DomainId\": \"http://xmlns.com/foaf/0.1/Agent1\",
+                    \"DomainUri\": \"http://www.w3.org/ns/org#Membership\",
+                    \"DomainId\": \"http://www.w3.org/ns/org#Membership1\",
                     \"isPrimary\": true,
                     \"isProvenance\": false,
-                    \"FullType\": \"http://xmlns.com/foaf/0.1/name\",
-                    \"DomainLabel\": \"foaf:Agent1\"
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"org:Membership1\"
                 }]
             },
             {
@@ -353,12 +511,12 @@ _:node1d2qouh77x1 a km-dev:R2RMLMapping ;
             {
                 \"name\": \"inputColumns\",
                 \"type\": \"hNodeIdList\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Resource\\\"},{\\\"columnName\\\":\\\"nomeCandidato\\\"}]}]\"
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Resource\\\"},{\\\"columnName\\\":\\\"membershipUri\\\"}]}]\"
             },
             {
                 \"name\": \"outputColumns\",
                 \"type\": \"hNodeIdList\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Resource\\\"},{\\\"columnName\\\":\\\"nomeCandidato\\\"}]}]\"
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Resource\\\"},{\\\"columnName\\\":\\\"membershipUri\\\"}]}]\"
             }
         ],
         \"tags\": [\"SemanticType\"]
@@ -376,44 +534,11 @@ _:node1d2qouh77x1 a km-dev:R2RMLMapping ;
                 \"name\": \"edge\",
                 \"type\": \"other\",
                 \"value\": {
-                    \"edgeTargetId\": \"http://xmlns.com/foaf/0.1/Agent1\",
-                    \"edgeId\": \"http://www.w3.org/ns/org#member\",
-                    \"edgeTargetUri\": \"http://xmlns.com/foaf/0.1/Agent\",
-                    \"edgeSourceId\": \"http://www.w3.org/ns/org#Membership1\",
-                    \"edgeSourceUri\": \"http://www.w3.org/ns/org#Membership\"
-                }
-            },
-            {
-                \"name\": \"inputColumns\",
-                \"type\": \"hNodeIdList\",
-                \"value\": \"[]\"
-            },
-            {
-                \"name\": \"outputColumns\",
-                \"type\": \"hNodeIdList\",
-                \"value\": \"[]\"
-            }
-        ],
-        \"tags\": [\"Modeling\"]
-    },
-    {
-        \"commandName\": \"AddLinkCommand\",
-        \"model\": \"new\",
-        \"inputParameters\": [
-            {
-                \"name\": \"worksheetId\",
-                \"type\": \"worksheetId\",
-                \"value\": \"W\"
-            },
-            {
-                \"name\": \"edge\",
-                \"type\": \"other\",
-                \"value\": {
-                    \"edgeTargetId\": \"http://www.w3.org/ns/org#Organization1\",
-                    \"edgeId\": \"http://www.w3.org/ns/org#organization\",
-                    \"edgeTargetUri\": \"http://www.w3.org/ns/org#Organization\",
-                    \"edgeSourceId\": \"http://www.w3.org/ns/org#Membership1\",
-                    \"edgeSourceUri\": \"http://www.w3.org/ns/org#Membership\"
+                    \"edgeTargetId\": \"http://www.w3.org/ns/org#Post1\",
+                    \"edgeId\": \"http://purl.org/pol/agent#occupies\",
+                    \"edgeTargetUri\": \"http://www.w3.org/ns/org#Post\",
+                    \"edgeSourceId\": \"http://xmlns.com/foaf/0.1/Person1\",
+                    \"edgeSourceUri\": \"http://xmlns.com/foaf/0.1/Person\"
                 }
             },
             {
@@ -443,7 +568,7 @@ _:node1d2qouh77x1 a km-dev:R2RMLMapping ;
                 \"type\": \"other\",
                 \"value\": {
                     \"edgeTargetId\": \"http://www.w3.org/ns/org#Post1\",
-                    \"edgeId\": \"http://www.w3.org/ns/org#hasPost\",
+                    \"edgeId\": \"http://purl.org/pol/agent#hasPost\",
                     \"edgeTargetUri\": \"http://www.w3.org/ns/org#Post\",
                     \"edgeSourceId\": \"http://www.w3.org/ns/org#Membership1\",
                     \"edgeSourceUri\": \"http://www.w3.org/ns/org#Membership\"
@@ -461,5 +586,216 @@ _:node1d2qouh77x1 a km-dev:R2RMLMapping ;
             }
         ],
         \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"AddLinkCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"edge\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"edgeTargetId\": \"http://www.w3.org/ns/org#Membership1\",
+                    \"edgeId\": \"http://www.w3.org/ns/org#hasMembership\",
+                    \"edgeTargetUri\": \"http://www.w3.org/ns/org#Membership\",
+                    \"edgeSourceId\": \"http://xmlns.com/foaf/0.1/Person1\",
+                    \"edgeSourceUri\": \"http://xmlns.com/foaf/0.1/Person\"
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
     }
 ]""" .
+
+km-dev:TriplesMap_0b1cce1e-5802-4b18-950d-ab0602df32cb a rr:TriplesMap .
+
+_:node1d3i7snv6x1 km-dev:hasTriplesMap km-dev:TriplesMap_0b1cce1e-5802-4b18-950d-ab0602df32cb .
+
+km-dev:TriplesMap_0b1cce1e-5802-4b18-950d-ab0602df32cb km-dev:isPartOfMapping _:node1d3i7snv6x1 .
+
+_:node1d3i7snv6x2 rr:tableName "legislature_56.json" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1d3i7snv6x1 .
+
+_:node1d3i7snv6x1 km-dev:hasLogicalTable _:node1d3i7snv6x2 .
+
+km-dev:TriplesMap_0b1cce1e-5802-4b18-950d-ab0602df32cb rr:logicalTable _:node1d3i7snv6x2 ;
+	rr:subjectMap _:node1d3i7snv6x3 .
+
+_:node1d3i7snv6x1 km-dev:hasSubjectMap _:node1d3i7snv6x3 .
+
+_:node1d3i7snv6x3 km-dev:isPartOfMapping _:node1d3i7snv6x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://xmlns.com/foaf/0.1/Person1" ;
+	rr:class foaf:Person ;
+	rr:template "{[\"Resource\",\"url\"]}" ;
+	a km-dev:steinerTreeRootNode .
+
+km-dev:PredicateObjectMap_5a551db9-d512-448d-9a0d-8965065fefed rr:predicate foaf:name .
+
+_:node1d3i7snv6x4 rr:column "[\"Resource\",\"nomeCivil\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1d3i7snv6x1 .
+
+_:node1d3i7snv6x1 km-dev:hasObjectMap _:node1d3i7snv6x4 .
+
+km-dev:PredicateObjectMap_5a551db9-d512-448d-9a0d-8965065fefed rr:objectMap _:node1d3i7snv6x4 .
+
+km-dev:TriplesMap_0b1cce1e-5802-4b18-950d-ab0602df32cb rr:predicateObjectMap km-dev:PredicateObjectMap_5a551db9-d512-448d-9a0d-8965065fefed .
+
+km-dev:PredicateObjectMap_5a551db9-d512-448d-9a0d-8965065fefed a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d3i7snv6x1 .
+
+_:node1d3i7snv6x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_5a551db9-d512-448d-9a0d-8965065fefed .
+
+km-dev:PredicateObjectMap_c83887d6-2731-480e-b984-d0a8a9938b37 rr:predicate <http://purl.org/pol/agent#occupies> .
+
+km-dev:RefObjectMap_dd6316a2-4946-476e-aca6-bb8898616292 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_8e092ffa-27b6-4a41-8538-0652824b0c96 ;
+	km-dev:isPartOfMapping _:node1d3i7snv6x1 .
+
+_:node1d3i7snv6x1 km-dev:hasObjectMap km-dev:RefObjectMap_dd6316a2-4946-476e-aca6-bb8898616292 .
+
+km-dev:PredicateObjectMap_c83887d6-2731-480e-b984-d0a8a9938b37 rr:objectMap km-dev:RefObjectMap_dd6316a2-4946-476e-aca6-bb8898616292 .
+
+km-dev:TriplesMap_0b1cce1e-5802-4b18-950d-ab0602df32cb rr:predicateObjectMap km-dev:PredicateObjectMap_c83887d6-2731-480e-b984-d0a8a9938b37 .
+
+km-dev:PredicateObjectMap_c83887d6-2731-480e-b984-d0a8a9938b37 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d3i7snv6x1 .
+
+_:node1d3i7snv6x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_c83887d6-2731-480e-b984-d0a8a9938b37 .
+
+km-dev:PredicateObjectMap_14098744-ff4d-475d-973b-99ba422051ea rr:predicate org:hasMembership .
+
+km-dev:RefObjectMap_f1e1f74d-5d2a-40a6-8f0c-0377e2de1990 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_f05ecce3-f290-4845-ba8e-62b4c71adc72 ;
+	km-dev:isPartOfMapping _:node1d3i7snv6x1 .
+
+_:node1d3i7snv6x1 km-dev:hasObjectMap km-dev:RefObjectMap_f1e1f74d-5d2a-40a6-8f0c-0377e2de1990 .
+
+km-dev:PredicateObjectMap_14098744-ff4d-475d-973b-99ba422051ea rr:objectMap km-dev:RefObjectMap_f1e1f74d-5d2a-40a6-8f0c-0377e2de1990 .
+
+km-dev:TriplesMap_0b1cce1e-5802-4b18-950d-ab0602df32cb rr:predicateObjectMap km-dev:PredicateObjectMap_14098744-ff4d-475d-973b-99ba422051ea .
+
+km-dev:PredicateObjectMap_14098744-ff4d-475d-973b-99ba422051ea a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d3i7snv6x1 .
+
+_:node1d3i7snv6x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_14098744-ff4d-475d-973b-99ba422051ea .
+
+km-dev:TriplesMap_8e092ffa-27b6-4a41-8538-0652824b0c96 a rr:TriplesMap .
+
+_:node1d3i7snv6x1 km-dev:hasTriplesMap km-dev:TriplesMap_8e092ffa-27b6-4a41-8538-0652824b0c96 .
+
+km-dev:TriplesMap_8e092ffa-27b6-4a41-8538-0652824b0c96 km-dev:isPartOfMapping _:node1d3i7snv6x1 .
+
+_:node1d3i7snv6x5 rr:tableName "legislature_56.json" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1d3i7snv6x1 .
+
+_:node1d3i7snv6x1 km-dev:hasLogicalTable _:node1d3i7snv6x5 .
+
+km-dev:TriplesMap_8e092ffa-27b6-4a41-8538-0652824b0c96 rr:logicalTable _:node1d3i7snv6x5 ;
+	rr:subjectMap _:node1d3i7snv6x6 .
+
+_:node1d3i7snv6x1 km-dev:hasSubjectMap _:node1d3i7snv6x6 .
+
+_:node1d3i7snv6x6 km-dev:isPartOfMapping _:node1d3i7snv6x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.w3.org/ns/org#Post1" ;
+	rr:class org:Post ;
+	rr:template "{[\"Resource\",\"postUri\"]}" .
+
+km-dev:TriplesMap_7bed1ffe-b542-407f-8d9b-bab98f9909a9 a rr:TriplesMap .
+
+_:node1d3i7snv6x1 km-dev:hasTriplesMap km-dev:TriplesMap_7bed1ffe-b542-407f-8d9b-bab98f9909a9 .
+
+km-dev:TriplesMap_7bed1ffe-b542-407f-8d9b-bab98f9909a9 km-dev:isPartOfMapping _:node1d3i7snv6x1 .
+
+_:node1d3i7snv6x7 rr:tableName "legislature_56.json" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1d3i7snv6x1 .
+
+_:node1d3i7snv6x1 km-dev:hasLogicalTable _:node1d3i7snv6x7 .
+
+km-dev:TriplesMap_7bed1ffe-b542-407f-8d9b-bab98f9909a9 rr:logicalTable _:node1d3i7snv6x7 ;
+	rr:subjectMap _:node1d3i7snv6x8 .
+
+_:node1d3i7snv6x1 km-dev:hasSubjectMap _:node1d3i7snv6x8 .
+
+_:node1d3i7snv6x8 km-dev:isPartOfMapping _:node1d3i7snv6x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.w3.org/ns/org#Organization1" ;
+	rr:class org:Organization ;
+	rr:template "{[\"Resource\",\"urlPartido\"]}" .
+
+km-dev:TriplesMap_f05ecce3-f290-4845-ba8e-62b4c71adc72 a rr:TriplesMap .
+
+_:node1d3i7snv6x1 km-dev:hasTriplesMap km-dev:TriplesMap_f05ecce3-f290-4845-ba8e-62b4c71adc72 .
+
+km-dev:TriplesMap_f05ecce3-f290-4845-ba8e-62b4c71adc72 km-dev:isPartOfMapping _:node1d3i7snv6x1 .
+
+_:node1d3i7snv6x9 rr:tableName "legislature_56.json" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1d3i7snv6x1 .
+
+_:node1d3i7snv6x1 km-dev:hasLogicalTable _:node1d3i7snv6x9 .
+
+km-dev:TriplesMap_f05ecce3-f290-4845-ba8e-62b4c71adc72 rr:logicalTable _:node1d3i7snv6x9 ;
+	rr:subjectMap _:node1d3i7snv6x10 .
+
+_:node1d3i7snv6x1 km-dev:hasSubjectMap _:node1d3i7snv6x10 .
+
+_:node1d3i7snv6x10 km-dev:isPartOfMapping _:node1d3i7snv6x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.w3.org/ns/org#Membership1" ;
+	rr:class org:Membership ;
+	rr:template "{[\"Resource\",\"membershipUri\"]}" .
+
+km-dev:PredicateObjectMap_2f140df6-ade0-4d7b-837e-9890d4c584a2 rr:predicate schema:startDate .
+
+_:node1d3i7snv6x11 rr:column "[\"Resource\",\"startDate\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1d3i7snv6x1 .
+
+_:node1d3i7snv6x1 km-dev:hasObjectMap _:node1d3i7snv6x11 .
+
+km-dev:PredicateObjectMap_2f140df6-ade0-4d7b-837e-9890d4c584a2 rr:objectMap _:node1d3i7snv6x11 .
+
+km-dev:TriplesMap_f05ecce3-f290-4845-ba8e-62b4c71adc72 rr:predicateObjectMap km-dev:PredicateObjectMap_2f140df6-ade0-4d7b-837e-9890d4c584a2 .
+
+km-dev:PredicateObjectMap_2f140df6-ade0-4d7b-837e-9890d4c584a2 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d3i7snv6x1 .
+
+_:node1d3i7snv6x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_2f140df6-ade0-4d7b-837e-9890d4c584a2 .
+
+km-dev:PredicateObjectMap_354de33b-9998-460f-a5bd-1749b351ab98 rr:predicate <http://purl.org/pol/agent#hasPost> .
+
+km-dev:RefObjectMap_4ed63197-afe2-42b6-b4fd-0bf2a79d3acb a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_8e092ffa-27b6-4a41-8538-0652824b0c96 ;
+	km-dev:isPartOfMapping _:node1d3i7snv6x1 .
+
+_:node1d3i7snv6x1 km-dev:hasObjectMap km-dev:RefObjectMap_4ed63197-afe2-42b6-b4fd-0bf2a79d3acb .
+
+km-dev:PredicateObjectMap_354de33b-9998-460f-a5bd-1749b351ab98 rr:objectMap km-dev:RefObjectMap_4ed63197-afe2-42b6-b4fd-0bf2a79d3acb .
+
+km-dev:TriplesMap_f05ecce3-f290-4845-ba8e-62b4c71adc72 rr:predicateObjectMap km-dev:PredicateObjectMap_354de33b-9998-460f-a5bd-1749b351ab98 .
+
+km-dev:PredicateObjectMap_354de33b-9998-460f-a5bd-1749b351ab98 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d3i7snv6x1 .
+
+_:node1d3i7snv6x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_354de33b-9998-460f-a5bd-1749b351ab98 .
