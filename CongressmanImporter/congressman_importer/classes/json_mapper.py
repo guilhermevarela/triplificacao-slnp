@@ -36,6 +36,7 @@ VERSION = '0.0.1'
 LEGISLATURE_FILE = 'generated-data/legislature_56.json'
 POST_IRI_PREFIX = 'http://www.w3.org/ns/org#Post'
 SNLP_IRI_PREFIX = 'http://www.seliganapolitica.org/resource'
+MEMBERSHIP_START_DATE = "2019-02-01"
 
 
 class JsonMapper:
@@ -59,12 +60,14 @@ class JsonMapper:
         Generate one resource based on Resource class
         """
         self.body_data.append({
+            'membershipUri': resource.membershipUri,
             'url': resource.url,
             'nomeCandidato': resource.candidate_name,
             'nomeCivil': resource.civil_name,
             'dataNascimento': resource.birth_date,
             'urlPartido': resource.party_url,
             'postUri': resource.postUri,
+            'startDate': MEMBERSHIP_START_DATE
         })
 
     def save_file(self):

@@ -54,12 +54,16 @@ def import_all_elected():
         # Look if the current elected has been elected before (based on legislature 55)
         previous_elected_congressman = identity.find(elected.name)
 
+        # Every Membership created must have a unique identifier
+        membership_uuid = generate_uuid()
+
         # If the elected has been elected before, he has an unique identifier already
         if previous_elected_congressman:
             resource = Resource(elected=elected,
                                 elected_uuid=previous_elected_congressman.resource_uri,
                                 post_uuid=post_uuid,
                                 party_uri=party_list.get_party(elected.party_name).uri,
+                                membership_uuid=membership_uuid,
                                 candidate_name=previous_elected_congressman.parlamentar_name)
 
         # If the elected has never been elected before, is necessary to generate a new unique identifier and update identity file
@@ -69,6 +73,7 @@ def import_all_elected():
                                 elected_uuid=elected_uuid,
                                 post_uuid=post_uuid,
                                 party_uri=party_list.get_party(elected.party_name).uri,
+                                membership_uuid=membership_uuid,
                                 candidate_name='')
             identity.update_data(elected_uuid, elected)
 
