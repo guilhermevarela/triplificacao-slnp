@@ -8,7 +8,7 @@ def test_resource_initialization_with_candidate_name():
         "nome": "nome",
         "data_nascimento": "01/01/19000"
     })
-    resource = Resource(elected, 'elected_uri', 'post_uri', 'party_uri', 'Name')
+    resource = Resource(elected, 'elected_uri', 'post_uri', 'party_uri', 'membership_uri', 'Name')
     expected = {
         'url': 'http://www.seliganapolitica.org/resource/elected_uri',
         'candidate_name': 'Name',
@@ -29,7 +29,7 @@ def test_resouruce_initialization_without_candidate_name():
         "nome": "nome",
         "data_nascimento": "01/01/19000"
     })
-    resource = Resource(elected, 'elected_uri', 'post_uri', 'party_uri')
+    resource = Resource(elected, 'elected_uri', 'post_uri', 'party_uri', 'membership_uri')
     expected = {
         'url': 'http://www.seliganapolitica.org/resource/elected_uri',
         'candidate_name': '',
