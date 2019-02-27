@@ -10,3 +10,4 @@ from .classes import Party
 from .classes import Resource
 
 from .helpers import generate_uuid
+
