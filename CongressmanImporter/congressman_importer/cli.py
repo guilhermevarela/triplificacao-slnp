@@ -89,20 +89,20 @@ def import_all_elected():
 
 cli.add_command(import_all_elected)
 
-@click.command('--legislature', default=56, 
-                help="""id from term ie .: 56 
-                        start: 2019-02-01*
-                        finish: 2022-01-31 
-                        first day is ignored by the script """)
+@click.command()
+@click.option('--legislature', default=56, 
+               help="""id from term ie .: 56 
+                       start: 2019-02-01*
+                       finish: 2022-01-31 
+                       first day is ignored by the script """)
 def update_legislature():
-    """
-    fetches all legislature updates
-    """
+   """
+   fetches all legislature updates
+   """
    from datetime import datetime
-    #compute all business days from legislature
-    busdays = [datetime.date(2019,02,02), datetime.date(2019,02,03)]
+   #compute all business days from legislature
+   busdays = [datetime.date(2019,2,2), datetime.date(2019,2,3)]
 
 
 if __name__ == '__main__':
     cli()
-

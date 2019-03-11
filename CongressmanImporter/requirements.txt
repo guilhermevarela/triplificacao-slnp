@@ -5,3 +5,5 @@ python-dateutil==2.7.5
 rdflib==4.2.2
 requests==2.21.0
 requests-mock==1.5.2
+bs4==0.0.1
+Scrapy==1.6.0
