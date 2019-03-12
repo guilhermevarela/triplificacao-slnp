@@ -114,5 +114,118 @@ def scrape_56():
 
 cli.add_command(scrape_56)
 
+@click.command()
+def update_56():
+    """
+    Updates Resources, Indentities and Ontology
+    """
+    import glob
+    import json
+    # Initializes all classes
+    ontology = Agent()
+    # identity = Identity(updated=True)
+    identity = Identity()
+    election_results = ElectionResults()
+    json_mapper = JsonMapper(load=True)
+    party_list = PartyList()
+
+    # Retrieve the elected Deputies and Senators
+    elected_data = election_results.get_all_elected()
+
+    # Add all 27 jurisdictions (federal unities)
+    ontology.add_all_jurisdictions()
+
+    posts = {}
+    for scrapped_file in glob.glob('scrapped-data/legislature_56_*.json'):
+        membership_updates = [] 
+        try:
+            with open(scrapped_file, 'r', encoding='utf8') as f:
+                membership_updates = json.load(f)
+            # success process the file
+            for membership_update in membership_updates:
+                congressman_identity = identity.find(membership_update['nomeCivil'])
+                if not congressman_identity:
+                    # create identity for the dude
+                    print('create identity for the dude')
+                    import code; code.interact(local=dict(globals(), **locals()))
+                
+                lookup = {a: membership_update[a] for a in ['nomeCivil', 'dataNascimento']}
+                if 'finishDate' in membership_update:
+                    lookup['finishDate'] = None 
+                    
+                    i = json_mapper.lookup_resource(lookup)                    
+                    if i is None:
+                        raise ValueError(
+                            """Tried to close a membership which doesn't exist. 
+                            File: {file} 
+                            Congressman: {name}
+                            BirthDate: {birth_date}""".format(
+                                file=scrapped_file,
+                                name=congressman_identity,
+                                birth_date=lookup['dataNascimento']
+                        ))
+                    else:
+                        # update the membership
+                        membership = json_mapper.update_resource(i, {'finishDate': lookup['finishDate']})
+                        # save postUri for next congressman to occupy the position
+                        posts[membership['nomeCandidato']] = membership['postUri']
+
+
+                else: 
+                    # new membership is there a post for it??
+                    print('new membership is there a post for it??')
+                    import code; code.interact(local=dict(globals(), **locals()))
+                # Every Membership created must have a unique identifier                
+                membership_uuid = generate_uuid()
+        except json.decoder.JSONDecodeError:
+            pass # empty json file throws JSONDecodeError
+
+        
+    # for elected in elected_data:
+
+    #     # Every Post created must have a unique identifier
+    #     post_uuid = generate_uuid()
+
+    #     # Creates Post instance
+    #     ontology.new_post(elected, post_uuid)
+
+    #     # Look if the current elected has been elected before (based on legislature 55)
+    #     previous_elected_congressman = identity.find(elected.name)
+
+    #     # Every Membership created must have a unique identifier
+    #     membership_uuid = generate_uuid()
+
+    #     # If the elected has been elected before, he has an unique identifier already
+    #     if previous_elected_congressman:
+    #         resource = Resource(elected=elected,
+    #                             elected_uuid=previous_elected_congressman.resource_uri,
+    #                             post_uuid=post_uuid,
+    #                             party_uri=party_list.get_party(elected.party_name).uri,
+    #                             membership_uuid=membership_uuid,
+    #                             candidate_name=previous_elected_congressman.parlamentar_name)
+
+    #     # If the elected has never been elected before, is necessary to generate a new unique identifier and update identity file
+    #     else:
+    #         elected_uuid = generate_uuid()
+    #         resource = Resource(elected=elected,
+    #                             elected_uuid=elected_uuid,
+    #                             post_uuid=post_uuid,
+    #                             party_uri=party_list.get_party(elected.party_name).uri,
+    #                             membership_uuid=membership_uuid,
+    #                             candidate_name='')
+    #         identity.update_data(elected_uuid, elected)
+
+    #     # Updates legislature_56.json file based on current elected
+    #     json_mapper.generate_resource(resource)
+
+    # Saves legislature_56.json file
+    # json_mapper.save_file()
+
+    # Saves ontology A-Box file
+    # ontology.save()
+
+
+cli.add_command(update_56)    
+
 if __name__ == '__main__':
     cli()

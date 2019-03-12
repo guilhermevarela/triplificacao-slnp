@@ -23,14 +23,19 @@ IDENTITY_FILE_UPDATED = './generated-data/identity_final.csv'
 
 
 class Identity:
-    def __init__(self):
+    def __init__(self, updated=False):
         """
         Add all candidates of previous elections present in IDENTITY_FILE
         """
         self.deputies = []
         self.senators = []
 
-        with open(IDENTITY_FILE, 'rt') as csvfile:
+        if updated:
+            file = IDENTITY_FILE_UPDATED
+        else:
+            file = IDENTITY_FILE
+
+        with open(file, 'rt') as csvfile:
             spamreader = csv.DictReader(csvfile, delimiter=';')
             for row in spamreader:
 

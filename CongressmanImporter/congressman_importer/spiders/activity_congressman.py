@@ -17,7 +17,7 @@
 '''
 
 __author__ = 'Guilherme Varela <guilhermevarela@hotmail.com>'
-
+from datetime import datetime
 import re
 import scrapy
 import bs4
@@ -36,14 +36,14 @@ class ActivityCongressmanSpider(scrapy.Spider):
     }
 
     def __init__(self, dt, *args, **kwargs):
-        self.dt = dt
+        self.dt = datetime.strptime(dt, '%Y-%m-%d')
         super(scrapy.Spider, self).__init__(*args, **kwargs)
 
     def start_requests(self):
         '''
             Stage 1: Request first term dates
         '''
-        dt = self.dt
+        dt = self.dt.strftime('%Y-%m-%d')
 
         q = QUERY_STR.format(dt, dt)
         url = '{:}{:}'.format(ACTIVITY_URL, q)
@@ -84,10 +84,10 @@ class ActivityCongressmanSpider(scrapy.Spider):
                 activity_detail = re.search(r'\((.*)\)', contents).group(0)
 
                 if (('Reassunção' in activity) or ('Posse' in activity) or ('Afastamento' in activity_detail)):
-                    data['startDate'] = self.dt
+                    data['startDate'] = self.dt.strftime('%d/%m/%Y')
 
                 elif (('Posse' in activity_detail) or ('Reassunção' in activity_detail) or ('Afastamento' in activity)):
-                    data['finishDate'] = self.dt
+                    data['finishDate'] = self.dt.strftime('%d/%m/%Y')
 
                 data['message'] = contents
                 url = '{url}dep_Detalhe.asp?id={id}'.format(

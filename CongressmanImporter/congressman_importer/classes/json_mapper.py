@@ -32,17 +32,21 @@ from ..helpers import generate_timestamp
 
 __author__ = 'Rebeca Bordini <bordini.rebeca@gmail.com>'
 
-VERSION = '0.0.1'
+VERSION = '0.0.2'
 LEGISLATURE_FILE = 'generated-data/legislature_56.json'
+LEGISLATURE_FILE_UPDATED = 'generated-data/legislature_56_final.json'
 POST_IRI_PREFIX = 'http://www.w3.org/ns/org#Post'
 SNLP_IRI_PREFIX = 'http://www.seliganapolitica.org/resource'
 MEMBERSHIP_START_DATE = "2019-02-01"
 
 
 class JsonMapper:
-    def __init__(self):
-        self.header = self.generate_header()
-        self.body_data = []
+    def __init__(self, load=False, file=LEGISLATURE_FILE):
+        if load:
+            self.load_file(file)
+        else:
+            self.header = self.generate_header()
+            self.body_data = []
 
     @staticmethod
     def generate_header():
@@ -67,8 +71,31 @@ class JsonMapper:
             'dataNascimento': resource.birth_date,
             'urlPartido': resource.party_url,
             'postUri': resource.postUri,
-            'startDate': MEMBERSHIP_START_DATE
+            'startDate': MEMBERSHIP_START_DATE,
+            'finishDate': None,
         })
+
+    def lookup_resource(self, lookup_attributes):
+        """
+        Looks up resources making comparations on attributes dictionary
+        """
+        def test(src, lkp):
+            """
+                Looks up lookup dict onto search dict
+            """
+            return all([src[k] == v for k, v in lkp.items()])
+
+        for i, src in enumerate(self.body_data):
+            if test(src, lookup_attributes):            
+                return i
+        return None
+    
+    def update_resource(self, i, update_attributes):
+        """
+        updates resource at position i
+        """
+        self.body_data[i].update(update_attributes)
+        return self.body_data[i]
 
     def save_file(self):
         """
@@ -80,3 +107,12 @@ class JsonMapper:
 
         with io.open(LEGISLATURE_FILE, 'w', encoding='utf8') as out_file:
             json.dump(document, out_file, ensure_ascii=False)
+
+    def load_file(self, file=LEGISLATURE_FILE):
+        """
+        Load the JSON file specified in file location
+        """        
+        with io.open(LEGISLATURE_FILE, 'r', encoding='utf8') as in_file:
+            document = json.load(in_file)
+        self.header = document['Info']
+        self.body_data = document['Resource']
