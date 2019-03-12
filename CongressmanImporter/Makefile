@@ -20,6 +20,9 @@ help:
 run:
 	python -m congressman_importer.cli import-all-elected
 
+## Scrapes congressmen from site
+scrape:
+	python -m congressman_importer.cli scrape-56
 
 ## Instala as dependêncis do projeto
 setup:

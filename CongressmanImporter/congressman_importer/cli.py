@@ -90,7 +90,7 @@ def import_all_elected():
 cli.add_command(import_all_elected)
 
 @click.command()
-def import_update():
+def scrape_56():
     """
     fetches legislature 56 activity
     """
@@ -98,40 +98,21 @@ def import_update():
     import subprocess
 
     from datetime import datetime, timedelta
-    from congressman_importer.spiders import ActivityCongressmanSpider, get_spider_settings
+    from congressman_importer import generate_legislature_iterator
+    from congressman_importer.spiders import ActivityCongressmanSpider
+
+    # DEFINE THE SCRAPPING INTERVAL
+    date_range = generate_legislature_iterator()
     
-    #compute all days from legislatura    
-    start_date = datetime.strptime('2019-02-02', '%Y-%m-%d') # start activity
-    # finish_date = datetime.strptime('2022-01-31', '%Y-%m-%d') # finish activity
-    finish_date = datetime.strptime('2019-02-10', '%Y-%m-%d') # finish activity
-    today = datetime.now().replace(
-        hour=0, 
-        minute=0, 
-        second=0, 
-        microsecond=0
-    )
-    finish = min(today, finish_date)
-    # import code; code.interact(local=dict(globals(), **locals()))
-    # print(os.getcwd())
-    # subprocess.Popen(
-    #     "scrapy runspider congressman_importer/spiders/activity_congressman.py -o scrapped-data/legislature_56_{dt}.json  -a dt='{dt}'".format(
-    #         dt='2019-02-03'
-    #     ),
-    #     shell=True
-    # )
-    dt = start_date
-    while dt < finish:
-        # dt1 = dt.strftime('%Y-%m-%d')
+    for dt in date_range:
         subprocess.Popen(
             "scrapy runspider congressman_importer/spiders/activity_congressman.py -o scrapped-data/legislature_56_{dt}.json  -a dt='{dt}'".format(
                 dt=dt.strftime('%Y-%m-%d')
             ),
             shell=True
         )
-        dt = dt + timedelta(1)
 
-
-cli.add_command(import_update)
+cli.add_command(scrape_56)
 
 if __name__ == '__main__':
     cli()

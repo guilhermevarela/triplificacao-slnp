@@ -18,26 +18,14 @@
 
 __author__ = 'Guilherme Varela <guilhermevarela@hotmail.com>'
 
-from datetime import date, datetime, timedelta
 import re
-
 import scrapy
 import bs4
 
-
-# import utils
 # CAMARA_URL = 'http://www.camara.leg.br/internet/deputado/resultadoHistorico.asp?dt_inicial=02%2F02%2F2015&dt_final=03%2F02%2F2015&parlamentar=&histMandato=1&ordenarPor=1&Pesquisar=Pesquisar'
 CAMARA_URL = 'http://www.camara.leg.br/internet/deputado/'
 ACTIVITY_URL = '{:}resultadoHistorico.asp'.format(CAMARA_URL)
 QUERY_STR = '?dt_inicial={:}&dt_final={:}&parlamentar=&histMandato=1&ordenarPor=1&Pesquisar=Pesquisar'
-
-# Use settings on lauching crawlers from shell or python scripts
-def get_spider_settings(feed_uri):
-    return {
-        'FEED_EXPORT_ENCODING': 'utf-8',
-        'USER_AGENT': 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)',
-        'FEED_URI': feed_uri
-    }
 
 class ActivityCongressmanSpider(scrapy.Spider):
     name = 'activity_congressmen'
@@ -130,17 +118,22 @@ class ActivityCongressmanSpider(scrapy.Spider):
         data = response.meta['data']
         ul = soup.find('ul', {'class': 'informacoes-deputado'})
         if ul is not None:
+            exit_loop = False
             for li in ul.children:
                 if isinstance(li, bs4.element.Tag):
                     for el in li.contents:
                         if isinstance(el, bs4.element.Tag): # span div
                             if 'Nome Civil:' in el.contents:
                                 key = 'nomeCivil'
-                            if 'Data de Nascimento:' in el.contents:
+                            elif 'Data de Nascimento:' in el.contents:
                                 key = 'dataNascimento'
+                            else:
+                                key = None
                         if isinstance(el, bs4.element.NavigableString): # contents
                             val = el.strip()
-                    data[key] = val
-                    if 'nomeCivil' in data and 'dataNascimento' in data:
-                        break
-        yield data
+                    if key:
+                        data[key] = val
+                    exit_loop = 'nomeCivil' in data and 'dataNascimento' in data
+                    if exit_loop:
+                        yield data
+                        return

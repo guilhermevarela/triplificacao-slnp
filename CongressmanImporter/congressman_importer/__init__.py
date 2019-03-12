@@ -9,5 +9,4 @@ from .classes import PartyList
 from .classes import Party
 from .classes import Resource
 
-from .helpers import generate_uuid
-
+from .helpers import generate_uuid, generate_legislature_iterator
