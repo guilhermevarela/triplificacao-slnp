@@ -1,1 +1,1 @@
-from .activity_congressman import ActivityCongressmanSpider
+from .activity_congressman import ActivityCongressmanSpider, get_spider_settings
