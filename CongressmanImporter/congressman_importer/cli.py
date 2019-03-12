@@ -96,12 +96,23 @@ cli.add_command(import_all_elected)
                        finish: 2022-01-31 
                        first day is ignored by the script """)
 def update_legislature():
-   """
-   fetches all legislature updates
-   """
-   from datetime import datetime
-   #compute all business days from legislature
-   busdays = [datetime.date(2019,2,2), datetime.date(2019,2,3)]
+    """
+    fetches all legislature updates
+    """
+    from datetime import datetime
+    from subprocess
+    #compute all days from legislatura
+    today = datetime.now().replace(
+        hour=0, 
+        minute=0, 
+        second=0, 
+        microsecond=0
+    )
+    finish = min(today, datetime.date(2019,2,10))
+
+    dt = datetime.date(2019,2,2)
+    while dt < finish
+        pass
 
 
 if __name__ == '__main__':
