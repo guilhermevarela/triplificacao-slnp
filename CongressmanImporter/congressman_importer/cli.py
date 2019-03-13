@@ -65,7 +65,7 @@ def import_all_elected():
                                 party_uri=party_list.get_party(elected.party_name).uri,
                                 membership_uuid=membership_uuid,
                                 candidate_name=previous_elected_congressman.parlamentar_name)
-
+            elected_uuid = previous_elected_congressman.resource_uri
         # If the elected has never been elected before, is necessary to generate a new unique identifier and update identity file
         else:
             elected_uuid = generate_uuid()
@@ -75,10 +75,13 @@ def import_all_elected():
                                 party_uri=party_list.get_party(elected.party_name).uri,
                                 membership_uuid=membership_uuid,
                                 candidate_name='')
-            identity.update_data(elected_uuid, elected)
+        identity.update_data(elected_uuid, elected)
 
         # Updates legislature_56.json file based on current elected
         json_mapper.generate_resource(resource)
+
+    # Saves identity_final.csv file
+    identity.save_file()
 
     # Saves legislature_56.json file
     json_mapper.save_file()
@@ -123,8 +126,8 @@ def update_56():
     import json
     # Initializes all classes
     ontology = Agent()
-    # identity = Identity(updated=True)
-    identity = Identity()
+
+    identity = Identity(updated=False)
     election_results = ElectionResults()
     json_mapper = JsonMapper(load=True)
     party_list = PartyList()
