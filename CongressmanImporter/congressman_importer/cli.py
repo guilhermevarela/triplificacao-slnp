@@ -75,6 +75,8 @@ def import_all_elected():
                                 party_uri=party_list.get_party(elected.party_name).uri,
                                 membership_uuid=membership_uuid,
                                 candidate_name='')
+        # if elected.name == 'NEY LEPREVOST NETO':
+        #     import code; code.interact(local=dict(globals(), **locals()))
         identity.update_data(elected_uuid, elected)
 
         # Updates legislature_56.json file based on current elected
@@ -127,7 +129,7 @@ def update_56():
     # Initializes all classes
     ontology = Agent()
 
-    identity = Identity(updated=False)
+    identity = Identity(updated=True)
     election_results = ElectionResults()
     json_mapper = JsonMapper(load=True)
     party_list = PartyList()

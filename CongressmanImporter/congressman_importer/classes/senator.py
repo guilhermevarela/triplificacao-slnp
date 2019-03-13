@@ -29,7 +29,7 @@ class Senator:
 
     def update_data(self, uri, data):
 
-        if self.resource_uri == uri:
+        if self.resource_uri == '' or self.resource_uri == uri:
             # re-writes in case is empty
             self.resource_uri = uri
             for k, v in data.__dict__.items():

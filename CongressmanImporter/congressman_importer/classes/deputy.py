@@ -21,7 +21,7 @@ class Deputy:
     }
     ELECTED_ATTRIBUTES = [
         'cpf', 'shift', 'party'
-        'federal_unity', 'party_name', 'birth_date', 
+        'federal_unity', 'party_name', 'birth_date',
         'post', 'electoral_unity', 'election_year'
 
     ]
@@ -35,7 +35,7 @@ class Deputy:
 
     def update_data(self, uri, data):
 
-        if self.resource_uri == uri:
+        if self.resource_uri == '' or self.resource_uri == uri:
             # re-writes in case is empty
             self.resource_uri = uri
             for k, v in data.__dict__.items():

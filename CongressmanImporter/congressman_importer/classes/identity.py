@@ -40,10 +40,10 @@ class Identity:
             for row in spamreader:
                 # Senators and deputies has different contracts
                 # TODO: CREATE ANOTHER FEATURE TELLING SENATORS vs DEPUTIES
-                if row.get('sen:CodigoParlamentar'):
+                if row.get('sen:CodigoParlamentar') or 'senador' in row.get('post', '').lower():
                     self.add_senator(Senator(row))
-                
-                if row.get('cam:ideCadastro'):
+
+                if row.get('cam:ideCadastro') or 'deputado' in row.get('post', '').lower():
                     self.add_deputy(Deputy(row))
 
     def add_deputy(self, deputy):
@@ -94,49 +94,43 @@ class Identity:
         :param data: Elected instance
         """
         if 'deputado' in data.post.lower():
+
             deputy = self.find(data.name)
+
             if deputy is None:
                 deputy = Deputy()
+
             deputy.update_data(uri, data)
+
+            self.add_deputy(deputy)
 
         elif 'senador' in data.post.lower():
             senator = self.find(data.name)
+
             if senator is None:
+
                 senator = Senator()
+
             senator.update_data(uri, data)
+            self.add_senator(senator)
 
         else:
             raise ValueError('Unhandled data with post {}'.format(data.post))
-            # import code; code.interact(local=dict(globals(), **locals()))
-        # slp:resource_uri    cam:dataFalecimento cam:dataNascimento  cam:ideCadastro cam:nomeCivil   cam:nomeParlamentarAtual    sen:CodigoParlamentar   sen:NomeCompletoParlamentar sen:NomeParlamentar
-        # with open(IDENTITY_FILE_UPDATED, 'a') as csvfile:
-        #     spamwriter = csv.writer(csvfile, delimiter=';')
-        #     formated_birth_date = parse(data.birth_date)
-        #     spamwriter.writerow([uri, '', formated_birth_date.strftime('%Y-%m-%d'), '', data.name, '', '', '', ''])
 
     def save_file(self):
+        """
+            Saves a file which integrates all congressman
+        """
         # paginate over deputies and senators getting their fields
         fieldnames = set([])
-        for data in self.deputies:
+        congressmen = self.deputies + self.senators
+        for data in congressmen:
             fieldnames = fieldnames.union(data.dump().keys())
 
-        for data in self.senators:
-            fieldnames = fieldnames.union(data.dump().keys())
-        
-        # import code; code.interact(local=dict(globals(), **locals()))
+
         with open(IDENTITY_FILE_UPDATED, 'a') as csvfile:
             writer = csv.DictWriter(csvfile, fieldnames=list(fieldnames), delimiter=';')
             writer.writeheader()
 
-            # spamwriter = csv.writer(csvfile, delimiter=';')
-            for data in self.deputies:
-                if hasattr(data, 'birth_date'):
-                    data.birth_date = parse(data.birth_date)
-                # spamwriter.writerow(data.dump())
-                writer.writerow(data.dump())
-
-            for data in self.senators:
-                if hasattr(data, 'birth_date'):
-                    data.birth_date = parse(data.birth_date)
-                # spamwriter.writerow(data.dump())
+            for data in congressmen:
                 writer.writerow(data.dump())
