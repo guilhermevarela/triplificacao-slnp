@@ -1,4 +1,4 @@
 [
-{"dataNascimento": "25/11/1972", "nomeCandidato": "SANDRO ALEX", "nomeCivil": "SANDRO ALEX CRUZ DE OLIVEIRA", "message": "4/2/2019 - Secretário de Estado(Posse como Suplente - REINHOLD STEPHANES JUNIOR - em 05/02/2019)", "finishDate": "04/02/2019"},
-{"dataNascimento": "26/10/1973", "nomeCandidato": "NEY LEPREVOST", "nomeCivil": "NEY LEPREVOST NETO", "message": "4/2/2019 - Secretário de Estado(Posse como Suplente - EVANDRO ROMAN - em 05/02/2019)", "finishDate": "04/02/2019"}
+{"finishDate": "04/02/2019", "jurisdiction": "PR", "nomeCandidato": "NEY LEPREVOST", "message": "4/2/2019 - Secretário de Estado(Posse como Suplente - EVANDRO ROMAN - em 05/02/2019)", "motive": "Secretário de Estado", "dataNascimento": "26/10/1973", "nomeCivil": "NEY LEPREVOST NETO", "party": "PSD", "replacement": "EVANDRO ROMAN"},
+{"finishDate": "04/02/2019", "jurisdiction": "PR", "nomeCandidato": "SANDRO ALEX", "message": "4/2/2019 - Secretário de Estado(Posse como Suplente - REINHOLD STEPHANES JUNIOR - em 05/02/2019)", "motive": "Secretário de Estado", "dataNascimento": "25/11/1972", "nomeCivil": "SANDRO ALEX CRUZ DE OLIVEIRA", "party": "PSD", "replacement": "REINHOLD STEPHANES JUNIOR"}
 ]

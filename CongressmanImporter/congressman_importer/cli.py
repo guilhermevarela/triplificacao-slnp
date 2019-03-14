@@ -93,7 +93,7 @@ def import_all_elected():
 cli.add_command(import_all_elected)
 
 @click.command()
-def scrape_56():
+def scrape_deputies():
     """
     fetches legislature 56 activity
     """
@@ -115,10 +115,10 @@ def scrape_56():
             shell=True
         )
 
-cli.add_command(scrape_56)
+cli.add_command(scrape_deputies)
 
 @click.command()
-def update_56():
+def update_deputies():
     """
     Updates Resources, Indentities and Ontology
     """
@@ -126,10 +126,7 @@ def update_56():
     import re
     import json
 
-    # from collections import namedtuple
     from .classes import Deputy
-
-    # Person = namedtuple('Person', 'name birth_date')
 
     def process_message(message):
         m1 = re.search(r'\((.*?)\)', message).group(1)
@@ -142,48 +139,49 @@ def update_56():
     identity = Identity(updated=True)
     # election_results = ElectionResults()
     json_mapper = JsonMapper(load=True)
-    # party_list = PartyList()
-
-    # Retrieve the elected Deputies and Senators
-    # elected_data = election_results.get_all_elected()
 
     # Add all 27 jurisdictions (federal unities)
     ontology.add_all_jurisdictions()
 
-    vacant_posts = {}
-    for scrapped_file in glob.glob('scrapped-data/legislature_56_*.json'):
+    expired_memberships = {}
+    
+    scrapped_files = sorted(glob.glob('scrapped-data/legislature_56_*.json'))    
+    for scrapped_file in scrapped_files:
         try:
             with open(scrapped_file, 'r', encoding='utf8') as f:
                 membership_updates = json.load(f)
-            # success process the file
-            # finishDates must be processed first
-            membership_updates = sorted(membership_updates, key= lambda x: x.get('finishDate', '31/01/2023'))
-            for membership_update in membership_updates:
 
+            # Success: means that the file is not empty
+            # finishDates must be processed first as those free up posts that can be occupied
+            membership_updates = sorted(
+                membership_updates, 
+                key= lambda x: x.get('finishDate', '31/01/2023')
+            )
+            for membership_update in membership_updates:
+                #Is this name registered in our database
                 deputy = identity.find(membership_update['nomeCivil'])
 
                 if not deputy:
-                    # create identity for the dude
+                    # This name isn't a registered name proceed to register it.
+                    # Lookup the replacement name from message
+                    previous_deputy_name = process_message(membership_update['message'])
 
+                    if previous_deputy_name not in expired_memberships:
 
-                    deputy_name = process_message(membership_update['message'])
-
-                    if deputy_name not in vacant_posts:
-
-                        print('create identity for the dude -- posse individual???')
-                        import code; code.interact(local=dict(globals(), **locals()))
+                        # print('create identity for the dude -- posse individual???')
+                        # import code; code.interact(local=dict(globals(), **locals()))
                         raise ValueError(
                             '''Unable to process {membership}
-                                deputy_name {name} not found
+                                previous_deputy_name {name} not found
                                 posts {posts}'''.format(
                                     membership=membership_update,
-                                    name=deputy_name,
-                                    posts=vacant_posts
+                                    name=previous_deputy_name,
+                                    posts=expired_memberships
                             ))
                     else:
-                        post_uuid = vacant_posts[deputy_name]['postUri']
+                        post_uuid = expired_memberships[previous_deputy_name]['postUri'].split('/')[-1]
 
-                        party_uri = vacant_posts[deputy_name]['urlPartido']
+                        party_uri = expired_memberships[previous_deputy_name]['urlPartido']
 
                         deputy_uuid = generate_uuid()
 
@@ -192,12 +190,12 @@ def update_56():
                         membership_update['resource_uri'] = deputy_uuid
                         deputy = Deputy(membership_update)
 
-                        del vacant_posts[deputy_name]
+                        del expired_memberships[previous_deputy_name]
 
                         identity.update_data(deputy_uuid, deputy)
 
                 lookup = {a: membership_update[a] for a in ['nomeCivil', 'dataNascimento']}
-                if 'finishDate' in membership_update:
+                if 'finishDate' in membership_update: # Closing an existing membership
                     lookup['finishDate'] = None
 
                     i = json_mapper.lookup_resource(lookup)
@@ -220,20 +218,23 @@ def update_56():
                         })
 
                         # save postUri for next congressman to occupy the position
-                        vacant_posts[membership['nomeCandidato']] = membership
+                        expired_memberships[membership['nomeCandidato']] = membership
 
 
-                else: 
-                    resource = Resource(elected=deputy,
-                        elected_uuid=deputy_uuid,
-                        post_uuid=post_uuid,
-                        party_uri=party_uri,
-                        membership_uuid=membership_uuid,
-                        candidate_name=membership_update['nomeCandidato'])
+                else: # Creating a membership
+                    try:
+                        resource = Resource(elected=deputy,
+                            elected_uuid=deputy_uuid,
+                            post_uuid=post_uuid,
+                            party_uri=party_uri,
+                            membership_uuid=membership_uuid,
+                            candidate_name=membership_update['nomeCandidato'])
 
-                    # Updates legislature_56_final.json file based on current deputy
-                    json_mapper.generate_resource(resource, start_date=membership_update['startDate'])
-                    
+                        # Updates legislature_56_final.json file based on current deputy
+                        json_mapper.generate_resource(resource, start_date=membership_update['startDate'])
+                    except UnboundLocalError:
+                        print('UnboundLocalError')
+                        import code; code.interact(local=dict(globals(), **locals()))
 
         except json.decoder.JSONDecodeError:
             pass # empty json file throws JSONDecodeError
@@ -249,7 +250,7 @@ def update_56():
     # ontology.save()
 
 
-cli.add_command(update_56)    
+cli.add_command(update_deputies)
 
 if __name__ == '__main__':
     cli()

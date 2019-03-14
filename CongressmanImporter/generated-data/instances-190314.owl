@@ -1,0 +1,3146 @@
+@prefix : <http://purl.org/pol/agent#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix geo: <http://www.geonames.org/> .
+@prefix gn: <http://www.geonames.org/ontology#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rel: <http://purl.org/vocab/relationship/> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+dcterms:bibliographicCitation a owl:DatatypeProperty .
+
+dcterms:description a owl:DatatypeProperty .
+
+dcterms:identifier a owl:DatatypeProperty .
+
+: a owl:Ontology ;
+    owl:imports geo:ontology,
+        <http://www.w3.org/2004/02/skos/core>,
+        org:,
+        foaf: .
+
+:directRelTypeFromTo a owl:ObjectProperty ;
+    rdfs:domain :DirectRelationship ;
+    rdfs:range :DirectRelationshipConcept .
+
+:directRelTypeToFrom a owl:ObjectProperty ;
+    rdfs:domain :DirectRelationship ;
+    rdfs:range :DirectRelationshipConcept .
+
+:hasJurisdiction a owl:ObjectProperty ;
+    rdfs:domain org:Post ;
+    rdfs:range gn:Feature .
+
+:hasPostSubstitute a owl:ObjectProperty ;
+    rdfs:subPropertyOf :hasPost .
+
+:hasProv a owl:ObjectProperty ;
+    rdfs:range prov:Entity .
+
+:hasReferrer a owl:ObjectProperty ;
+    rdfs:domain :Referral ;
+    rdfs:range foaf:Agent ;
+    owl:inverseOf :isReferrer .
+
+:inDirectRelationshipScheme a owl:ObjectProperty ;
+    rdfs:domain :DirectRelationshipConcept ;
+    rdfs:range :DirectRelationshipConceptScheme ;
+    rdfs:subPropertyOf skos:inScheme .
+
+:inOrgClassificationScheme a owl:ObjectProperty ;
+    rdfs:domain :OrgClassificationConcept ;
+    rdfs:range :OrgClassificationConceptScheme ;
+    rdfs:subPropertyOf skos:inScheme .
+
+:inOrgRoleScheme a owl:ObjectProperty ;
+    rdfs:domain org:Role ;
+    rdfs:range :OrgRoleConceptScheme ;
+    rdfs:subPropertyOf skos:inScheme .
+
+:occupies a owl:ObjectProperty ;
+    rdfs:domain foaf:Person ;
+    rdfs:range org:Post ;
+    owl:propertyChainAxiom ( org:hasMembership :hasPost ) .
+
+:refers a owl:ObjectProperty ;
+    rdfs:domain foaf:Agent ;
+    rdfs:range foaf:Person ;
+    owl:propertyChainAxiom ( :isReferrer :hasReferred ) .
+
+:relationFrom a owl:ObjectProperty ;
+    rdfs:domain :DirectRelationship ;
+    rdfs:range foaf:Person .
+
+:relationTo a owl:ObjectProperty ;
+    rdfs:domain :DirectRelationship ;
+    rdfs:range foaf:Person .
+
+:singletonPropertyOf a owl:ObjectProperty .
+
+schema:Date a owl:Class .
+
+schema:endDate a owl:DatatypeProperty ;
+    rdfs:range xsd:date .
+
+schema:startDate a owl:DatatypeProperty ;
+    rdfs:range xsd:date .
+
+schema:validFrom a owl:DatatypeProperty ;
+    rdfs:range xsd:date .
+
+schema:validUntil a owl:DatatypeProperty ;
+    rdfs:range xsd:date .
+
+gn:locatedIn a owl:ObjectProperty ;
+    rdfs:range gn:Feature .
+
+rdf:Property a owl:Class .
+
+rdf:type a owl:ObjectProperty .
+
+rdfs:label a owl:DatatypeProperty .
+
+skos:broader a owl:ObjectProperty ;
+    rdfs:domain skos:Concept ;
+    rdfs:range skos:Concept .
+
+skos:prefLabel a owl:DatatypeProperty .
+
+<http://www.w3.org/ns/org#Post/0066c3bc-f494-4c96-ba9f-d79b92a7dc29> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/MA> .
+
+<http://www.w3.org/ns/org#Post/009b786e-3f1d-47ef-b83d-bdf90101767b> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/AP> .
+
+<http://www.w3.org/ns/org#Post/00ed35db-7486-4404-b7b6-d9c0f20aeab2> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SP> .
+
+<http://www.w3.org/ns/org#Post/0120e438-f1b4-45b2-8ed3-389cea1222f1> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PE> .
+
+<http://www.w3.org/ns/org#Post/0147de35-f357-49b3-98a0-0b612a58e3e5> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RS> .
+
+<http://www.w3.org/ns/org#Post/015d7f41-e809-4045-85bc-a450221606a0> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/AL> .
+
+<http://www.w3.org/ns/org#Post/01c6d8b3-4c7a-4eae-b8d4-9fcfd5a93212> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/MT> .
+
+<http://www.w3.org/ns/org#Post/023f0c09-997d-4a89-839a-cac5b69b7c32> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/GO> .
+
+<http://www.w3.org/ns/org#Post/0287429d-ed4b-4cba-8f32-76029676839e> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RJ> .
+
+<http://www.w3.org/ns/org#Post/043f281b-29f5-48a1-a8b4-5d92dac4657c> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/BA> .
+
+<http://www.w3.org/ns/org#Post/045721cb-cfc0-42e2-ab41-04e3c33712cd> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/BA> .
+
+<http://www.w3.org/ns/org#Post/04763399-c231-4c4d-9bbe-cf7ffedab130> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RJ> .
+
+<http://www.w3.org/ns/org#Post/048561e7-b59a-4d57-900f-e532981f60cc> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/BA> .
+
+<http://www.w3.org/ns/org#Post/049ba11f-5dbb-40a8-8d2e-a038b96a43eb> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/MG> .
+
+<http://www.w3.org/ns/org#Post/04ecb226-e6e2-409e-a1d8-e89cbc92de69> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/MG> .
+
+<http://www.w3.org/ns/org#Post/057a9f50-418a-44c3-9ab5-4576ee3a4525> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SP> .
+
+<http://www.w3.org/ns/org#Post/058b232c-dc1e-4e07-a7ba-faa7f71016f6> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SE> .
+
+<http://www.w3.org/ns/org#Post/05c65f03-73f0-4dbb-96de-0bdb7a68d4af> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RO> .
+
+<http://www.w3.org/ns/org#Post/05f1aa1a-ad9d-4c98-9ac4-0a7d99f38d9e> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/BA> .
+
+<http://www.w3.org/ns/org#Post/05f4ba58-b4a0-4600-811c-31b5359b76ac> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/GO> .
+
+<http://www.w3.org/ns/org#Post/0666ed34-cde7-46d3-ba1d-91cb7e6424e7> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SP> .
+
+<http://www.w3.org/ns/org#Post/069d61b7-e3ea-4594-ac52-573e284144ca> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PE> .
+
+<http://www.w3.org/ns/org#Post/06adb9d7-f279-47fc-bfb4-b8ec1ab6220d> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SC> .
+
+<http://www.w3.org/ns/org#Post/071393fb-7a84-4d67-bc97-ec01ec4b28dc> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/AP> .
+
+<http://www.w3.org/ns/org#Post/073c10ad-d27f-46a3-a661-21fd4b8d1ab8> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/BA> .
+
+<http://www.w3.org/ns/org#Post/0745e0bb-58a3-421e-878c-1999e2fdd1fe> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PB> .
+
+<http://www.w3.org/ns/org#Post/074ea1ac-a901-4618-ac5c-d40ae20ed4c7> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SP> .
+
+<http://www.w3.org/ns/org#Post/0755367b-f258-43d3-9c8f-02bd59cd792f> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/MG> .
+
+<http://www.w3.org/ns/org#Post/07b97c34-9b4e-4e45-84dd-aea5492094d3> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PR> .
+
+<http://www.w3.org/ns/org#Post/07ff1855-99e7-4d4c-a0a1-ff4063a7edf3> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RR> .
+
+<http://www.w3.org/ns/org#Post/08961329-8203-4a45-bc61-a4e913c539df> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RJ> .
+
+<http://www.w3.org/ns/org#Post/091faca0-9eaa-490d-a63e-041378cf5603> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RN> .
+
+<http://www.w3.org/ns/org#Post/09a25aed-9ace-4d68-8165-622473190273> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SP> .
+
+<http://www.w3.org/ns/org#Post/09f8158d-bf68-4886-9569-1c4813e989ef> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/GO> .
+
+<http://www.w3.org/ns/org#Post/0acb6709-c16a-4861-9545-04e8cdcb2bef> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PR> .
+
+<http://www.w3.org/ns/org#Post/0c177d8b-7935-4835-aa1b-cd5f4648351c> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/MG> .
+
+<http://www.w3.org/ns/org#Post/0c34755f-d43b-48cf-8112-b1dfff9a364b> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SP> .
+
+<http://www.w3.org/ns/org#Post/0d44fcb5-0af4-49c5-b335-f8861545d884> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PR> .
+
+<http://www.w3.org/ns/org#Post/0d78bef3-4750-4bae-8bf9-ceb58a05ed99> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PB> .
+
+<http://www.w3.org/ns/org#Post/0e4df73d-d108-49d2-a194-eccc77f45022> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RJ> .
+
+<http://www.w3.org/ns/org#Post/0e6fef3f-eefe-4d06-9168-704a9d1c2794> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/CE> .
+
+<http://www.w3.org/ns/org#Post/0ed6172b-eecf-454d-bb02-5081f912e9cf> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RJ> .
+
+<http://www.w3.org/ns/org#Post/0f259d7e-589a-45bf-893a-b5c3a70f45ee> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/BA> .
+
+<http://www.w3.org/ns/org#Post/1026c621-10dd-46b1-b8a8-8cf15918cb46> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/BA> .
+
+<http://www.w3.org/ns/org#Post/102f5232-29e7-4824-918e-8bcb3ae563c0> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/AM> .
+
+<http://www.w3.org/ns/org#Post/105ae870-6960-4fed-bf2b-7e23c021187c> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SP> .
+
+<http://www.w3.org/ns/org#Post/10f8cb8e-ffa5-4652-92b1-f01b2d1eda5f> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/AC> .
+
+<http://www.w3.org/ns/org#Post/119b178f-5308-406f-b176-409e0dbc9142> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RN> .
+
+<http://www.w3.org/ns/org#Post/11f58597-5517-4a7e-89f9-4cbd4e0f178b> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SC> .
+
+<http://www.w3.org/ns/org#Post/1279fc96-ea60-4c23-a7b2-a4a6b891d40d> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SP> .
+
+<http://www.w3.org/ns/org#Post/1318dc25-ee47-41d8-b38c-3d060e999ebe> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/ES> .
+
+<http://www.w3.org/ns/org#Post/13214c13-38a1-46da-a3cb-da57d3473777> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/TO> .
+
+<http://www.w3.org/ns/org#Post/1334ee4f-3558-4e69-8446-d91d91bb063f> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SP> .
+
+<http://www.w3.org/ns/org#Post/13a14fe1-d862-4f13-9d58-c31366ff8344> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PR> .
+
+<http://www.w3.org/ns/org#Post/13e45a15-753d-4af1-bd69-4637208e281a> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/DF> .
+
+<http://www.w3.org/ns/org#Post/14cd9931-7ee3-4dc6-87f6-b363d23c7894> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SP> .
+
+<http://www.w3.org/ns/org#Post/15a38087-1fb5-42cb-8e1a-cd6fa4305b9e> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/MG> .
+
+<http://www.w3.org/ns/org#Post/15cd32cf-bed3-4f52-97bb-80926d931e0b> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/BA> .
+
+<http://www.w3.org/ns/org#Post/15d15893-90d2-4bde-9398-53bd4aac1035> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PR> .
+
+<http://www.w3.org/ns/org#Post/15d57489-19c3-44cc-ada6-12926d373ed4> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RO> .
+
+<http://www.w3.org/ns/org#Post/16509d2c-67c3-4c06-9ac3-e72444675b7c> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RR> .
+
+<http://www.w3.org/ns/org#Post/1772cbd6-1b8d-464c-b0ea-f9284519c622> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/TO> .
+
+<http://www.w3.org/ns/org#Post/182ad1f1-01bf-4692-a57b-69f155bb5ff5> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SP> .
+
+<http://www.w3.org/ns/org#Post/186fbed0-e1e6-41e6-8c7c-7e1fb709a181> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PB> .
+
+<http://www.w3.org/ns/org#Post/1a86d08d-cd91-4711-b8d6-8dda037a9a77> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/AC> .
+
+<http://www.w3.org/ns/org#Post/1af33fd6-7b18-4005-bbdc-5505aeaf3497> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PA> .
+
+<http://www.w3.org/ns/org#Post/1b87ddf7-24fe-44d5-a584-1eece044d8ea> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/MS> .
+
+<http://www.w3.org/ns/org#Post/1bd06338-521f-45c5-a211-3dd89dd44e47> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/MG> .
+
+<http://www.w3.org/ns/org#Post/1c0865c8-25a8-4125-a5aa-9bb08a39aa97> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/AC> .
+
+<http://www.w3.org/ns/org#Post/1c6f7b23-b87f-49a5-a0de-548ed01a1a0a> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/MG> .
+
+<http://www.w3.org/ns/org#Post/1ce9cbc4-444c-45ef-b1ce-9dce47549dbc> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/DF> .
+
+<http://www.w3.org/ns/org#Post/1e1d9f76-db7e-4adc-8ecc-337e571eddbd> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RN> .
+
+<http://www.w3.org/ns/org#Post/1eac9863-a9d9-4b39-9954-6f09cdc379ab> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SP> .
+
+<http://www.w3.org/ns/org#Post/1ec1f650-a76b-40fb-9e34-efcae2355d5f> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/BA> .
+
+<http://www.w3.org/ns/org#Post/1fe021b2-056b-4349-b2cc-acb823a2655f> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/MG> .
+
+<http://www.w3.org/ns/org#Post/202d50b7-6648-42c6-9711-c1e58bdba05a> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/CE> .
+
+<http://www.w3.org/ns/org#Post/20451f6b-2d5a-4d2c-8fbc-c5c490a998f9> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SC> .
+
+<http://www.w3.org/ns/org#Post/20ce197d-727d-4e17-b5d8-14a76084e2e3> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RJ> .
+
+<http://www.w3.org/ns/org#Post/21326a2f-179b-4f4d-bcc3-158d517122ff> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/CE> .
+
+<http://www.w3.org/ns/org#Post/215e3fb7-cde9-4a58-a82a-0a6a2d3e7920> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PA> .
+
+<http://www.w3.org/ns/org#Post/21a95517-84c6-4644-8dd1-7ba4354cedc5> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RJ> .
+
+<http://www.w3.org/ns/org#Post/22228612-0cc7-4679-9089-0e7c29a5af90> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/BA> .
+
+<http://www.w3.org/ns/org#Post/23f29e59-a66d-4d8c-b658-409702d5d4ef> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SC> .
+
+<http://www.w3.org/ns/org#Post/24289483-a794-4126-8cff-44287586b23e> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SC> .
+
+<http://www.w3.org/ns/org#Post/24aa98d0-df18-4094-819b-f133b11f500f> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RJ> .
+
+<http://www.w3.org/ns/org#Post/2599893b-29f5-4913-ac99-2ce8173feb14> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/AP> .
+
+<http://www.w3.org/ns/org#Post/263eac41-bdff-4f62-9fa8-ca6c07a6fbb1> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/GO> .
+
+<http://www.w3.org/ns/org#Post/2721ab51-a25c-4bb7-855b-f28c35714319> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RJ> .
+
+<http://www.w3.org/ns/org#Post/27f3da24-08c9-4d7a-a28a-3f32c1fcfc0b> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RO> .
+
+<http://www.w3.org/ns/org#Post/27fa6c10-499f-48dc-a325-7dba1f31f624> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PE> .
+
+<http://www.w3.org/ns/org#Post/28229860-2531-45af-8640-335e5f6040be> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SP> .
+
+<http://www.w3.org/ns/org#Post/28245c97-ed1c-4c65-b0d0-bcc655f5fe52> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/MA> .
+
+<http://www.w3.org/ns/org#Post/28917fe8-2461-40f7-8bcc-fa079d681f76> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/DF> .
+
+<http://www.w3.org/ns/org#Post/28fa3e40-d1b1-4959-8809-d74e304918c1> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/MA> .
+
+<http://www.w3.org/ns/org#Post/2962f703-21ba-4961-b734-8aaf1cf24943> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/AM> .
+
+<http://www.w3.org/ns/org#Post/29c11bbd-78c5-4e51-8985-08bf257e31e9> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PI> .
+
+<http://www.w3.org/ns/org#Post/2a24dbd1-176c-4b46-a138-70425a189cd0> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/BA> .
+
+<http://www.w3.org/ns/org#Post/2a56b8c9-6d5b-4a56-9252-d219212f7631> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RN> .
+
+<http://www.w3.org/ns/org#Post/2b31548c-1bd3-4a30-b716-97680ced596d> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PR> .
+
+<http://www.w3.org/ns/org#Post/2b71092d-4517-41af-8879-d74d6eee734e> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/AL> .
+
+<http://www.w3.org/ns/org#Post/2b73456f-1ee8-4200-a227-8de5db440faf> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PI> .
+
+<http://www.w3.org/ns/org#Post/2ba9f77a-7ec8-4e69-a4cb-c0a647ccd258> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RN> .
+
+<http://www.w3.org/ns/org#Post/2d0fc207-cf23-4378-b883-c0c66f9573c3> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SP> .
+
+<http://www.w3.org/ns/org#Post/2ddfc738-1f9e-47d7-a710-07e62577e4f1> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PE> .
+
+<http://www.w3.org/ns/org#Post/2de1508b-577b-4efe-a4ac-d4ef923abe57> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PR> .
+
+<http://www.w3.org/ns/org#Post/2f199990-1f02-45fb-bf85-2251e45951cc> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PR> .
+
+<http://www.w3.org/ns/org#Post/2f781896-ef2e-48d3-bcea-803416e1bac8> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/AL> .
+
+<http://www.w3.org/ns/org#Post/2f8a4b2b-b49c-43e9-9044-f29a39319245> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PR> .
+
+<http://www.w3.org/ns/org#Post/30b99e1b-2f24-455c-beb6-e20699ddaa51> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PB> .
+
+<http://www.w3.org/ns/org#Post/30d3f0d7-74ab-44a1-b7fc-68c43fef2bff> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RJ> .
+
+<http://www.w3.org/ns/org#Post/30db4e70-12ce-4037-85b5-c0e7868ae785> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RO> .
+
+<http://www.w3.org/ns/org#Post/313ec74f-ca33-4f46-abba-49a4e79b4565> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RS> .
+
+<http://www.w3.org/ns/org#Post/31c4b8cd-29ed-4b50-8668-4b847d3bd4e1> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PR> .
+
+<http://www.w3.org/ns/org#Post/32ee2308-c628-48b2-ad38-47e84c4edfbd> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RR> .
+
+<http://www.w3.org/ns/org#Post/332a5dcc-68a6-4e62-8e4d-6f716798f4a9> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/MA> .
+
+<http://www.w3.org/ns/org#Post/335b29a2-c866-415a-ac97-432dee21cb7d> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SP> .
+
+<http://www.w3.org/ns/org#Post/33645026-c1a9-4740-b176-4a8ac81952a0> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RS> .
+
+<http://www.w3.org/ns/org#Post/33caa0e1-b215-43d7-94fd-a01e54ee3899> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SE> .
+
+<http://www.w3.org/ns/org#Post/33d89f2d-9559-465a-8af0-7246bea8bf88> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SP> .
+
+<http://www.w3.org/ns/org#Post/342fff19-2832-425a-9246-097b49e661eb> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RS> .
+
+<http://www.w3.org/ns/org#Post/348197c1-753c-4aaf-a8b2-c43dd67a2870> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/GO> .
+
+<http://www.w3.org/ns/org#Post/36b54882-e304-45ca-b356-dfedf9ff7e30> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SP> .
+
+<http://www.w3.org/ns/org#Post/389afc62-fe0f-4841-a681-097f616f2d91> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/CE> .
+
+<http://www.w3.org/ns/org#Post/38d4e40c-3055-4363-a812-69ff1cd0abb6> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SP> .
+
+<http://www.w3.org/ns/org#Post/3a34bc9f-71d7-488a-be72-bc05b2c639b4> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/MA> .
+
+<http://www.w3.org/ns/org#Post/3a6a2a83-9d36-46d6-a0fa-052256bb79af> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SP> .
+
+<http://www.w3.org/ns/org#Post/3a6b6c5b-bc43-431e-a912-a973dc086c26> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/MG> .
+
+<http://www.w3.org/ns/org#Post/3befa827-a907-44b6-a2a2-33c803d438f4> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PA> .
+
+<http://www.w3.org/ns/org#Post/3c0d9781-9fa6-4c33-9790-4cde15c9d14d> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SP> .
+
+<http://www.w3.org/ns/org#Post/3c5fb6c7-4b43-4cd6-89ba-9e3ee11f49a9> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PR> .
+
+<http://www.w3.org/ns/org#Post/3cbe27f4-c2bb-47c2-907c-a83dcb3a2b99> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RS> .
+
+<http://www.w3.org/ns/org#Post/3cc3c1c4-6cca-4aae-ba83-0a4d5f895556> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/DF> .
+
+<http://www.w3.org/ns/org#Post/3db8ad36-ab66-4b81-9e21-a54d49e41d32> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SP> .
+
+<http://www.w3.org/ns/org#Post/3dc7eded-5835-4f14-b3e2-7eab6c7fe451> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/MT> .
+
+<http://www.w3.org/ns/org#Post/3e9499e2-e8ab-4c42-aefe-ff8b2a0af525> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PR> .
+
+<http://www.w3.org/ns/org#Post/3eb0ea74-b3ed-451e-b42d-c9bae8b3bd0d> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SP> .
+
+<http://www.w3.org/ns/org#Post/3edaf063-430b-4424-a58d-dbf213ef2fbc> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/DF> .
+
+<http://www.w3.org/ns/org#Post/3edce613-cdf4-4cd8-b66c-b9ba154e79c9> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SE> .
+
+<http://www.w3.org/ns/org#Post/3ef16d18-0da2-4105-bb72-2e194e2a9baa> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/BA> .
+
+<http://www.w3.org/ns/org#Post/3f75c99c-c63a-4dc5-85ff-2bc25d581005> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PB> .
+
+<http://www.w3.org/ns/org#Post/3f97443b-5c98-4f7f-abcb-9495ba524e62> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PR> .
+
+<http://www.w3.org/ns/org#Post/3fa4102d-0635-4848-b07e-60849c4c04c2> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/MT> .
+
+<http://www.w3.org/ns/org#Post/3fc2deee-6fd6-4299-8ea6-e4ab15b0ef68> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PB> .
+
+<http://www.w3.org/ns/org#Post/40e8d774-81a0-42aa-9a89-935874c78c60> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PA> .
+
+<http://www.w3.org/ns/org#Post/412b1bb9-561d-4503-9b2b-a3e9341d92b9> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RJ> .
+
+<http://www.w3.org/ns/org#Post/417b4388-1e7a-45e5-9691-ef6abe12522b> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/ES> .
+
+<http://www.w3.org/ns/org#Post/41cb40f8-3fc6-44e2-9652-b96eb9a68b07> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/GO> .
+
+<http://www.w3.org/ns/org#Post/425acf36-c020-4f50-9058-b0804489be00> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PB> .
+
+<http://www.w3.org/ns/org#Post/42c810dd-1d19-4ebc-b8ef-9e5787740e3f> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RJ> .
+
+<http://www.w3.org/ns/org#Post/4340c810-6ccb-45a8-a87b-a775fa2e88cc> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PI> .
+
+<http://www.w3.org/ns/org#Post/43ce6dd2-3368-4279-97a0-d58070458264> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/AM> .
+
+<http://www.w3.org/ns/org#Post/444792d1-7328-49a5-b63b-9e40c75480a9> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SC> .
+
+<http://www.w3.org/ns/org#Post/445830e4-b148-40b8-8df6-7211d0ab4128> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RS> .
+
+<http://www.w3.org/ns/org#Post/45354fa2-bfac-4d3d-97a0-1c600a05b087> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RS> .
+
+<http://www.w3.org/ns/org#Post/4561ba0c-1819-4d05-a469-ce52bd2273d1> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/TO> .
+
+<http://www.w3.org/ns/org#Post/475abb21-c00f-4a44-8be6-e4ad57cb17b9> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/BA> .
+
+<http://www.w3.org/ns/org#Post/479eb022-6856-4b1a-a622-f18d650c1d44> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SP> .
+
+<http://www.w3.org/ns/org#Post/47c31161-3877-4665-921c-b70fbdb28638> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/ES> .
+
+<http://www.w3.org/ns/org#Post/47f50078-f893-45c0-81be-a36562b58869> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/MG> .
+
+<http://www.w3.org/ns/org#Post/486286cc-4824-4165-8ef8-592c1a5f5776> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SP> .
+
+<http://www.w3.org/ns/org#Post/48f3ca7c-6287-4f89-9413-ba589d6f7032> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SP> .
+
+<http://www.w3.org/ns/org#Post/492219a4-691a-4c5c-ba8a-a6fac3723a3e> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/MG> .
+
+<http://www.w3.org/ns/org#Post/49fdfd49-b798-47e1-9c0a-050e181eec98> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/MG> .
+
+<http://www.w3.org/ns/org#Post/4af2bd48-9467-4845-afd1-3312bf870875> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SP> .
+
+<http://www.w3.org/ns/org#Post/4aff7777-e054-4aa1-ae46-d5410a52bb1b> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/MG> .
+
+<http://www.w3.org/ns/org#Post/4baade9d-8492-40f3-a79a-d075925b9713> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/CE> .
+
+<http://www.w3.org/ns/org#Post/4c0e5453-5d41-4786-b2d7-bd53891712a3> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SC> .
+
+<http://www.w3.org/ns/org#Post/4c0e5fce-b52c-4019-8f3e-28c84bbcd632> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RJ> .
+
+<http://www.w3.org/ns/org#Post/4c5edf05-b9c3-4d78-887e-1128e0984303> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RO> .
+
+<http://www.w3.org/ns/org#Post/4e1b1fe3-66b1-4d43-8370-71c63d6bd405> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RS> .
+
+<http://www.w3.org/ns/org#Post/4e5cd3a1-9463-44f9-8a0e-ef090713ade4> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PE> .
+
+<http://www.w3.org/ns/org#Post/4e768b49-636d-4a25-a715-d74348b0a8f1> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/CE> .
+
+<http://www.w3.org/ns/org#Post/4f0cfb10-8781-469d-9ba0-475613280201> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SE> .
+
+<http://www.w3.org/ns/org#Post/4fe4a21f-c09b-45a1-a8ad-d174976d1da6> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/MA> .
+
+<http://www.w3.org/ns/org#Post/4ffeb4dd-126d-49a7-99d2-27b99cd2ccfd> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SP> .
+
+<http://www.w3.org/ns/org#Post/5091c0a1-9ee1-4b7e-b9d9-5b88904b52c1> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/BA> .
+
+<http://www.w3.org/ns/org#Post/5147a85b-7ef7-44b6-bad9-37483d1300a4> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/ES> .
+
+<http://www.w3.org/ns/org#Post/515ddae5-ceae-4c50-a931-7ddc3e043b4c> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SE> .
+
+<http://www.w3.org/ns/org#Post/52030f86-73af-4d3d-9d2b-13dca6091c24> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/MS> .
+
+<http://www.w3.org/ns/org#Post/5217be4b-df9d-4403-ba37-293a27f31b68> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SP> .
+
+<http://www.w3.org/ns/org#Post/52236613-8c17-4ddf-a48d-c5dc235270d1> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SC> .
+
+<http://www.w3.org/ns/org#Post/52925b7c-0d0e-4760-bb0f-d12195c45628> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/AC> .
+
+<http://www.w3.org/ns/org#Post/533babbc-83c9-4fe8-b144-035c48c20f49> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/GO> .
+
+<http://www.w3.org/ns/org#Post/533f1010-9b32-47e4-92db-4a87bf044322> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RS> .
+
+<http://www.w3.org/ns/org#Post/535e616f-ead2-40a1-8829-9f0c56470115> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PA> .
+
+<http://www.w3.org/ns/org#Post/53a2764e-879b-43e1-b524-5e9ec4175a0b> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SC> .
+
+<http://www.w3.org/ns/org#Post/53f3d429-a2e2-4085-8f0f-a139bb0999f3> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SP> .
+
+<http://www.w3.org/ns/org#Post/541e6592-358b-4e45-ac4a-cb60a573ad5b> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SP> .
+
+<http://www.w3.org/ns/org#Post/549106e7-cf9b-40bc-b0e0-b5cade1ba393> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PR> .
+
+<http://www.w3.org/ns/org#Post/5504d4ef-014c-4660-9b3d-2b013f9e396b> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/DF> .
+
+<http://www.w3.org/ns/org#Post/55ac10bf-346a-4c94-9515-97d8cbe9e9db> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RR> .
+
+<http://www.w3.org/ns/org#Post/55b00a4d-0ee4-4d96-994f-4b2bade0fd38> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/MA> .
+
+<http://www.w3.org/ns/org#Post/55bf93c6-05ef-4222-a76d-6515f5551fe0> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/ES> .
+
+<http://www.w3.org/ns/org#Post/55deaf1e-0b0e-4f35-99bc-38af604b30ca> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SP> .
+
+<http://www.w3.org/ns/org#Post/56780673-26c1-4b43-9f97-c586df08f0af> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RO> .
+
+<http://www.w3.org/ns/org#Post/5758dc2c-4086-4561-8bd8-8509e419daaa> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/MS> .
+
+<http://www.w3.org/ns/org#Post/577431d4-5071-4ee2-9329-a7dda6a7019f> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SP> .
+
+<http://www.w3.org/ns/org#Post/57eec236-a7e4-4245-90b5-f4482b6511dc> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/MG> .
+
+<http://www.w3.org/ns/org#Post/5831e0e6-313f-4624-8d90-63e9161d2afb> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RJ> .
+
+<http://www.w3.org/ns/org#Post/584eb371-7e56-4484-b7c1-8324ef6228aa> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/MG> .
+
+<http://www.w3.org/ns/org#Post/58950988-0cda-4277-bb47-2a3ed295d257> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/AM> .
+
+<http://www.w3.org/ns/org#Post/58cb568d-8630-4ed0-ba88-c6b15d33a683> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RS> .
+
+<http://www.w3.org/ns/org#Post/5936e8ce-2404-418d-9f6c-b9768a31e7c2> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SE> .
+
+<http://www.w3.org/ns/org#Post/597186b1-66f2-49e1-ab0f-2db3596aedc4> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RS> .
+
+<http://www.w3.org/ns/org#Post/59dfeaa4-9da2-46ee-a986-2d99ddbfdc81> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SC> .
+
+<http://www.w3.org/ns/org#Post/59fda11f-bb58-4059-87a3-04ecc597f4a4> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/MS> .
+
+<http://www.w3.org/ns/org#Post/5a09a2bc-6ce7-4804-baf2-b5d87d45fc34> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RR> .
+
+<http://www.w3.org/ns/org#Post/5a80b149-9c4f-4de3-ae10-7369661e3e44> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/CE> .
+
+<http://www.w3.org/ns/org#Post/5a9899f4-b94e-4dcc-848f-2b06b9205840> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/ES> .
+
+<http://www.w3.org/ns/org#Post/5ab55a32-40b8-4b79-a647-515949c57a13> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RS> .
+
+<http://www.w3.org/ns/org#Post/5ace30a1-8326-4acc-8bf9-5acdbfb11dd0> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/CE> .
+
+<http://www.w3.org/ns/org#Post/5ad794c6-5a6f-4080-9862-d8a1b656a966> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/AL> .
+
+<http://www.w3.org/ns/org#Post/5afb3dcd-962a-454f-ac9a-9dd2e54d5f65> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/AL> .
+
+<http://www.w3.org/ns/org#Post/5b882cff-4518-49cf-bfcb-1db6923171c1> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SP> .
+
+<http://www.w3.org/ns/org#Post/5bb252ef-a082-4004-a8e0-df2d5e7eaf7c> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/BA> .
+
+<http://www.w3.org/ns/org#Post/5c85bda0-0889-4dac-aa90-acd573d92082> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SP> .
+
+<http://www.w3.org/ns/org#Post/5cab3c69-09b8-4e12-ac00-740516d89449> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SP> .
+
+<http://www.w3.org/ns/org#Post/5cd4d3cf-723b-4887-ab5e-0db285b5d1ea> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/AL> .
+
+<http://www.w3.org/ns/org#Post/5ce67082-dad4-4b13-a13c-1218b59e43da> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RJ> .
+
+<http://www.w3.org/ns/org#Post/5d106506-e65c-48f1-8d17-31094a04e384> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SP> .
+
+<http://www.w3.org/ns/org#Post/5d128532-ab0c-497d-8963-35dd26622ea0> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PE> .
+
+<http://www.w3.org/ns/org#Post/5d634a14-c138-494c-93bf-1fd73b3f7cc7> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RS> .
+
+<http://www.w3.org/ns/org#Post/5d84f556-b39a-4d43-b051-cc74001cbce8> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PE> .
+
+<http://www.w3.org/ns/org#Post/5df7843b-e830-4311-b69e-edf81c71f590> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/BA> .
+
+<http://www.w3.org/ns/org#Post/5ef83671-9348-4f93-93c3-fe233cc6ffb3> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PE> .
+
+<http://www.w3.org/ns/org#Post/5fcc6a84-a16a-48bf-97a3-e509f9e6ac69> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/BA> .
+
+<http://www.w3.org/ns/org#Post/6079661f-d622-4b02-9ddd-160893cbca33> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PE> .
+
+<http://www.w3.org/ns/org#Post/60aa7c06-c999-41ef-b936-cc27f8655421> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PE> .
+
+<http://www.w3.org/ns/org#Post/60d22720-9c2c-4040-a129-7bc961799856> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RJ> .
+
+<http://www.w3.org/ns/org#Post/63d6c7c2-79e7-49e1-a371-9ce781f749a2> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/AC> .
+
+<http://www.w3.org/ns/org#Post/640cda13-60d0-47b1-a1ef-dbf86816fe1c> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RS> .
+
+<http://www.w3.org/ns/org#Post/645451dc-d355-496a-99e9-88a6e89e2b46> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/CE> .
+
+<http://www.w3.org/ns/org#Post/64719d09-292f-4398-bac0-cb04a6dfb65f> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/BA> .
+
+<http://www.w3.org/ns/org#Post/66761766-7fda-4141-b5e4-16466509a730> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/MG> .
+
+<http://www.w3.org/ns/org#Post/6686efc4-4701-4376-8efe-d83c714c858f> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/DF> .
+
+<http://www.w3.org/ns/org#Post/66d21a93-b115-43b6-a8a5-ad5a6f04f219> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PE> .
+
+<http://www.w3.org/ns/org#Post/67772544-55ec-4440-a17c-cdf0a26c2613> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/MG> .
+
+<http://www.w3.org/ns/org#Post/6785827c-4c00-4111-89eb-f2faae6ff3f2> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/MT> .
+
+<http://www.w3.org/ns/org#Post/67df519c-68aa-4590-8fc8-49e06c1910b9> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SP> .
+
+<http://www.w3.org/ns/org#Post/680275aa-0f1d-4b36-9cfa-5602efbff8f2> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/MG> .
+
+<http://www.w3.org/ns/org#Post/68405038-8740-4ee2-9e30-fc8d7141d01e> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/MT> .
+
+<http://www.w3.org/ns/org#Post/68c42b8b-a649-4556-a8e6-92c5b303ea9c> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SC> .
+
+<http://www.w3.org/ns/org#Post/69e474d3-75f2-410d-8174-7394b92aaa29> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SP> .
+
+<http://www.w3.org/ns/org#Post/6a40a7c7-c0bd-43e8-b21c-f0785b4a53b2> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/GO> .
+
+<http://www.w3.org/ns/org#Post/6a47f065-6e51-4898-90b8-3c74568ba321> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/MG> .
+
+<http://www.w3.org/ns/org#Post/6a8ef3b6-7a62-4c4f-947f-643407798bff> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SP> .
+
+<http://www.w3.org/ns/org#Post/6ac4f58d-b24f-4371-813a-4c0708612ea0> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PI> .
+
+<http://www.w3.org/ns/org#Post/6ae9dbcb-d7d4-40e8-80c6-520612bd7721> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/GO> .
+
+<http://www.w3.org/ns/org#Post/6b360c8a-eaee-415a-8401-ac24cd8ba8c2> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/AM> .
+
+<http://www.w3.org/ns/org#Post/6b780329-2255-4d76-95d9-84757d8ce23b> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PI> .
+
+<http://www.w3.org/ns/org#Post/6ca6d87e-b73c-44ed-aec9-f486150553c3> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/MA> .
+
+<http://www.w3.org/ns/org#Post/6d0df326-fff8-4f1c-a7be-504283bbdcd0> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/MT> .
+
+<http://www.w3.org/ns/org#Post/6d847e6f-9da2-4fd3-9355-dd8d917a2df4> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SC> .
+
+<http://www.w3.org/ns/org#Post/6db56753-817d-48fb-9fe0-c299ee3e3e36> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RS> .
+
+<http://www.w3.org/ns/org#Post/6e15ab04-173d-47e5-a544-f3f01700d862> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/MA> .
+
+<http://www.w3.org/ns/org#Post/6e506dd0-49a3-40e3-9393-78c034b504a7> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PA> .
+
+<http://www.w3.org/ns/org#Post/6e78554a-39e9-4d08-8226-b036241fbbb9> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/MG> .
+
+<http://www.w3.org/ns/org#Post/6edaac9e-34a2-4f4f-b357-5b360764d18b> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PA> .
+
+<http://www.w3.org/ns/org#Post/6ef2df34-72b3-49b5-b7ad-5bc0e643287e> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SP> .
+
+<http://www.w3.org/ns/org#Post/6f1523b3-3fd1-473b-9e5e-46a847b109d3> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/MS> .
+
+<http://www.w3.org/ns/org#Post/6f502b6f-880e-41c8-8388-60b079ce46c2> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SP> .
+
+<http://www.w3.org/ns/org#Post/6f86479f-2b85-4498-b919-af60598fc1ba> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/CE> .
+
+<http://www.w3.org/ns/org#Post/6ffa7ae0-32a2-4c97-a305-d4fb639acba6> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PB> .
+
+<http://www.w3.org/ns/org#Post/70f51de1-b07b-458d-b446-719b3981abc2> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RJ> .
+
+<http://www.w3.org/ns/org#Post/71f0325b-4f82-41ec-8e9e-462342f89758> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/MS> .
+
+<http://www.w3.org/ns/org#Post/72064747-fd5a-43ab-88fe-09ec530643ea> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/TO> .
+
+<http://www.w3.org/ns/org#Post/727f225b-274f-4755-8eb4-000d7e3deff3> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/MG> .
+
+<http://www.w3.org/ns/org#Post/72cac2a5-16d3-44a7-8333-aa6ea9a0ac57> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RN> .
+
+<http://www.w3.org/ns/org#Post/72eaff1a-ee36-4543-9fee-6aef06c9b522> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/MG> .
+
+<http://www.w3.org/ns/org#Post/73416702-8327-45c5-9d0b-0c4447247cd8> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RN> .
+
+<http://www.w3.org/ns/org#Post/73a9edac-7185-4192-9fa8-dd9cd525fd6c> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PR> .
+
+<http://www.w3.org/ns/org#Post/753f48b7-54a5-4593-b48e-cc759f096a75> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PE> .
+
+<http://www.w3.org/ns/org#Post/75ece2ab-3c4a-4edd-ae24-571985de04ac> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PE> .
+
+<http://www.w3.org/ns/org#Post/75ed844a-a665-41b5-8b17-e92f94e85af7> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/MG> .
+
+<http://www.w3.org/ns/org#Post/760b0ed5-7bb7-42ed-ad7d-950e979f21db> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/CE> .
+
+<http://www.w3.org/ns/org#Post/76e051ec-eac0-4af9-b8f1-61b1dcc8b809> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PR> .
+
+<http://www.w3.org/ns/org#Post/77760a4d-8009-40de-835f-9050e6fabff1> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/MA> .
+
+<http://www.w3.org/ns/org#Post/7867a872-e0ae-4e63-87df-c35c5b23da64> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RJ> .
+
+<http://www.w3.org/ns/org#Post/78c739eb-3796-471f-ab0b-6f6cbbef917f> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PB> .
+
+<http://www.w3.org/ns/org#Post/7ab8263a-1774-4329-b59f-10ab0f25b0e7> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SP> .
+
+<http://www.w3.org/ns/org#Post/7b36f237-c51a-489e-84d9-764121130535> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RS> .
+
+<http://www.w3.org/ns/org#Post/7ba2c598-f460-4841-a070-34906804eebf> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/MG> .
+
+<http://www.w3.org/ns/org#Post/7ba6f01f-2154-47f9-b8ea-6afbdaab55c9> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/GO> .
+
+<http://www.w3.org/ns/org#Post/7decc3c6-173b-4486-8ded-39aa919478a1> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PR> .
+
+<http://www.w3.org/ns/org#Post/7e128c41-3938-4464-bd4c-d374050a3d30> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SP> .
+
+<http://www.w3.org/ns/org#Post/7e1d2bcc-6be1-42a0-a01c-bb13b5c99374> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SP> .
+
+<http://www.w3.org/ns/org#Post/7e4a2715-c38b-4b01-8236-a850ebf852ba> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RJ> .
+
+<http://www.w3.org/ns/org#Post/7e5a73bb-060b-459a-a154-d7577f8df369> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/MA> .
+
+<http://www.w3.org/ns/org#Post/7e8a6d7d-7c78-4afc-98db-e833cac497bb> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/MG> .
+
+<http://www.w3.org/ns/org#Post/7fba7f27-0515-4b0d-8146-4a2cac6d06b9> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/CE> .
+
+<http://www.w3.org/ns/org#Post/7fd1dd2b-0cee-4dc0-a0d5-4d4d312d35e7> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RJ> .
+
+<http://www.w3.org/ns/org#Post/80220b1c-0ecf-482e-a318-a491b9ddaab6> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/BA> .
+
+<http://www.w3.org/ns/org#Post/8023856e-377c-41cf-af18-3b77f36ea21a> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RS> .
+
+<http://www.w3.org/ns/org#Post/80492732-8f5b-42d3-905d-6231ca66281b> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/GO> .
+
+<http://www.w3.org/ns/org#Post/805fd6fe-4dad-43bb-a773-a1552461ac30> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PR> .
+
+<http://www.w3.org/ns/org#Post/80cc685d-52f0-4d3a-9bd2-d3ce4873336c> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/AL> .
+
+<http://www.w3.org/ns/org#Post/8212ef89-a245-4fde-a8fe-2f3415c12866> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/MS> .
+
+<http://www.w3.org/ns/org#Post/82133458-b9f8-492b-875f-ede149309c21> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SP> .
+
+<http://www.w3.org/ns/org#Post/82c15589-3c4f-4c26-bb8f-269ce8fad23c> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SC> .
+
+<http://www.w3.org/ns/org#Post/831be427-b140-443e-94f3-cb385e0782d2> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/BA> .
+
+<http://www.w3.org/ns/org#Post/83ab06da-0f9e-460c-ad09-42119ea8c4f1> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RJ> .
+
+<http://www.w3.org/ns/org#Post/84f55b16-5b05-4090-9679-ac64bf5a3f22> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PE> .
+
+<http://www.w3.org/ns/org#Post/86126fbb-11e3-41bd-9efd-e86ea7808273> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/AM> .
+
+<http://www.w3.org/ns/org#Post/8675e01d-bda3-4ed5-8b8e-ad324a7cf190> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PA> .
+
+<http://www.w3.org/ns/org#Post/8695b684-4b03-4ffe-a0f3-44b592e56ef5> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/MG> .
+
+<http://www.w3.org/ns/org#Post/86f1a0e5-fd2a-4fbf-b594-fffb144ddaff> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PR> .
+
+<http://www.w3.org/ns/org#Post/87fccc80-6d03-4067-9837-97ef873f99cd> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/AP> .
+
+<http://www.w3.org/ns/org#Post/88dcd249-35bb-4922-bf74-68c609365b65> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SP> .
+
+<http://www.w3.org/ns/org#Post/8a1db2bb-ab4c-43ae-ba9f-013547bf951b> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PB> .
+
+<http://www.w3.org/ns/org#Post/8a2a3ac3-0939-4e6d-92ad-6486aa3c3bf8> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RJ> .
+
+<http://www.w3.org/ns/org#Post/8a588978-dffa-469e-ab51-ab5746db904d> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PA> .
+
+<http://www.w3.org/ns/org#Post/8a739a1c-d1f9-4c16-99be-bc7cd8173a1c> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PR> .
+
+<http://www.w3.org/ns/org#Post/8a75f829-4736-4cd9-af92-5a1c64749f0a> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PE> .
+
+<http://www.w3.org/ns/org#Post/8a816229-dece-4819-8139-da7462cd38f2> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/GO> .
+
+<http://www.w3.org/ns/org#Post/8ba79996-85dc-4cbe-8ad2-cf5590dbf92c> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/TO> .
+
+<http://www.w3.org/ns/org#Post/8bf0a556-e904-4846-87dc-780cdf078b5d> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/CE> .
+
+<http://www.w3.org/ns/org#Post/8c3e5257-c309-469b-8bb3-88e7da6b4dca> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PI> .
+
+<http://www.w3.org/ns/org#Post/8c78a420-5c7f-4ef8-962c-fb2b2ff51600> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PE> .
+
+<http://www.w3.org/ns/org#Post/8c83b1f6-4c26-4b92-8591-79d4195eca66> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PB> .
+
+<http://www.w3.org/ns/org#Post/8cffafbc-ec50-451a-9996-9f5c89e87368> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/AP> .
+
+<http://www.w3.org/ns/org#Post/8d4f0847-8f1a-4e20-829f-4d506a611394> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RS> .
+
+<http://www.w3.org/ns/org#Post/8d674035-d187-4f34-ab9a-59932ff71903> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/GO> .
+
+<http://www.w3.org/ns/org#Post/8e484e9e-8234-4a57-be00-18c296c4817e> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/MG> .
+
+<http://www.w3.org/ns/org#Post/8f3d2ceb-6fa7-4b36-bf2e-37256589b69f> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SP> .
+
+<http://www.w3.org/ns/org#Post/8f70d76a-de01-4916-b692-f800c3f36317> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PR> .
+
+<http://www.w3.org/ns/org#Post/90c41a2d-6685-4264-95e4-6dc8442ec995> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PE> .
+
+<http://www.w3.org/ns/org#Post/90f07301-2ab3-43ff-9f21-b6f13735a988> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PI> .
+
+<http://www.w3.org/ns/org#Post/913c39d2-9f52-45fc-8357-493715278686> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/MG> .
+
+<http://www.w3.org/ns/org#Post/916d0064-559f-4c63-89bc-58dc61a1d712> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RS> .
+
+<http://www.w3.org/ns/org#Post/91df2bd5-879a-4516-bccc-6c8fe60ae93f> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/DF> .
+
+<http://www.w3.org/ns/org#Post/91f6e010-8157-44d2-a522-bb1166ac6610> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PE> .
+
+<http://www.w3.org/ns/org#Post/92122a0c-0639-40bc-b35a-6938eda36e4d> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RJ> .
+
+<http://www.w3.org/ns/org#Post/930b477e-94d7-4c78-8198-30c154eb9ff2> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RJ> .
+
+<http://www.w3.org/ns/org#Post/938fd9e6-1eb9-4bd3-bedc-e351bc06a16c> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/AM> .
+
+<http://www.w3.org/ns/org#Post/94d8e255-e57c-4265-a0d6-9b287ffeb823> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SC> .
+
+<http://www.w3.org/ns/org#Post/94dbd832-73f3-402f-8adf-9317bf74bb1c> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/AL> .
+
+<http://www.w3.org/ns/org#Post/9541ff12-f491-4952-81a1-059783af1b4a> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/CE> .
+
+<http://www.w3.org/ns/org#Post/962ee1ca-49a6-436f-b890-4bf6f174ac1e> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/MA> .
+
+<http://www.w3.org/ns/org#Post/96310c00-9bfc-4d13-a68e-db9425cde6cc> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/AM> .
+
+<http://www.w3.org/ns/org#Post/9661601f-c077-4815-ab7f-428b0c7aea28> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/MG> .
+
+<http://www.w3.org/ns/org#Post/967ffc30-b4e4-480b-a297-73015f9423dc> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/BA> .
+
+<http://www.w3.org/ns/org#Post/970545d3-afc9-40a6-b7ef-f05fcdba713d> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PE> .
+
+<http://www.w3.org/ns/org#Post/97cb67c4-76d8-4514-b25e-caab1b65e505> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PB> .
+
+<http://www.w3.org/ns/org#Post/981d1ff4-ae50-4080-93d9-124e4ed04c88> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/ES> .
+
+<http://www.w3.org/ns/org#Post/981fe4cd-9415-4df1-9b88-376dd027ff10> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PB> .
+
+<http://www.w3.org/ns/org#Post/9a8203c5-b75e-4f7e-abdb-6d5a140da8e0> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RJ> .
+
+<http://www.w3.org/ns/org#Post/9a9ae3eb-5204-48e4-baba-0efe840b1e15> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/AP> .
+
+<http://www.w3.org/ns/org#Post/9aa5615f-b04f-45a4-a7d4-d8675839bb74> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SP> .
+
+<http://www.w3.org/ns/org#Post/9b542998-6820-4ad0-9b84-4e632cd2c070> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RS> .
+
+<http://www.w3.org/ns/org#Post/9be3f507-809b-4e69-8922-da419675e875> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RS> .
+
+<http://www.w3.org/ns/org#Post/9bfa9876-26c4-426f-994a-bccd7bd92f7a> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PR> .
+
+<http://www.w3.org/ns/org#Post/9c79964c-a02d-41a8-9f1f-54c830b375e8> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/MA> .
+
+<http://www.w3.org/ns/org#Post/9cab2d02-8030-4ab2-9b9e-7475e2c16040> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/MT> .
+
+<http://www.w3.org/ns/org#Post/9cc8f96a-021e-42a6-b703-2703210d845a> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/MG> .
+
+<http://www.w3.org/ns/org#Post/9cdceae4-b9e8-4878-bfdd-44c414e957cd> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/MG> .
+
+<http://www.w3.org/ns/org#Post/9dced8c1-fae1-4d7f-af24-d0f683bcfdd6> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PA> .
+
+<http://www.w3.org/ns/org#Post/9e28b721-a29e-44e5-86c4-ae1d94dd2a3e> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/AM> .
+
+<http://www.w3.org/ns/org#Post/9e5caf57-1244-4ac7-b289-8178b67c5205> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/MA> .
+
+<http://www.w3.org/ns/org#Post/9f89f9f8-8dc4-4180-bf99-8c995944a8db> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RR> .
+
+<http://www.w3.org/ns/org#Post/9fa7dcfd-4e59-4116-abde-bb7e8700a4ed> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RS> .
+
+<http://www.w3.org/ns/org#Post/9fa82918-733f-4e24-89e2-530a12761efc> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RJ> .
+
+<http://www.w3.org/ns/org#Post/9ff9172a-d91b-4d10-b80e-788baa7d88ac> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RJ> .
+
+<http://www.w3.org/ns/org#Post/a05f424c-55ed-4adf-a668-6dcb33d779ba> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/BA> .
+
+<http://www.w3.org/ns/org#Post/a24b8c2e-31db-4b5f-bce5-51404f2aca5b> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SP> .
+
+<http://www.w3.org/ns/org#Post/a351f169-2e29-4fe1-827e-89a2908d4835> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/BA> .
+
+<http://www.w3.org/ns/org#Post/a3dca087-ec2d-4682-a07f-84e806877527> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PE> .
+
+<http://www.w3.org/ns/org#Post/a3ff80f9-1ed1-4584-afcc-1a27319bcd44> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/TO> .
+
+<http://www.w3.org/ns/org#Post/a49d5215-4415-4404-9e37-af13ebe22f60> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PR> .
+
+<http://www.w3.org/ns/org#Post/a53ac321-4b11-4082-a4c5-69db15a2af3d> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/AP> .
+
+<http://www.w3.org/ns/org#Post/a546d670-8e26-49c1-a652-e8c1a652a7d3> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/CE> .
+
+<http://www.w3.org/ns/org#Post/a5c7ee15-c162-469a-9646-dbc8f5404295> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RJ> .
+
+<http://www.w3.org/ns/org#Post/a6bd3d2b-e374-4572-8d81-5370a00d5032> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/BA> .
+
+<http://www.w3.org/ns/org#Post/a6dc292f-f1b4-4951-8d7b-0353cba64f55> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/MT> .
+
+<http://www.w3.org/ns/org#Post/a73ba585-8596-4371-9f33-ae7115c82f92> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SP> .
+
+<http://www.w3.org/ns/org#Post/a7b12e64-cffb-4484-a99e-162c1e0dadb5> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RJ> .
+
+<http://www.w3.org/ns/org#Post/a84280a1-7c25-478b-bb49-afa58c6922db> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SP> .
+
+<http://www.w3.org/ns/org#Post/a8e6a217-481f-4d1a-a63a-73e95af13624> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PE> .
+
+<http://www.w3.org/ns/org#Post/a9e1dd01-e217-4ea1-9043-61a661f46ec5> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RJ> .
+
+<http://www.w3.org/ns/org#Post/aa1d953e-5a32-4e65-aaac-2c8f8d36b4ac> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SC> .
+
+<http://www.w3.org/ns/org#Post/aa4c68c1-c40a-475b-96cf-c19afd08a70d> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RJ> .
+
+<http://www.w3.org/ns/org#Post/aa811f35-9e86-47d7-8d7f-451b052fe658> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/BA> .
+
+<http://www.w3.org/ns/org#Post/ab78331b-f460-4596-8bdc-0a7ef4b6f741> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/TO> .
+
+<http://www.w3.org/ns/org#Post/abb9ea2b-1102-4820-822b-7b05d7ae2df5> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/MG> .
+
+<http://www.w3.org/ns/org#Post/ac582e0d-97a3-4ce7-aa0d-9cad459d5b5c> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SP> .
+
+<http://www.w3.org/ns/org#Post/acd63ac0-c68d-4638-9598-f06eff3635ac> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/AP> .
+
+<http://www.w3.org/ns/org#Post/adfba22f-5d21-44b3-9c7b-6e0175b57194> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PE> .
+
+<http://www.w3.org/ns/org#Post/ae7f6f67-fb6e-4696-ad5d-72621b5be774> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/CE> .
+
+<http://www.w3.org/ns/org#Post/aef92643-e375-42a5-86ef-50613720159b> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SC> .
+
+<http://www.w3.org/ns/org#Post/af05f848-001b-4bd8-8d84-5b6299ec5c3b> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RJ> .
+
+<http://www.w3.org/ns/org#Post/af68079c-7156-4e8f-97b7-7bcdbb238493> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/ES> .
+
+<http://www.w3.org/ns/org#Post/afd19ff0-4052-48f5-87cd-1148bd6791f9> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RR> .
+
+<http://www.w3.org/ns/org#Post/b01b1fb1-1b75-46dc-8218-37ddec493d36> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/CE> .
+
+<http://www.w3.org/ns/org#Post/b052fec2-cac5-413f-864f-c849cfe77a8f> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/AL> .
+
+<http://www.w3.org/ns/org#Post/b0d20b99-006c-4b90-9014-9f6c7b1a5c5a> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RJ> .
+
+<http://www.w3.org/ns/org#Post/b1054783-f6ed-44c6-955c-03b25eae7093> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RO> .
+
+<http://www.w3.org/ns/org#Post/b2968a28-064e-4c78-8d51-8619b35552cf> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/GO> .
+
+<http://www.w3.org/ns/org#Post/b2a4e2fe-5d12-4c8b-80f4-eec9f5fab8c3> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PA> .
+
+<http://www.w3.org/ns/org#Post/b38f3751-2581-4f52-97fd-d3239a61cd86> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PA> .
+
+<http://www.w3.org/ns/org#Post/b4081254-57b1-4f72-aa3c-9e9d097d1897> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PR> .
+
+<http://www.w3.org/ns/org#Post/b4a0ce40-1479-444c-b94a-69645cd841a1> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SP> .
+
+<http://www.w3.org/ns/org#Post/b54fb064-e220-4e76-8fe1-17a7b6f2bd79> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RS> .
+
+<http://www.w3.org/ns/org#Post/b5bca9a8-8725-4fea-84a9-6617dd283095> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PR> .
+
+<http://www.w3.org/ns/org#Post/b5c057db-12c2-410e-b91a-e61552a53063> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/GO> .
+
+<http://www.w3.org/ns/org#Post/b5f890fa-336b-4f9f-9f57-508ef46a0c9f> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PB> .
+
+<http://www.w3.org/ns/org#Post/b6464053-3423-44c5-9028-8c7f52b95bf3> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/CE> .
+
+<http://www.w3.org/ns/org#Post/b6538b7f-6bd0-40aa-9e3a-03118ea6bb07> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/MA> .
+
+<http://www.w3.org/ns/org#Post/b691acfc-f8ea-432d-bb8b-52a969a2f986> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/MG> .
+
+<http://www.w3.org/ns/org#Post/b6ced492-a12c-4f23-bc9d-1b74f4cdbc6c> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PA> .
+
+<http://www.w3.org/ns/org#Post/b7194568-a23f-4c38-87e7-f56ad3d7b7ec> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/AC> .
+
+<http://www.w3.org/ns/org#Post/b7aaaf14-2200-46c6-9e23-adf4a0debcdb> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/AM> .
+
+<http://www.w3.org/ns/org#Post/b7d04836-d32c-480d-802a-2c8ccc2aeecb> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RJ> .
+
+<http://www.w3.org/ns/org#Post/b8014e8b-4656-4c51-aa1e-a255697d963a> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/ES> .
+
+<http://www.w3.org/ns/org#Post/b8505580-32e3-4637-8c2b-26240046bd1f> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/MT> .
+
+<http://www.w3.org/ns/org#Post/b85f2762-e474-418c-bcf2-2ccf1e53f786> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/MG> .
+
+<http://www.w3.org/ns/org#Post/b891f667-d100-4787-8705-f0243e2e732b> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PA> .
+
+<http://www.w3.org/ns/org#Post/b957ee69-4b42-49f7-8b58-37d452ebaddc> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/ES> .
+
+<http://www.w3.org/ns/org#Post/b9701102-24c0-4677-bd6e-7ac43653b469> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PA> .
+
+<http://www.w3.org/ns/org#Post/b9845687-3db7-4897-b70b-1bc4732887a8> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/MG> .
+
+<http://www.w3.org/ns/org#Post/b98bdccf-efac-4c19-8151-476f35bec9c7> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RJ> .
+
+<http://www.w3.org/ns/org#Post/ba56800c-44b0-4ed3-8f2d-6214d6fa280d> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RJ> .
+
+<http://www.w3.org/ns/org#Post/ba6ece24-9e4d-4d04-a835-958a14f4d587> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RO> .
+
+<http://www.w3.org/ns/org#Post/baa328ed-eb59-4483-ba6a-4aa01f4408a0> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/CE> .
+
+<http://www.w3.org/ns/org#Post/bafb8dde-6b2e-4b68-aec6-0e04d96859df> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/BA> .
+
+<http://www.w3.org/ns/org#Post/bb9a8267-47bf-4735-aae4-2213a10a7a9a> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PE> .
+
+<http://www.w3.org/ns/org#Post/bc7cb4c4-6d57-4bfe-a663-9981ce996776> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/MG> .
+
+<http://www.w3.org/ns/org#Post/bd0d49d5-f2b4-42a9-ba19-b5b7e9ceb215> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/MG> .
+
+<http://www.w3.org/ns/org#Post/be0eab52-37d4-4a79-ba46-d46d9e62fd5f> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PI> .
+
+<http://www.w3.org/ns/org#Post/be3b65aa-83b5-4d3b-bf75-7570b106102a> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/AC> .
+
+<http://www.w3.org/ns/org#Post/be53d3a6-40be-4031-9459-72d2f026eed3> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SP> .
+
+<http://www.w3.org/ns/org#Post/be75d737-1094-4035-aad1-f1f81722f8ad> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/BA> .
+
+<http://www.w3.org/ns/org#Post/be762b61-b2a1-4c2c-9196-68babba0ada8> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SP> .
+
+<http://www.w3.org/ns/org#Post/bea5e722-b05a-4655-ac91-0d67384c7995> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PA> .
+
+<http://www.w3.org/ns/org#Post/bf167a25-63b9-430c-94f5-7acc74dae335> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/MG> .
+
+<http://www.w3.org/ns/org#Post/bf36894c-204e-4285-9a4f-af6d431e3ff6> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SP> .
+
+<http://www.w3.org/ns/org#Post/bf61873c-feae-45a3-9dc6-2d601e047f72> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/GO> .
+
+<http://www.w3.org/ns/org#Post/bfd9f603-bb28-426c-876f-7bd110cd3891> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/CE> .
+
+<http://www.w3.org/ns/org#Post/bff28a83-ca85-43b0-8583-3ccf8df24d34> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RJ> .
+
+<http://www.w3.org/ns/org#Post/c01e5ba9-73aa-4221-ac22-8bcc150f033f> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/AC> .
+
+<http://www.w3.org/ns/org#Post/c02a6a57-f4a2-4ddb-a73c-d1600484df10> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/GO> .
+
+<http://www.w3.org/ns/org#Post/c148d430-876f-42c6-a019-cf0421e9f5d6> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SP> .
+
+<http://www.w3.org/ns/org#Post/c265da36-8842-4323-b216-27ed3027035c> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SC> .
+
+<http://www.w3.org/ns/org#Post/c269dd6a-c657-468d-ac54-a7ae6f6e0b15> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/ES> .
+
+<http://www.w3.org/ns/org#Post/c28dfd38-3b3a-4576-ada0-34d25f8d0fee> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RS> .
+
+<http://www.w3.org/ns/org#Post/c38e9db0-ff5a-46ae-94eb-9e03baf1d16b> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PE> .
+
+<http://www.w3.org/ns/org#Post/c3a0a8dd-7cb0-473f-bd25-3e0cdc5193ba> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RR> .
+
+<http://www.w3.org/ns/org#Post/c3d09cfb-96f5-41db-bf7b-eceb7248da40> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SP> .
+
+<http://www.w3.org/ns/org#Post/c47edb3d-0aa2-45e3-a829-9e480371bbc6> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/MG> .
+
+<http://www.w3.org/ns/org#Post/c5169879-81fc-4fb7-ac1d-22e1d324b068> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/MG> .
+
+<http://www.w3.org/ns/org#Post/c6100c3b-6d6a-42b3-b3fe-e989f23c58b7> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/MT> .
+
+<http://www.w3.org/ns/org#Post/c67cb59e-da71-4083-b2dc-3581b10e12f1> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/BA> .
+
+<http://www.w3.org/ns/org#Post/c6b55eaf-129d-4e9b-afca-f181e7e6ec60> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RJ> .
+
+<http://www.w3.org/ns/org#Post/c70daaad-8e36-4ee0-b897-4a8ee79f3d1e> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RS> .
+
+<http://www.w3.org/ns/org#Post/c76f16a2-159c-4eb7-a17e-18be9e87c257> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/AL> .
+
+<http://www.w3.org/ns/org#Post/c7ec97b4-f9c7-427b-be0d-1922ec2ca8b1> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/BA> .
+
+<http://www.w3.org/ns/org#Post/c950632c-522b-40a3-bdef-3d9552d445dd> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/MS> .
+
+<http://www.w3.org/ns/org#Post/c9efaad0-5eba-455c-8b95-8c0f6579128f> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/AC> .
+
+<http://www.w3.org/ns/org#Post/ca6098ea-24e7-4a27-9d3d-2f6e71b56c61> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/GO> .
+
+<http://www.w3.org/ns/org#Post/ca72ac78-0c1c-4115-a4bf-8e5052e998a3> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PR> .
+
+<http://www.w3.org/ns/org#Post/cad2d633-3ff2-4abb-bc99-4051e72a86fe> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SP> .
+
+<http://www.w3.org/ns/org#Post/cb001aa5-35fc-48a9-9da3-d5e258613638> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/MA> .
+
+<http://www.w3.org/ns/org#Post/cbad03bf-b96d-4ae6-949d-12f6e11e518b> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RJ> .
+
+<http://www.w3.org/ns/org#Post/cbba36fc-a8bd-4c0c-84fb-64e008e38b11> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/MG> .
+
+<http://www.w3.org/ns/org#Post/cc77c43b-0310-4fa6-81ff-c90ad9ae3fbc> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RJ> .
+
+<http://www.w3.org/ns/org#Post/cca24ecb-6d44-49f3-bdce-4981caf9a7ce> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RJ> .
+
+<http://www.w3.org/ns/org#Post/ce153b03-ca39-4952-a790-b385cf5318be> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/BA> .
+
+<http://www.w3.org/ns/org#Post/ce5bca79-d1e1-4185-b712-87e85637361c> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/MG> .
+
+<http://www.w3.org/ns/org#Post/cf2b579a-422c-4d77-bdb7-fdd004152ed8> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RJ> .
+
+<http://www.w3.org/ns/org#Post/cf605c8b-da4c-425c-9136-ee88f0ff85a0> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/TO> .
+
+<http://www.w3.org/ns/org#Post/d013d613-5b51-4eb4-b642-0b8e929e2a92> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PE> .
+
+<http://www.w3.org/ns/org#Post/d0190611-912a-4468-9f8f-c7e79ea58b4e> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/MG> .
+
+<http://www.w3.org/ns/org#Post/d2883b1a-59d5-4201-affc-4b7e440dea90> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RR> .
+
+<http://www.w3.org/ns/org#Post/d2c67077-35f2-4672-8d3b-0333dcb46160> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PA> .
+
+<http://www.w3.org/ns/org#Post/d307d797-55e4-44d2-bab2-c415369261c6> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/MG> .
+
+<http://www.w3.org/ns/org#Post/d30f9a7b-8465-4382-8915-ca5cfb221c96> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PR> .
+
+<http://www.w3.org/ns/org#Post/d37df44f-2344-4673-b4ba-ca7cc075f006> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RR> .
+
+<http://www.w3.org/ns/org#Post/d3933684-4e0f-46c2-99f4-4b01addb1290> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SP> .
+
+<http://www.w3.org/ns/org#Post/d4a14375-29da-434d-b01c-b77d5f0ee69f> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/BA> .
+
+<http://www.w3.org/ns/org#Post/d4c82d9a-f8a4-4928-8fe4-7fd46559ed00> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RS> .
+
+<http://www.w3.org/ns/org#Post/d4ec6d8c-865e-4e32-ae0f-c755d7137ac6> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SP> .
+
+<http://www.w3.org/ns/org#Post/d66f1a03-db17-466c-b935-5a571573ad96> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SP> .
+
+<http://www.w3.org/ns/org#Post/d68bcb36-f210-42e8-ae70-648d0b5cf4d6> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SP> .
+
+<http://www.w3.org/ns/org#Post/d7333144-761f-4461-b16a-7e96174b219b> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/MG> .
+
+<http://www.w3.org/ns/org#Post/d74ca0ca-711a-48d1-9ec6-b615117accc6> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/CE> .
+
+<http://www.w3.org/ns/org#Post/d79f94a0-dd11-49f3-a258-8c832d4c7e74> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RN> .
+
+<http://www.w3.org/ns/org#Post/d8327f4b-8e3e-40c7-bc6a-27b4f92c4b5e> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PR> .
+
+<http://www.w3.org/ns/org#Post/d87b9977-5293-4bb0-861f-7de80603ea4a> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RS> .
+
+<http://www.w3.org/ns/org#Post/d8ada417-ac85-43ac-923e-683fd53ea845> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PR> .
+
+<http://www.w3.org/ns/org#Post/d8c35694-8661-4efc-877d-80364101bed6> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SP> .
+
+<http://www.w3.org/ns/org#Post/d8d79c61-bb97-4ce2-a44e-845024b1809d> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/CE> .
+
+<http://www.w3.org/ns/org#Post/d912e4c8-5c5c-4f76-b136-016702429b06> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/MG> .
+
+<http://www.w3.org/ns/org#Post/d9d3f705-e294-484c-902f-4c7bcedcc7dd> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SP> .
+
+<http://www.w3.org/ns/org#Post/da731509-955c-4840-ae60-d8880d495339> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/MA> .
+
+<http://www.w3.org/ns/org#Post/dac379a4-4965-430b-9d32-e3afb3b7d490> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/MG> .
+
+<http://www.w3.org/ns/org#Post/daed71d7-6ab0-4861-87d1-dde3308023ef> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PI> .
+
+<http://www.w3.org/ns/org#Post/dc0669f7-cab6-4f92-a3de-3b5f2298fa34> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/TO> .
+
+<http://www.w3.org/ns/org#Post/dc0a8a42-3490-4177-b17c-6c961d34b754> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/BA> .
+
+<http://www.w3.org/ns/org#Post/dc1fc67f-dfa2-4282-a803-38d3ea213487> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PI> .
+
+<http://www.w3.org/ns/org#Post/dce8f98e-58d1-48b4-8af7-0f3d7c4cbba9> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/BA> .
+
+<http://www.w3.org/ns/org#Post/dd109c37-e976-4361-a636-e529b5070997> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/MG> .
+
+<http://www.w3.org/ns/org#Post/dd9a01ec-2373-4813-bf4e-ec0c9814881b> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RS> .
+
+<http://www.w3.org/ns/org#Post/ddc67e96-4cab-444f-a13a-4a9260a5674b> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/MS> .
+
+<http://www.w3.org/ns/org#Post/ddd278b2-ae50-48b9-8237-128fc719671a> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SP> .
+
+<http://www.w3.org/ns/org#Post/de19c427-f52d-4643-aa99-a85219cdcee3> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/ES> .
+
+<http://www.w3.org/ns/org#Post/de1f86da-a77a-4fc5-a461-93682fc030b8> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/AC> .
+
+<http://www.w3.org/ns/org#Post/de9bb325-2bf3-45c1-bd4a-2d68185bc9ed> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/MG> .
+
+<http://www.w3.org/ns/org#Post/dea1b47c-1cb0-4202-92c2-af23dfd87ea2> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SP> .
+
+<http://www.w3.org/ns/org#Post/dea469b9-4669-4915-8c89-7a7b951adf9f> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RS> .
+
+<http://www.w3.org/ns/org#Post/df505a1e-e371-4e75-8038-6133268f2b46> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RS> .
+
+<http://www.w3.org/ns/org#Post/dfc11703-be26-4a3c-be15-667a68bb2ae0> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/MG> .
+
+<http://www.w3.org/ns/org#Post/e0391dfc-0bd0-4e6c-a157-c5db6c44c9bb> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/BA> .
+
+<http://www.w3.org/ns/org#Post/e0d7b258-11dd-4172-87a9-0c37c015d119> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SP> .
+
+<http://www.w3.org/ns/org#Post/e15f88ae-0c5f-40c5-873b-87cdfc841016> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/DF> .
+
+<http://www.w3.org/ns/org#Post/e1a06ec8-8f14-4f04-acd6-388e7645e3c7> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/BA> .
+
+<http://www.w3.org/ns/org#Post/e1aa5891-3f21-4940-b2a7-8525fe259551> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/BA> .
+
+<http://www.w3.org/ns/org#Post/e1fd05db-1ea2-4d30-b7c5-e5e0abbca5d5> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/MG> .
+
+<http://www.w3.org/ns/org#Post/e2b1329d-4002-440d-8359-a645017c7d27> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RJ> .
+
+<http://www.w3.org/ns/org#Post/e2ea5252-7714-41e4-81fd-efbee26f8170> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/BA> .
+
+<http://www.w3.org/ns/org#Post/e58c2417-ecf5-447d-aedf-e6ea60f2269a> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/CE> .
+
+<http://www.w3.org/ns/org#Post/e72f64be-5aba-4b0e-b51b-be77689cec41> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PE> .
+
+<http://www.w3.org/ns/org#Post/e78634d5-e0d4-4f4c-b68b-c626318228b6> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RS> .
+
+<http://www.w3.org/ns/org#Post/e807aaaf-8d89-4b29-aa0b-78434ecc1fad> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/MG> .
+
+<http://www.w3.org/ns/org#Post/e8c05cbe-fe56-4f12-b526-c1b3fec6b339> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SE> .
+
+<http://www.w3.org/ns/org#Post/e9252705-00d2-4184-ba38-7381de791e83> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/AL> .
+
+<http://www.w3.org/ns/org#Post/e949c656-ff93-4804-a4e8-c850cc02bceb> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/MG> .
+
+<http://www.w3.org/ns/org#Post/ea1e6a31-97ed-4743-b280-4dcba6a8c453> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/MG> .
+
+<http://www.w3.org/ns/org#Post/ea370714-8c9c-4f87-8847-4c7984260710> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SP> .
+
+<http://www.w3.org/ns/org#Post/ea62cd19-4c70-49f8-97f3-ff96cbdadf4b> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SP> .
+
+<http://www.w3.org/ns/org#Post/ead4108e-9d58-4d0d-94cf-ab2e9768fe1b> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/GO> .
+
+<http://www.w3.org/ns/org#Post/ebe269b4-b432-401c-806c-83056113d580> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PA> .
+
+<http://www.w3.org/ns/org#Post/ec24d117-023f-4203-8ff1-facd375c655b> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/BA> .
+
+<http://www.w3.org/ns/org#Post/ec97b6d3-36fd-41ff-9b3a-58a881596648> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SP> .
+
+<http://www.w3.org/ns/org#Post/ed78b961-ff61-43a1-baa4-2b030badbc8b> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RJ> .
+
+<http://www.w3.org/ns/org#Post/ee9af6f4-4c14-4b88-a77f-7545bab3dc61> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/TO> .
+
+<http://www.w3.org/ns/org#Post/eea92eaa-f01f-4bc1-b20e-2db14f2841ac> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RO> .
+
+<http://www.w3.org/ns/org#Post/ef5d2a5f-83e1-4cb0-b8f6-5675104b9fb9> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/MS> .
+
+<http://www.w3.org/ns/org#Post/f0b2eafb-bfee-48d5-9424-da2449af357e> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RN> .
+
+<http://www.w3.org/ns/org#Post/f1476f49-3d0c-44b9-9b3e-51426387b628> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PA> .
+
+<http://www.w3.org/ns/org#Post/f19f2f75-0be0-4f1a-8f46-6c7ba48ebee7> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/BA> .
+
+<http://www.w3.org/ns/org#Post/f1d4081c-ca9f-4c64-80b9-201c48b9aa46> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RS> .
+
+<http://www.w3.org/ns/org#Post/f1f75eb7-8ea1-4e20-91d8-5dfe46e4a9ce> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/AP> .
+
+<http://www.w3.org/ns/org#Post/f28f9e34-cfe6-4141-b562-43615a0cddbb> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/MA> .
+
+<http://www.w3.org/ns/org#Post/f2ed4182-976d-4669-96ef-114dd8cc7a41> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/CE> .
+
+<http://www.w3.org/ns/org#Post/f2fb44e3-9c67-4397-aace-0cee6b84f89e> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RS> .
+
+<http://www.w3.org/ns/org#Post/f4777e4c-55c2-4edc-bc1c-c10ce630e163> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PI> .
+
+<http://www.w3.org/ns/org#Post/f4cece35-b524-4db5-93f8-b6202153f8ae> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/MG> .
+
+<http://www.w3.org/ns/org#Post/f500c0ae-3ac4-4259-b248-8f20cb48f5f9> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PR> .
+
+<http://www.w3.org/ns/org#Post/f5279c26-1b11-4663-ba50-2c3c993d5a0e> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/AP> .
+
+<http://www.w3.org/ns/org#Post/f557e0da-aaf4-45fa-974d-e328dc8470f1> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RO> .
+
+<http://www.w3.org/ns/org#Post/f574bfeb-da56-478c-b0ff-1e3fe3322656> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SC> .
+
+<http://www.w3.org/ns/org#Post/f642598b-0327-4956-afb0-04b9a3e54567> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PE> .
+
+<http://www.w3.org/ns/org#Post/f6586782-9df1-43a0-8047-6eb24d61b253> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/MA> .
+
+<http://www.w3.org/ns/org#Post/f7ab5bee-f760-4d60-8dca-79db8747e01b> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RN> .
+
+<http://www.w3.org/ns/org#Post/f81c99f2-17ab-4b2a-b9e9-28e72ebcbbf1> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SE> .
+
+<http://www.w3.org/ns/org#Post/f81f8208-5c2b-497a-addb-f01c7c957602> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RJ> .
+
+<http://www.w3.org/ns/org#Post/f84ace26-7c72-4fa6-bf2c-e2f13491be98> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/BA> .
+
+<http://www.w3.org/ns/org#Post/f86a2464-f159-4a8c-8033-d8f25b542637> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RJ> .
+
+<http://www.w3.org/ns/org#Post/f913eff5-64b6-4ff8-873c-21e0c12696e4> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SE> .
+
+<http://www.w3.org/ns/org#Post/f9642cac-238b-4619-b64e-59dca0a6b93f> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SP> .
+
+<http://www.w3.org/ns/org#Post/fa455547-ebfc-4dee-a765-1d4ac35b2516> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/MA> .
+
+<http://www.w3.org/ns/org#Post/fa76dfb0-a7b7-4253-a359-3f55fa223528> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/BA> .
+
+<http://www.w3.org/ns/org#Post/fad95284-4205-46cf-9074-5ac2819c8c17> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PR> .
+
+<http://www.w3.org/ns/org#Post/fbdac782-ab77-4a33-ac6f-41f0684159c7> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RJ> .
+
+<http://www.w3.org/ns/org#Post/fc64b68b-0593-475b-acbe-0dc946c9a94f> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/DF> .
+
+<http://www.w3.org/ns/org#Post/fcf3db54-24f8-44b1-bb7d-9ecfaf8ec8bf> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PR> .
+
+<http://www.w3.org/ns/org#Post/fde8b3e8-a537-42f3-8685-c77982b17f64> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/SE> .
+
+<http://www.w3.org/ns/org#Post/fdfe5cda-2637-448f-a3e8-dd3c39c5b07c> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/RJ> .
+
+<http://www.w3.org/ns/org#Post/feb0a38f-f848-4c66-aabf-53b601e2203c> a org:Post ;
+    schema:endDate "2024-01-31"^^xsd:date ;
+    schema:startDate "2019-02-01"^^xsd:date ;
+    org:hasJurisdiction <http://www.geonames.org/ontology#Feature/PI> .
+
+org:classification a owl:ObjectProperty ;
+    rdfs:domain org:Organization ;
+    rdfs:range skos:Concept .
+
+org:hasPost a owl:ObjectProperty ;
+    rdfs:domain org:Organization ;
+    rdfs:range org:Post .
+
+org:member a owl:ObjectProperty ;
+    rdfs:domain org:Membership ;
+    rdfs:range foaf:Agent ;
+    rdfs:subPropertyOf owl:topObjectProperty .
+
+org:organization a owl:ObjectProperty ;
+    rdfs:range org:Organization .
+
+org:postIn a owl:ObjectProperty ;
+    rdfs:domain org:Post ;
+    rdfs:range org:Organization .
+
+org:role a owl:ObjectProperty ;
+    rdfs:range org:Role .
+
+org:subOrganizationOf a owl:ObjectProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain org:Organization ;
+    rdfs:range org:Organization .
+
+prov:Role a owl:Class .
+
+prov:actedOnBehalfOf a owl:ObjectProperty ;
+    rdfs:domain prov:Agent ;
+    rdfs:range prov:Agent ;
+    owl:propertyChainAxiom ( [ owl:inverseOf prov:wasAttributedTo ] prov:wasGeneratedBy [ owl:inverseOf prov:hadActivity ] prov:agent ) .
+
+prov:hadPrimarySource a owl:ObjectProperty ;
+    rdfs:domain prov:Entity ;
+    rdfs:range prov:Entity .
+
+prov:hadRole a owl:ObjectProperty .
+
+prov:qualifiedAssociation a owl:ObjectProperty ;
+    rdfs:domain prov:Activity ;
+    rdfs:range prov:Association ;
+    rdfs:subPropertyOf prov:qualifiedInfluence .
+
+prov:qualifiedDelegation a owl:ObjectProperty ;
+    rdfs:domain prov:Agent ;
+    rdfs:range prov:Delegation ;
+    rdfs:subPropertyOf prov:qualifiedInfluence .
+
+foaf:name a owl:DatatypeProperty .
+
+:DirectRelationshipConceptScheme a owl:Class ;
+    rdfs:subClassOf skos:ConceptScheme .
+
+:OrgClassificationConcept a owl:Class ;
+    rdfs:subClassOf skos:Concept .
+
+:OrgClassificationConceptScheme a owl:Class ;
+    rdfs:subClassOf skos:ConceptScheme .
+
+:OrgRoleConceptScheme a owl:Class ;
+    rdfs:subClassOf skos:ConceptScheme .
+
+:hasReferred a owl:ObjectProperty ;
+    rdfs:domain :Referral ;
+    rdfs:range foaf:Person ;
+    owl:propertyChainAxiom ( :refersTo [ owl:inverseOf org:hasMembership ] ) .
+
+:refersTo a owl:ObjectProperty ;
+    rdfs:domain :Referral ;
+    rdfs:range org:Membership .
+
+prov:Association a owl:Class ;
+    rdfs:subClassOf prov:AgentInfluence .
+
+prov:Delegation a owl:Class ;
+    rdfs:subClassOf prov:AgentInfluence .
+
+prov:agent a owl:ObjectProperty ;
+    rdfs:domain prov:AgentInfluence ;
+    rdfs:range prov:Agent .
+
+prov:hadActivity a owl:ObjectProperty .
+
+prov:wasAttributedTo a owl:ObjectProperty ;
+    rdfs:domain prov:Entity ;
+    rdfs:range prov:Agent .
+
+prov:wasGeneratedBy a owl:ObjectProperty ;
+    rdfs:domain prov:Entity ;
+    rdfs:range prov:Activity .
+
+:hasPost a owl:ObjectProperty ;
+    rdfs:domain org:Membership ;
+    rdfs:range org:Post .
+
+:isReferrer a owl:ObjectProperty ;
+    rdfs:domain foaf:Agent ;
+    rdfs:range :Referral .
+
+gn:Feature a owl:Class .
+
+org:Role a owl:Class .
+
+org:hasMembership a owl:ObjectProperty ;
+    rdfs:domain foaf:Agent ;
+    rdfs:range org:Membership .
+
+prov:Activity a owl:Class .
+
+prov:qualifiedInfluence a owl:ObjectProperty .
+
+:DirectRelationshipConcept a owl:Class ;
+    rdfs:subClassOf skos:Concept .
+
+prov:AgentInfluence a owl:Class .
+
+:DirectRelationship a owl:Class .
+
+:Referral a owl:Class .
+
+xsd:date a rdfs:Datatype .
+
+org:Membership a owl:Class .
+
+skos:Concept a owl:Class .
+
+prov:Agent a owl:Class .
+
+prov:Entity a owl:Class .
+
+foaf:Person a owl:Class ;
+    rdfs:subClassOf foaf:Agent .
+
+org:Organization a owl:Class .
+
+foaf:Agent a owl:Class .
+
+<http://www.geonames.org/ontology#Feature/AC> a <http://www.w3.org/ns/org#geonames:Feature> .
+
+<http://www.geonames.org/ontology#Feature/AM> a <http://www.w3.org/ns/org#geonames:Feature> .
+
+<http://www.geonames.org/ontology#Feature/AP> a <http://www.w3.org/ns/org#geonames:Feature> .
+
+<http://www.geonames.org/ontology#Feature/DF> a <http://www.w3.org/ns/org#geonames:Feature> .
+
+<http://www.geonames.org/ontology#Feature/MS> a <http://www.w3.org/ns/org#geonames:Feature> .
+
+<http://www.geonames.org/ontology#Feature/MT> a <http://www.w3.org/ns/org#geonames:Feature> .
+
+<http://www.geonames.org/ontology#Feature/RN> a <http://www.w3.org/ns/org#geonames:Feature> .
+
+<http://www.geonames.org/ontology#Feature/RO> a <http://www.w3.org/ns/org#geonames:Feature> .
+
+<http://www.geonames.org/ontology#Feature/RR> a <http://www.w3.org/ns/org#geonames:Feature> .
+
+<http://www.geonames.org/ontology#Feature/SE> a <http://www.w3.org/ns/org#geonames:Feature> .
+
+<http://www.geonames.org/ontology#Feature/TO> a <http://www.w3.org/ns/org#geonames:Feature> .
+
+<http://www.geonames.org/ontology#Feature/AL> a <http://www.w3.org/ns/org#geonames:Feature> .
+
+<http://www.geonames.org/ontology#Feature/ES> a <http://www.w3.org/ns/org#geonames:Feature> .
+
+<http://www.geonames.org/ontology#Feature/PI> a <http://www.w3.org/ns/org#geonames:Feature> .
+
+<http://www.geonames.org/ontology#Feature/PB> a <http://www.w3.org/ns/org#geonames:Feature> .
+
+<http://www.geonames.org/ontology#Feature/SC> a <http://www.w3.org/ns/org#geonames:Feature> .
+
+<http://www.geonames.org/ontology#Feature/GO> a <http://www.w3.org/ns/org#geonames:Feature> .
+
+<http://www.geonames.org/ontology#Feature/PA> a <http://www.w3.org/ns/org#geonames:Feature> .
+
+<http://www.geonames.org/ontology#Feature/MA> a <http://www.w3.org/ns/org#geonames:Feature> .
+
+<http://www.geonames.org/ontology#Feature/CE> a <http://www.w3.org/ns/org#geonames:Feature> .
+
+<http://www.geonames.org/ontology#Feature/PE> a <http://www.w3.org/ns/org#geonames:Feature> .
+
+<http://www.geonames.org/ontology#Feature/PR> a <http://www.w3.org/ns/org#geonames:Feature> .
+
+<http://www.geonames.org/ontology#Feature/RS> a <http://www.w3.org/ns/org#geonames:Feature> .
+
+<http://www.geonames.org/ontology#Feature/BA> a <http://www.w3.org/ns/org#geonames:Feature> .
+
+<http://www.geonames.org/ontology#Feature/RJ> a <http://www.w3.org/ns/org#geonames:Feature> .
+
+<http://www.geonames.org/ontology#Feature/MG> a <http://www.w3.org/ns/org#geonames:Feature> .
+
+<http://www.geonames.org/ontology#Feature/SP> a <http://www.w3.org/ns/org#geonames:Feature> .
+
+org:Post a owl:Class .
+

@@ -51,7 +51,7 @@ class ActivityCongressmanSpider(scrapy.Spider):
         req = scrapy.Request(
             url,
             self.activity_congressmen,
-            headers={'accept': 'application/json'}            
+            headers={'accept': 'application/json'}
         )
         yield req
 
@@ -64,7 +64,7 @@ class ActivityCongressmanSpider(scrapy.Spider):
         Arguments:
             response {[type]} -- [description]
         '''
-        soup = bs4.BeautifulSoup(response.body_as_unicode(), features='lxml')        
+        soup = bs4.BeautifulSoup(response.body_as_unicode(), features='lxml')
         for tag in soup.find(id='content').children:
             # a tag href ideCadastro -- content NomeParlamentarAtual
             info = getattr(tag, 'a', None)
@@ -73,21 +73,35 @@ class ActivityCongressmanSpider(scrapy.Spider):
                 id_api = info['href'].split('/')[-1]
                 data['nomeCandidato'] = info.contents[0]
 
+            # This block captures PARTY NAME and jurisdiction
+            info = getattr(tag, 'h4', None)
+            if info is not None:
+                party_info = re.search(r'- (.*?)<\/h4>', str(info)).group(1)
+                data['party']  = party_info.split('/')[0]
+                data['jurisdiction'] = party_info.split('/')[1].strip()
+
             # This block reads the contents of the message and assigns
-            # entry of exit
             info = getattr(tag, 'li', None)
             if info is not None:
                 contents = re.sub(r'[\r|\t|\n]', '', info.contents[0])
                 # gets everything up to the first parenthesis
-                activity = re.search(r'(.*)\(', contents).group(0)
+                # activity = re.search(r'(.*)\(', contents).group(0)
+                event = re.search(r'- (.*)\(', contents).group(1)
                 # grabs everything enclosed in parenthesis
-                activity_detail = re.search(r'\((.*)\)', contents).group(0)
+                event_complement = re.search(r'\((.*)\)', contents).group(1)
 
-                if (('Reassunção' in activity) or ('Posse' in activity) or ('Afastamento' in activity_detail)):
+                if (('Reassunção' in event) or ('Posse' in event) or ('Afastamento' in event_complement)):
+
                     data['startDate'] = self.dt.strftime('%d/%m/%Y')
+                    # The event is someone starting a new membership
+                    data['status'] = event
 
-                elif (('Posse' in activity_detail) or ('Reassunção' in activity_detail) or ('Afastamento' in activity)):
+                elif (('Posse' in event_complement) or ('Reassunção' in event_complement) or ('Afastamento' in activity)):
                     data['finishDate'] = self.dt.strftime('%d/%m/%Y')
+                    # The event is someone leaving office
+                    data['motive'] = event
+
+                data['replacement'] = re.search(r'- (.*) -', event_complement).group(1)
 
                 data['message'] = contents
                 url = '{url}dep_Detalhe.asp?id={id}'.format(
