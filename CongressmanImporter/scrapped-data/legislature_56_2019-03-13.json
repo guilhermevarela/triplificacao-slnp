@@ -1,4 +1,4 @@
 [
-{"message": "13/3/2019 - Posse como Suplente(Secretário de Estado - JOSIAS GOMES - em 13/03/2019)", "startDate": "2019-03-13", "replacement": "JOSIAS GOMES", "dataNascimento": "1957-08-23", "party": "PT", "nomeCandidato": "JOSEILDO RAMOS", "status": "Posse como Suplente", "nomeCivil": "JOSEILDO RIBEIRO RAMOS", "jurisdiction": "BA"},
-{"motive": "Secretário de Estado", "message": "13/3/2019 - Secretário de Estado(Posse como Suplente - JOSEILDO RAMOS - em 13/03/2019)", "replacement": "JOSEILDO RAMOS", "nomeCivil": "JOSIAS GOMES DA SILVA", "finishDate": "2019-03-13", "dataNascimento": "1956-10-14", "party": "PT", "nomeCandidato": "JOSIAS GOMES", "jurisdiction": "BA"}
+{"party": "PT", "startDate": "2019-03-13", "jurisdiction": "BA", "dataNascimento": "1957-08-23", "message": "13/3/2019 - Posse como Suplente(Secretário de Estado - JOSIAS GOMES - em 13/03/2019)", "replacement": "JOSIAS GOMES", "status": "Posse como Suplente", "nomeCandidato": "JOSEILDO RAMOS", "nomeCivil": "JOSEILDO RIBEIRO RAMOS"},
+{"party": "PT", "finishDate": "2019-03-13", "motive": "Secretário de Estado", "jurisdiction": "BA", "dataNascimento": "1956-10-14", "message": "13/3/2019 - Secretário de Estado(Posse como Suplente - JOSEILDO RAMOS - em 13/03/2019)", "replacement": "JOSEILDO RAMOS", "nomeCandidato": "JOSIAS GOMES", "nomeCivil": "JOSIAS GOMES DA SILVA"}
 ]

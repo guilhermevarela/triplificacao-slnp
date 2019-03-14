@@ -144,7 +144,7 @@ def update_deputies():
 
     identity = Identity(updated=True)
 
-    json_mapper = JsonMapper()
+    json_mapper = JsonMapper(load=True)
 
     party_list = PartyList()
 
@@ -200,9 +200,9 @@ def update_deputies():
                                 name=deputy_name,
                                 posts=expired_memberships
                         ))
-                
+
                 #Is this name registered in our database
-                deputy = identity.find(membership_update['nomeCivil'])                    
+                deputy = identity.find(membership_update['nomeCivil'])
 
                 # Generate an identity for the deputy
                 if not deputy:
@@ -230,10 +230,8 @@ def update_deputies():
                         'finishDate': None,
                     }
 
-                    i = json_mapper.lookup_resource(lookup)
-                    if i is None:
-                        print('ValueError')
-                        
+                    resources = json_mapper.find(lookup)
+                    if not resources:
                         raise ValueError(
                             """Tried to close a membership which doesn't exist. 
                             File: {file}
@@ -245,7 +243,8 @@ def update_deputies():
                         ))
                     else:
                         # update the membership
-                        membership = json_mapper.update_resource(i, {
+                        membership = resources[-1]
+                        membership.update({
                             'finishDate': membership_update['finishDate'],
                             'nomeCandidato': membership_update['nomeCandidato']
                         })
@@ -279,7 +278,6 @@ def update_deputies():
     identity.save_file()
 
     # Saves legislature_56_final.json file
-    # import code; code.interact(local=dict(globals(), **locals()))
     json_mapper.save_file(updated=True)
 
     # Saves ontology A-Box file

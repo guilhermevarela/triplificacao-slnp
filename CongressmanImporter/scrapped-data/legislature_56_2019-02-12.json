@@ -1,4 +1,4 @@
 [
-{"finishDate": "2019-02-12", "dataNascimento": "1987-07-25", "message": "12/2/2019 - Secretário de Estado(Posse como Suplente - SANTINI - em 12/02/2019)", "party": "PP", "jurisdiction": "RS", "nomeCandidato": "COVATTI FILHO", "motive": "Secretário de Estado", "replacement": "SANTINI", "nomeCivil": "LUIS ANTONIO FRANCISCATTO COVATTI"},
-{"dataNascimento": "1973-10-02", "message": "12/2/2019 - Posse como Suplente(Secretário de Estado - COVATTI FILHO - em 12/02/2019)", "nomeCandidato": "SANTINI", "jurisdiction": "RS", "startDate": "2019-02-12", "party": "PTB", "replacement": "COVATTI FILHO", "status": "Posse como Suplente", "nomeCivil": "RONALDO SANTINI"}
+{"message": "12/2/2019 - Secretário de Estado(Posse como Suplente - SANTINI - em 12/02/2019)", "finishDate": "2019-02-12", "nomeCandidato": "COVATTI FILHO", "replacement": "SANTINI", "motive": "Secretário de Estado", "jurisdiction": "RS", "nomeCivil": "LUIS ANTONIO FRANCISCATTO COVATTI", "dataNascimento": "1987-07-25", "party": "PP"},
+{"startDate": "2019-02-12", "status": "Posse como Suplente", "party": "PTB", "nomeCandidato": "SANTINI", "replacement": "COVATTI FILHO", "message": "12/2/2019 - Posse como Suplente(Secretário de Estado - COVATTI FILHO - em 12/02/2019)", "nomeCivil": "RONALDO SANTINI", "dataNascimento": "1973-10-02", "jurisdiction": "RS"}
 ]

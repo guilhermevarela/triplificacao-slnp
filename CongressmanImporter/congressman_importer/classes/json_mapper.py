@@ -41,7 +41,7 @@ MEMBERSHIP_START_DATE = "2019-02-01"
 
 
 class JsonMapper:
-    def __init__(self, load=True, updated=False):
+    def __init__(self, load=False, updated=False):
         if load:
             self.load_file(updated)
         else:
@@ -63,7 +63,7 @@ class JsonMapper:
         """
         Generate one resource based on Resource class
         """
-        import code; code.interact(local=dict(globals(), **locals()))
+        # import code; code.interact(local=dict(globals(), **locals()))
         self.body_data.append({
             'membershipUri': resource.membershipUri,
             'url': resource.url,
@@ -76,7 +76,7 @@ class JsonMapper:
             'finishDate': None,
         })
 
-    def lookup_resource(self, lookup_attributes):
+    def find(self, lookup_map):
         """
         Looks up resources making comparations on attributes dictionary
         """
@@ -86,18 +86,13 @@ class JsonMapper:
             """
             return all([src[k] == v for k, v in lkp.items()])
 
+        resources = []
         for i, src in enumerate(self.body_data):
-            if test(src, lookup_attributes):
-                return i
+            if test(src, lookup_map):
+                resources.append(src)
+        if resources:
+            return resources
         return None
-
-    def update_resource(self, i, update_attributes):
-        """
-        updates resource at position i
-        """
-
-        self.body_data[i].update(update_attributes)
-        return self.body_data[i]
 
     def save_file(self, updated=False):
         """
