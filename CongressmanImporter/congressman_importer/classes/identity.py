@@ -40,11 +40,14 @@ class Identity:
             for row in spamreader:
                 # Senators and deputies has different contracts
                 # TODO: CREATE ANOTHER FEATURE TELLING SENATORS vs DEPUTIES
-                if row.get('sen:CodigoParlamentar') or 'senador' in row.get('post', '').lower():
-                    self.add_senator(Senator(row))
+                try:
+                    if row.get('sen:CodigoParlamentar') or 'senador' in row.get('post', '').lower():
+                        self.add_senator(Senator(row))
 
-                if row.get('cam:ideCadastro') or 'deputado' in row.get('post', '').lower():
-                    self.add_deputy(Deputy(row))
+                    if row.get('cam:ideCadastro') or 'deputado' in row.get('post', '').lower():
+                        self.add_deputy(Deputy(row))
+                except AttributeError:
+                    import code; code.interact(local=dict(globals(), **locals()))
 
     def add_deputy(self, deputy):
         """

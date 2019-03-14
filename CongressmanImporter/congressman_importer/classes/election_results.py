@@ -42,6 +42,11 @@ class ElectionResults:
         :param elected: Instance of Elected class
         """
         if elected.post in self.POSTS and elected.shift in self.ELECTED_FLAGS:
+            elected.birth_date = '{yr}-{mt}-{dd}'.format(
+                yr=elected.birth_date[-4:],
+                mt=elected.birth_date[3:5],
+                dd=elected.birth_date[:2],
+            )
             self.elected.append(elected)
 
     def get_all_elected(self):

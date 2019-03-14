@@ -92,16 +92,18 @@ class ActivityCongressmanSpider(scrapy.Spider):
 
                 if (('Reassunção' in event) or ('Posse' in event) or ('Afastamento' in event_complement)):
 
-                    data['startDate'] = self.dt.strftime('%d/%m/%Y')
+                    data['startDate'] = self.dt.strftime('%Y-%m-%d')
                     # The event is someone starting a new membership
                     data['status'] = event
 
                 elif (('Posse' in event_complement) or ('Reassunção' in event_complement) or ('Afastamento' in activity)):
-                    data['finishDate'] = self.dt.strftime('%d/%m/%Y')
+                    data['finishDate'] = self.dt.strftime('%Y-%m-%d')
                     # The event is someone leaving office
                     data['motive'] = event
 
                 data['replacement'] = re.search(r'- (.*) -', event_complement).group(1)
+                if data['replacement'] == '':
+                    data['replacement'] = None
 
                 data['message'] = contents
                 url = '{url}dep_Detalhe.asp?id={id}'.format(
@@ -146,7 +148,14 @@ class ActivityCongressmanSpider(scrapy.Spider):
                         if isinstance(el, bs4.element.NavigableString): # contents
                             val = el.strip()
                     if key:
-                        data[key] = val
+                        if key == 'dataNascimento':
+                            data[key] = '{yr}-{mt}-{dd}'.format(
+                                yr=val[-4:],
+                                mt=val[3:5],
+                                dd=val[:2],
+                            )
+                        else:
+                            data[key] = val
                     exit_loop = 'nomeCivil' in data and 'dataNascimento' in data
                     if exit_loop:
                         yield data

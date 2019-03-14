@@ -41,9 +41,9 @@ MEMBERSHIP_START_DATE = "2019-02-01"
 
 
 class JsonMapper:
-    def __init__(self, load=False, file=LEGISLATURE_FILE):
+    def __init__(self, load=True, updated=False):
         if load:
-            self.load_file(file)
+            self.load_file(updated)
         else:
             self.header = self.generate_header()
             self.body_data = []
@@ -63,6 +63,7 @@ class JsonMapper:
         """
         Generate one resource based on Resource class
         """
+        import code; code.interact(local=dict(globals(), **locals()))
         self.body_data.append({
             'membershipUri': resource.membershipUri,
             'url': resource.url,
@@ -86,16 +87,15 @@ class JsonMapper:
             return all([src[k] == v for k, v in lkp.items()])
 
         for i, src in enumerate(self.body_data):
-            if test(src, lookup_attributes):            
+            if test(src, lookup_attributes):
                 return i
         return None
-    
+
     def update_resource(self, i, update_attributes):
         """
         updates resource at position i
         """
-        # if i == 321:
-        #     import code; code.interact(local=dict(globals(), **locals()))
+
         self.body_data[i].update(update_attributes)
         return self.body_data[i]
 
@@ -107,14 +107,24 @@ class JsonMapper:
         document['Info'] = self.header
         document['Resource'] = self.body_data
 
-        with io.open(LEGISLATURE_FILE, 'w', encoding='utf8') as out_file:
+        if updated:
+            file_path = LEGISLATURE_FILE_UPDATED
+        else:
+            file_path = LEGISLATURE_FILE
+
+        with io.open(file_path, 'w', encoding='utf8') as out_file:
             json.dump(document, out_file, ensure_ascii=False)
 
-    def load_file(self, file=LEGISLATURE_FILE):
+    def load_file(self, updated=False):
         """
         Load the JSON file specified in file location
-        """        
-        with io.open(LEGISLATURE_FILE, 'r', encoding='utf8') as in_file:
+        """
+        if updated:
+            file_path = LEGISLATURE_FILE_UPDATED
+        else:
+            file_path = LEGISLATURE_FILE
+
+        with io.open(file_path, 'r', encoding='utf8') as in_file:
             document = json.load(in_file)
         self.header = document['Info']
         self.body_data = document['Resource']

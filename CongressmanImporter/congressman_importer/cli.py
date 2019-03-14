@@ -17,7 +17,14 @@ import click
 from .classes import ElectionResults, Identity, Agent, JsonMapper, PartyList, Resource
 from .helpers import generate_uuid
 
+from enum import Enum
+
 __author__ = 'Rebeca Bordini <bordini.rebeca@gmail.com>'
+
+class DeputyStatus(Enum):
+    elected = 'Posse na Sessão Preparatória'
+    apointee = 'Posse como Suplente'
+    returning = 'Reassunção'
 
 @click.group()
 def cli():
@@ -42,7 +49,7 @@ def import_all_elected():
 
     # Add all 27 jurisdictions (federal unities)
     ontology.add_all_jurisdictions()
-    
+
     for elected in elected_data:
 
         # Every Post created must have a unique identifier
@@ -55,7 +62,7 @@ def import_all_elected():
         previous_elected_congressman = identity.find(elected.name)
 
         # Every Membership created must have a unique identifier
-        membership_uuid = generate_uuid()        
+        membership_uuid = generate_uuid()
 
         # If the elected has been elected before, he has an unique identifier already
         if previous_elected_congressman:
@@ -106,10 +113,15 @@ def scrape_deputies():
 
     # DEFINE THE SCRAPPING INTERVAL
     date_range = generate_legislature_iterator()
-    
+
+    spider_script = 'congressman_importer/spiders/activity_congressman.py'
+
+    target_prefix = 'scrapped-data/legislature_56_'
     for dt in date_range:
         subprocess.Popen(
-            "scrapy runspider congressman_importer/spiders/activity_congressman.py -o scrapped-data/legislature_56_{dt}.json  -a dt='{dt}'".format(
+            "scrapy runspider {script} -o {target}{dt}.json  -a dt='{dt}'".format(
+                target=target_prefix,
+                script=spider_script,
                 dt=dt.strftime('%Y-%m-%d')
             ),
             shell=True
@@ -123,29 +135,25 @@ def update_deputies():
     Updates Resources, Indentities and Ontology
     """
     import glob
-    import re
     import json
 
     from .classes import Deputy
-
-    def process_message(message):
-        m1 = re.search(r'\((.*?)\)', message).group(1)
-        m1 = re.search(r'- (.*?) -', m1).group(1)
-        return m1
 
     # Initializes all classes
     ontology = Agent()
 
     identity = Identity(updated=True)
-    # election_results = ElectionResults()
-    json_mapper = JsonMapper(load=True)
+
+    json_mapper = JsonMapper()
+
+    party_list = PartyList()
 
     # Add all 27 jurisdictions (federal unities)
     ontology.add_all_jurisdictions()
 
     expired_memberships = {}
-    
-    scrapped_files = sorted(glob.glob('scrapped-data/legislature_56_*.json'))    
+
+    scrapped_files = sorted(glob.glob('scrapped-data/legislature_56_*.json'))
     for scrapped_file in scrapped_files:
         try:
             with open(scrapped_file, 'r', encoding='utf8') as f:
@@ -154,53 +162,78 @@ def update_deputies():
             # Success: means that the file is not empty
             # finishDates must be processed first as those free up posts that can be occupied
             membership_updates = sorted(
-                membership_updates, 
-                key= lambda x: x.get('finishDate', '31/01/2023')
+                membership_updates,
+                key= lambda x: -1 if 'finishDate' in x else 1
             )
             for membership_update in membership_updates:
+
+                # Generates or re-covers UUIDS
+                # * post_uuid, deputy_uuid, party_uri
+                deputy_name = membership_update['nomeCandidato']
+
+                # This deputy is leaving office
+                is_leaving = 'finishDate' in membership_update
+
+                # This deputy was officialy elected but took office after 2019-02-01
+                is_elected = membership_update['replacement'] is None
+
+                # This deputy is either acting as an apointee or is returning into office
+                # either way it's assuming a previously occupied post
+                is_replacing = membership_update['nomeCandidato'] in expired_memberships
+                if is_elected or is_replacing or is_leaving:
+
+                    if is_elected:
+                        post_uuid = generate_uuid()
+
+                        party_uri = party_list.get_party(membership_update['party']).uri
+                    elif is_replacing:                                            
+                        post_uuid = expired_memberships[deputy_name]['postUri'].split('/')[-1]
+
+                        party_uri = expired_memberships[deputy_name]['urlPartido']
+
+                else:
+                    raise ValueError(
+                        '''Unable to process {membership}
+                            deputy_name {name} not found
+                            posts {posts}'''.format(
+                                membership=membership_update,
+                                name=deputy_name,
+                                posts=expired_memberships
+                        ))
+                
                 #Is this name registered in our database
-                deputy = identity.find(membership_update['nomeCivil'])
+                deputy = identity.find(membership_update['nomeCivil'])                    
 
+                # Generate an identity for the deputy
                 if not deputy:
-                    # This name isn't a registered name proceed to register it.
-                    # Lookup the replacement name from message
-                    previous_deputy_name = process_message(membership_update['message'])
 
-                    if previous_deputy_name not in expired_memberships:
+                    deputy_uuid = generate_uuid()
 
-                        # print('create identity for the dude -- posse individual???')
-                        # import code; code.interact(local=dict(globals(), **locals()))
-                        raise ValueError(
-                            '''Unable to process {membership}
-                                previous_deputy_name {name} not found
-                                posts {posts}'''.format(
-                                    membership=membership_update,
-                                    name=previous_deputy_name,
-                                    posts=expired_memberships
-                            ))
-                    else:
-                        post_uuid = expired_memberships[previous_deputy_name]['postUri'].split('/')[-1]
+                    membership_update['resource_uri'] = deputy_uuid
+                    deputy = Deputy(membership_update)
 
-                        party_uri = expired_memberships[previous_deputy_name]['urlPartido']
+                    del expired_memberships[deputy_name]
 
-                        deputy_uuid = generate_uuid()
+                    identity.update_data(deputy_uuid, deputy)
 
-                        membership_uuid = generate_uuid()
+                else:
+                    # this deputy is already registered
+                    deputy_uuid = deputy.resource_uri
 
-                        membership_update['resource_uri'] = deputy_uuid
-                        deputy = Deputy(membership_update)
-
-                        del expired_memberships[previous_deputy_name]
-
-                        identity.update_data(deputy_uuid, deputy)
-
-                lookup = {a: membership_update[a] for a in ['nomeCivil', 'dataNascimento']}
-                if 'finishDate' in membership_update: # Closing an existing membership
-                    lookup['finishDate'] = None
+                # This segment updates the Resources or Memberships by either:
+                # * update an existing Membership ( finishDate == processingDate )
+                # * generates a new membership
+                if is_leaving: # Closing an existing membership
+                    lookup = {
+                        'nomeCivil': membership_update['nomeCivil'],
+                        'dataNascimento': membership_update['dataNascimento'],
+                        'finishDate': None,
+                    }
 
                     i = json_mapper.lookup_resource(lookup)
                     if i is None:
-                        import code; code.interact(local=dict(globals(), **locals()))
+                        print('ValueError')
+                        
                         raise ValueError(
                             """Tried to close a membership which doesn't exist. 
                             File: {file}
@@ -216,12 +249,14 @@ def update_deputies():
                             'finishDate': membership_update['finishDate'],
                             'nomeCandidato': membership_update['nomeCandidato']
                         })
-
-                        # save postUri for next congressman to occupy the position
-                        expired_memberships[membership['nomeCandidato']] = membership
+                        if membership_update['replacement'] is not None:
+                            # save postUri for next congressman to occupy the position
+                            expired_memberships[membership_update['replacement']] = membership
 
 
                 else: # Creating a membership
+                    membership_uuid = generate_uuid()
+
                     try:
                         resource = Resource(elected=deputy,
                             elected_uuid=deputy_uuid,
@@ -244,6 +279,7 @@ def update_deputies():
     identity.save_file()
 
     # Saves legislature_56_final.json file
+    # import code; code.interact(local=dict(globals(), **locals()))
     json_mapper.save_file(updated=True)
 
     # Saves ontology A-Box file
