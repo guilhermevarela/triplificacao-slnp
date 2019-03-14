@@ -17,14 +17,8 @@ import click
 from .classes import ElectionResults, Identity, Agent, JsonMapper, PartyList, Resource
 from .helpers import generate_uuid
 
-from enum import Enum
 
 __author__ = 'Rebeca Bordini <bordini.rebeca@gmail.com>'
-
-class DeputyStatus(Enum):
-    elected = 'Posse na Sessão Preparatória'
-    apointee = 'Posse como Suplente'
-    returning = 'Reassunção'
 
 @click.group()
 def cli():
@@ -116,7 +110,7 @@ def scrape_deputies():
 
     spider_script = 'congressman_importer/spiders/activity_congressman.py'
 
-    target_prefix = 'scrapped-data/legislature_56_'
+    target_prefix = 'scraped-data/legislature_56_'
     for dt in date_range:
         subprocess.Popen(
             "scrapy runspider {script} -o {target}{dt}.json  -a dt='{dt}'".format(
@@ -153,7 +147,7 @@ def update_deputies():
 
     expired_memberships = {}
 
-    scrapped_files = sorted(glob.glob('scrapped-data/legislature_56_*.json'))
+    scrapped_files = sorted(glob.glob('scraped-data/legislature_56_*.json'))
     for scrapped_file in scrapped_files:
         try:
             with open(scrapped_file, 'r', encoding='utf8') as f:
