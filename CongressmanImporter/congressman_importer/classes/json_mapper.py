@@ -59,7 +59,7 @@ class JsonMapper:
             "hasVersion": VERSION
         }
 
-    def generate_resource(self, resource):
+    def generate_resource(self, resource, start_date=MEMBERSHIP_START_DATE):
         """
         Generate one resource based on Resource class
         """
@@ -71,7 +71,7 @@ class JsonMapper:
             'dataNascimento': resource.birth_date,
             'urlPartido': resource.party_url,
             'postUri': resource.postUri,
-            'startDate': MEMBERSHIP_START_DATE,
+            'startDate': start_date,
             'finishDate': None,
         })
 
@@ -94,10 +94,12 @@ class JsonMapper:
         """
         updates resource at position i
         """
+        # if i == 321:
+        #     import code; code.interact(local=dict(globals(), **locals()))
         self.body_data[i].update(update_attributes)
         return self.body_data[i]
 
-    def save_file(self):
+    def save_file(self, updated=False):
         """
         Save the JSON file specified in LEGISLATURE_FILE location
         """

@@ -9,6 +9,7 @@ This module provides a object to represent Deputies.
 
 __author__ = 'Rebeca Bordini <bordini.rebeca@gmail.com>'
 
+
 class Deputy:
 
     CONGRESS_API_MAPPING = {
@@ -19,6 +20,14 @@ class Deputy:
         'cam:nomeCivil': 'name',
         'cam:nomeParlamentarAtual': 'parlamentar_name'
     }
+
+    MEMBERSHIP_API_MAPPING = {
+        'resource_uri': 'resource_uri',
+        'dataNascimento': 'birth_date',
+        'nomeCivil': 'name',
+        'nomeCandidato': 'parlamentar_name'
+    }
+
     ELECTED_ATTRIBUTES = [
         'cpf', 'shift', 'party'
         'federal_unity', 'party_name', 'birth_date',
@@ -28,14 +37,22 @@ class Deputy:
 
     def __init__(self, data={}):
         for k, v in self.CONGRESS_API_MAPPING.items():
-            setattr(self, v, data.get(k, ''))
+            if k in data:
+                setattr(self, v, data.get(k, ''))
+
+        for k, v in self.MEMBERSHIP_API_MAPPING.items():
+            if k in data:
+                setattr(self, v, data.get(k, ''))
+
+        if not hasattr(self, 'post'):
+            self.post = 'DEPUTADO'
 
     def __repr__(self):
         return "{name}".format(name=self.name)
 
     def update_data(self, uri, data):
 
-        if self.resource_uri == '' or self.resource_uri == uri:
+        if (not hasattr(self, 'resource_uri')) or (self.resource_uri == uri):
             # re-writes in case is empty
             self.resource_uri = uri
             for k, v in data.__dict__.items():
