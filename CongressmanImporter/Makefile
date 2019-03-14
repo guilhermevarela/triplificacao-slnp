@@ -22,7 +22,11 @@ run:
 
 ## Scrapes congressmen from site
 scrape:
-	python -m congressman_importer.cli scrape-56
+	python -m congressman_importer.cli scrape-deputies
+
+## Updates congressmen using both import-all-elected data and scrape-deputies data
+update:
+	python -m congressman_importer.cli update-deputies	
 
 ## Instala as dependêncis do projeto
 setup:
